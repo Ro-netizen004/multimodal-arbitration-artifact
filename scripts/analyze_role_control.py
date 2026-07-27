@@ -90,11 +90,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--models", nargs="+", required=True)
     parser.add_argument("--original-image-root", type=Path,
-                        default=Path("results/phase6_legibility/gsm8k"))
+                        default=Path("results/prompt_framing_control/original_prompt/gsm8k/image_degradation"))
     parser.add_argument("--original-text-root", type=Path,
-                        default=Path("results/phase7_text_legibility/gsm8k"))
+                        default=Path("results/prompt_framing_control/original_prompt/gsm8k/text_degradation"))
     parser.add_argument("--control-root", type=Path,
-                        default=Path("results/phase_control/role_counterbalance"))
+                        default=Path("results/main_arithmetic"))
     parser.add_argument("--resamples", type=int, default=10_000)
     args = parser.parse_args()
 
@@ -102,8 +102,8 @@ def main() -> None:
     for model in args.models:
         original = asymmetry(args.original_image_root / model,
                              args.original_text_root / model)
-        neutral = asymmetry(args.control_root / "role_neutral" / model,
-                            args.control_root / "text_legibility" / "role_neutral" / model)
+        neutral = asymmetry(args.control_root / "gsm8k" / "image_degradation" / model,
+                            args.control_root / "gsm8k" / "text_degradation" / model)
         ids = sorted(original.keys() & neutral.keys())
         if not ids:
             print(f"{model}\tNO MATCHED RESULTS")
@@ -121,8 +121,8 @@ def main() -> None:
         for framing, image_dir, text_dir in (
             ("original", args.original_image_root / model,
              args.original_text_root / model),
-            ("neutral", args.control_root / "role_neutral" / model,
-             args.control_root / "text_legibility" / "role_neutral" / model),
+            ("neutral", args.control_root / "gsm8k" / "image_degradation" / model,
+             args.control_root / "gsm8k" / "text_degradation" / model),
         ):
             result = behavioral_asymmetry(image_dir, text_dir)
             if result is None:

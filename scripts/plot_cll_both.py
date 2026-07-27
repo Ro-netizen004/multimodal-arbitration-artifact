@@ -40,8 +40,15 @@ DISPLAY = {
 
 
 def load_level(model, arm, level):
-    phase = "phase6_legibility" if arm == "image" else "phase7_text_legibility"
-    path = ROOT / "results" / phase / "gsm8k" / model / FILES[arm][level]
+    path = (
+        ROOT
+        / "results"
+        / "main_arithmetic"
+        / "gsm8k"
+        / f"{arm}_degradation"
+        / model
+        / FILES[arm][level]
+    )
     rows = {}
     if not path.exists():
         return rows

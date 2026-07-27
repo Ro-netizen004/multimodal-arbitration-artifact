@@ -53,9 +53,9 @@ deterministically at evaluation time rather than stored as separate dataset
 rows.
 
 The saved item-level experimental outputs in this repository are sufficient to
-reproduce all reported ChartQA-Conflict statistics. The chart files and
-reports are distributed separately during anonymous review when permitted;
-their public archival location will be restored after the anonymity period.
+reproduce all reported ChartQA-Conflict statistics. The 229 analyzed chart
+files and reports are included in this anonymous-review artifact; their public
+archival location will be restored after the anonymity period.
 
 ## Source and licensing
 

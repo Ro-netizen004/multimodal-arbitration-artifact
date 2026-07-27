@@ -2,7 +2,7 @@
 """
 Plot the legibility curve: text preference vs. image legibility.
 
-Reads results/phase6_legibility/legibility_all.json (or per-model
+Reads results/main_arithmetic/gsm8k/image_degradation/legibility_all.json (or per-model
 legibility_summary.json files) and draws one line per model of text preference
 in the mismatch condition against noise level.
 
@@ -15,7 +15,7 @@ Reading of the figure:
 
 Usage:
     python scripts/plot_legibility.py
-    python scripts/plot_legibility.py --results-dir results/phase6_legibility
+    python scripts/plot_legibility.py --results-dir results/main_arithmetic/gsm8k/image_degradation
     python scripts/plot_legibility.py --as-percent
 """
 
@@ -212,7 +212,7 @@ def plot(results_dir, as_percent=False, out_path=None, benchmark="gsm8k",
 
 def main():
     parser = argparse.ArgumentParser(description="Plot text preference vs. image legibility")
-    parser.add_argument("--results-dir", default="results/phase6_legibility")
+    parser.add_argument("--results-dir", default="results/main_arithmetic/gsm8k/image_degradation")
     parser.add_argument("--benchmark", default="gsm8k",
                         help="Which benchmark's results to plot. gsm8k reads --results-dir "
                              "directly; others read <results-dir>/<benchmark>/.")

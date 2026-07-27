@@ -49,7 +49,7 @@ From the artifact root:
 ```bash
 python scripts/cll_replication_table.py --prompt-role neutral
 
-python scripts/analyze_chartqa_conflict.py   --root results/phase_control/chartqa_conflict_full230_hf_v1/evidence   --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct     Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf     llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct   --exclude-ids 45
+python scripts/analyze_chartqa_conflict.py   --root results/main_chartqa_conflict   --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct     Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf     llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct   --exclude-ids 45
 
 python scripts/analyze_calibrated_slopes.py   --benchmark all
 ```

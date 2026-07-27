@@ -66,7 +66,7 @@ def paired_stats(values, seed, resamples, statistic="median"):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path,
-                        default=Path("results/phase_control/chartqa_conflict/evidence"))
+                        default=Path("results/main_chartqa_conflict"))
     parser.add_argument("--models", nargs="+", required=True)
     parser.add_argument("--resamples", type=int, default=10_000)
     parser.add_argument(

@@ -41,7 +41,7 @@ def load_accuracy(benchmark, model):
         accuracy = {"image": {}, "text": {}}
         root = (
             ROOT
-            / "results/phase_control/chartqa_decodability_full230_hf_v1/evidence"
+            / "results/calibration/chartqa_unimodal"
         )
         for channel in ("image", "text"):
             model_dir = root / channel / model
@@ -71,7 +71,7 @@ def load_accuracy(benchmark, model):
 
     decodability_path = (
         ROOT
-        / "results/phase_control/decodability"
+        / "results/calibration/arithmetic_unimodal"
         / benchmark
         / "decodability_all.json"
     )
@@ -86,7 +86,7 @@ def load_accuracy(benchmark, model):
     # The GSM8K decodability jobs measured the text channel; the matching
     # canonical-image unimodal runs are the Phase 4 per-level results.
     if benchmark == "gsm8k" and not accuracy["image"]:
-        phase4 = ROOT / "results/phase4" / model
+        phase4 = ROOT / "results/calibration/gsm8k_image_unimodal" / model
         for level in LEVELS:
             matches = sorted(phase4.glob(f"level_{level}_*.json"))
             if len(matches) != 1:
@@ -124,7 +124,7 @@ def load_common_changes(benchmark, model):
     for channel in ("image", "text"):
         model_dir = (
             ROOT
-            / "results/phase_control/chartqa_conflict_full230_hf_v1/evidence"
+            / "results/main_chartqa_conflict"
             / channel
             / model
             if benchmark == "chartqa"
@@ -254,7 +254,7 @@ def main():
     parser.add_argument(
         "--output",
         type=Path,
-        default=ROOT / "results/phase_control/calibrated_slopes.json",
+        default=ROOT / "results/calibration/derived/calibrated_slopes.json",
     )
     args = parser.parse_args()
     benchmarks = (

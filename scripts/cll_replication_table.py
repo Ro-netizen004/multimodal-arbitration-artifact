@@ -46,20 +46,21 @@ def _load_by_id(path):
 
 def result_dir(model, benchmark, arm, prompt_role):
     if prompt_role == "neutral":
-        base = ROOT / "results/phase_control/role_counterbalance"
-        if benchmark == "svamp":
-            base /= "svamp"
-        if arm == "text":
-            base /= "text_legibility"
-        return base / "role_neutral" / model
+        return (
+            ROOT
+            / "results"
+            / "main_arithmetic"
+            / benchmark
+            / f"{arm}_degradation"
+            / model
+        )
     return (
         ROOT
-        / (
-            "results/phase6_legibility"
-            if arm == "image"
-            else "results/phase7_text_legibility"
-        )
+        / "results"
+        / "prompt_framing_control"
+        / "original_prompt"
         / benchmark
+        / f"{arm}_degradation"
         / model
     )
 

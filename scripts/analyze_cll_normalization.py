@@ -90,19 +90,19 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--models", nargs="+", required=True)
     parser.add_argument("--original-image-root", type=Path,
-                        default=Path("results/phase6_legibility/gsm8k"))
+                        default=Path("results/prompt_framing_control/original_prompt/gsm8k/image_degradation"))
     parser.add_argument("--original-text-root", type=Path,
-                        default=Path("results/phase7_text_legibility/gsm8k"))
+                        default=Path("results/prompt_framing_control/original_prompt/gsm8k/text_degradation"))
     parser.add_argument("--neutral-root", type=Path,
-                        default=Path("results/phase_control/role_counterbalance"))
+                        default=Path("results/main_arithmetic"))
     parser.add_argument("--resamples", type=int, default=10_000)
     parser.add_argument("--alphas", nargs="+", type=float, default=(0.0, 0.5, 1.0))
     args = parser.parse_args()
 
     framings = {
         "original": (args.original_image_root, args.original_text_root),
-        "neutral": (args.neutral_root / "role_neutral",
-                    args.neutral_root / "text_legibility" / "role_neutral"),
+        "neutral": (args.neutral_root / "gsm8k" / "image_degradation",
+                    args.neutral_root / "gsm8k" / "text_degradation"),
     }
     print("framing\tmodel\talpha\tn\tR_image\tR_text\tasymmetry\t95% CI\tWilcoxon p")
     for framing, (image_root, text_root) in framings.items():
