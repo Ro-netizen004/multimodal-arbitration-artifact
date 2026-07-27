@@ -20,12 +20,13 @@ confidence intervals, statistical tests, tables, and figures from the saved
 item-level outputs. Reviewers do not need to download a benchmark or rerun a
 vision-language model for those checks.
 
-The artifact does not redistribute upstream benchmark data or the
-ChartQA-Conflict image dataset. Consequently, rerunning model inference from
-the original chart inputs requires separate access to the released dataset.
-Once that dataset is available, the included inference scripts and frozen
-configuration metadata provide the full pipeline. This distinction does not
-affect reproduction of the reported numerical analyses.
+The artifact includes an inspection-ready release of the 229 ChartQA-Conflict
+items used in the reported analyses: each native chart, shared question,
+chart-supported answer, conflicting evidence-bearing report, and
+report-supported answer. The original GSM8K, SVAMP, and complete upstream
+ChartQA datasets are not redistributed. The included inference scripts and
+frozen configuration metadata provide the pipeline for rerunning the reported
+ChartQA-Conflict condition.
 
 ## Environment used for inference
 

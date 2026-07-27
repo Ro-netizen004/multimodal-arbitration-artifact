@@ -6,6 +6,9 @@
   benchmark, degradation arm, and level.
 - Generated-answer source-attribution outputs used in the behavioral analyses.
 - Unimodal decodability measurements used by the calibration analyses.
+- The 229 analyzed ChartQA-Conflict charts and evidence-bearing reports, with
+  source-supported answers, provenance fields, and the documented post-run
+  exclusion.
 - Machine-readable derived summaries and figure inputs.
 - Scripts for paired tests, bootstrap intervals, calibrated slopes, tables, and
   figures.
@@ -19,15 +22,13 @@ model weights, GPUs, or access to the original benchmark images.
 
 - Model weights.
 - Upstream GSM8K, SVAMP, or ChartQA data.
-- The 230 ChartQA-Conflict chart images and reports.
 - Large token-by-token generation traces, caches, and cluster logs.
 
-The ChartQA-Conflict manifest is frozen by SHA-256 in `MANIFEST.json`, and the
-saved result configurations retain its revision and design version. The
-dataset location is anonymized during double-blind review. With authorized
-dataset access, `scripts/run_chartqa_conflict.py` can rerun inference; without
-it, all downstream statistical analyses remain reproducible from the included
-outputs.
+The original ChartQA-Conflict construction contained 230 reviewed items and is
+frozen by SHA-256 in `MANIFEST.json`. One item was removed by a post-run
+entailment audit; `data/chartqa_conflict/` contains the 229 analyzed items and
+records the exclusion. Saved result configurations retain the frozen revision
+and design version.
 
 After the anonymity period, the final archival release should replace the
 placeholder dataset namespace with the public dataset URL and pinned revision.
