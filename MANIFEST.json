@@ -11,6 +11,16 @@
       "sha256": "e7a78d6a7a45d6d0ffd48c03baec37a4ef9454868784b0e10592a51aeb77b012"
     },
     {
+      "path": "data/chartqa_conflict/DATASET_OVERVIEW.md",
+      "bytes": 3192,
+      "sha256": "17f3213abb4989d8838beefd624c1695aae7d28cee7af18d89aa12d990514750"
+    },
+    {
+      "path": "data/chartqa_conflict/dataset_summary.json",
+      "bytes": 559,
+      "sha256": "af6290bfb0b1ab1804d5867e25cf0f948a0c4e8b3ebf862b0246a782824935cd"
+    },
+    {
       "path": "DATA_ACCESS.md",
       "bytes": 1556,
       "sha256": "a89ba915712a3c3e08756c8e6723f53b6692a60fe9f337fe2059c30e837d1348"

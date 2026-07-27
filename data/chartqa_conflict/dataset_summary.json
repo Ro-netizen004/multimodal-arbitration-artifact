@@ -1,0 +1,25 @@
+{
+  "dataset": "ChartQA-Conflict",
+  "design_version": "chartqa-same-question-conflict-v4",
+  "source_dataset": "ChartQA",
+  "source_split": "test",
+  "frozen_items": 230,
+  "analyzed_items": 229,
+  "excluded_conflict_ids": [
+    45
+  ],
+  "manifest_sha256": "388bce0572487024f5ac12261621cbab8931ec3032d8bf0c65a258c134d20842",
+  "levels": [
+    0,
+    2,
+    4,
+    5
+  ],
+  "arms": [
+    "image",
+    "text"
+  ],
+  "attribution": "strict_normalized_exact_match",
+  "reasoning_trace_rescore": false,
+  "upstream_license": "GPL-3.0"
+}
