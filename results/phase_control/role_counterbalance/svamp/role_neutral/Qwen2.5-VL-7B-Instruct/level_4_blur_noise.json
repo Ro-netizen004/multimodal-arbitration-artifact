@@ -1,0 +1,19 @@
+{
+  "level": 4,
+  "name": "blur_noise",
+  "prompt_role": "neutral",
+  "prompt_config_version": "role-control-v1",
+  "n_problems": 300,
+  "counts": {
+    "text": 214,
+    "neither": 76,
+    "invalid": 1,
+    "ambiguous": 4,
+    "image": 5
+  },
+  "decidable": 219,
+  "text_preference": 0.9771689497716894,
+  "image_preference": 0.0228310502283105,
+  "neither_rate": 0.25333333333333335,
+  "dataset_sha256": "a6c5137215ce48f6720680385e08928dc0a2af18241722a874f9eca62abf73f6"
+}

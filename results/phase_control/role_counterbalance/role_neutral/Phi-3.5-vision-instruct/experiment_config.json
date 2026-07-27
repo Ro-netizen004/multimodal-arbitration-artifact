@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_config_version": "role-control-v1",
+  "model": "Phi-3.5-vision-instruct",
+  "channel": "image",
+  "prompt_role": "neutral",
+  "n_problems": 1319,
+  "dataset_sha256": "ede050d84b5a1c62df9cb75bc409d42c14744d0ca3666fbe3ba38cb1df8eb7eb"
+}

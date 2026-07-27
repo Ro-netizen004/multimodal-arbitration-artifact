@@ -1,0 +1,27 @@
+{
+  "n_problems": 1319,
+  "counts_raw": {
+    "image": 82,
+    "neither": 842,
+    "text": 363,
+    "invalid": 17,
+    "ambiguous": 15
+  },
+  "decidable_raw": 445,
+  "text_preference_raw": 0.8157303370786517,
+  "counts_rescored": {
+    "image": 82,
+    "image_reasoning": 106,
+    "text_reasoning": 718,
+    "text": 363,
+    "invalid": 17,
+    "ambiguous": 15,
+    "neither": 18
+  },
+  "decidable": 1269,
+  "text_preference": 0.8518518518518519,
+  "neither_rate": 0.013646702047005308,
+  "rescore_channel": "text",
+  "level": 2,
+  "name": "light_corruption"
+}

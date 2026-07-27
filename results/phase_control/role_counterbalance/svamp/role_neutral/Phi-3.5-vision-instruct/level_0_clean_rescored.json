@@ -1,0 +1,25 @@
+{
+  "n_problems": 300,
+  "counts_raw": {
+    "neither": 167,
+    "text": 127,
+    "ambiguous": 4,
+    "image": 2
+  },
+  "decidable_raw": 129,
+  "text_preference_raw": 0.9844961240310077,
+  "counts_rescored": {
+    "image_reasoning": 55,
+    "neither": 38,
+    "text_reasoning": 74,
+    "text": 127,
+    "ambiguous": 4,
+    "image": 2
+  },
+  "decidable": 258,
+  "text_preference": 0.7790697674418605,
+  "neither_rate": 0.12666666666666668,
+  "rescore_channel": "image",
+  "level": 0,
+  "name": "clean"
+}

@@ -1,0 +1,46 @@
+{
+  "arm": "text",
+  "mode": "generation",
+  "levels": {
+    "0": {
+      "n": 230,
+      "counts": {
+        "neither": 25,
+        "text": 11,
+        "image": 193,
+        "invalid": 1
+      },
+      "text_preference": 0.05392156862745098
+    },
+    "2": {
+      "n": 230,
+      "counts": {
+        "neither": 25,
+        "image": 201,
+        "invalid": 3,
+        "text": 1
+      },
+      "text_preference": 0.0049504950495049506
+    },
+    "4": {
+      "n": 230,
+      "counts": {
+        "neither": 27,
+        "image": 197,
+        "invalid": 4,
+        "text": 2
+      },
+      "text_preference": 0.010050251256281407
+    },
+    "5": {
+      "n": 230,
+      "counts": {
+        "invalid": 4,
+        "image": 201,
+        "neither": 24,
+        "text": 1
+      },
+      "text_preference": 0.0049504950495049506
+    }
+  }
+}

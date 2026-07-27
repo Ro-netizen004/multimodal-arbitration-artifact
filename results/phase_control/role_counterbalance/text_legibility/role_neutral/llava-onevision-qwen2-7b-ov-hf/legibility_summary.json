@@ -1,0 +1,31 @@
+{
+  "model": "llava-onevision-qwen2-7b-ov-hf",
+  "n": 1319,
+  "levels_complete": [
+    0,
+    2,
+    4,
+    5
+  ],
+  "text_preference_by_level": {
+    "0": 0.9797979797979798,
+    "2": 0.8157303370786517,
+    "4": 0.32275132275132273,
+    "5": 0.024752475247524754
+  },
+  "neither_rate_by_level": {
+    "0": 0.3775587566338135,
+    "2": 0.6383623957543594,
+    "4": 0.6884003032600455,
+    "5": 0.5163002274450341
+  },
+  "experiment_config": {
+    "schema_version": 1,
+    "prompt_config_version": "role-control-v1",
+    "model": "llava-onevision-qwen2-7b-ov-hf",
+    "channel": "text",
+    "prompt_role": "neutral",
+    "n_problems": 1319,
+    "dataset_sha256": "ede050d84b5a1c62df9cb75bc409d42c14744d0ca3666fbe3ba38cb1df8eb7eb"
+  }
+}

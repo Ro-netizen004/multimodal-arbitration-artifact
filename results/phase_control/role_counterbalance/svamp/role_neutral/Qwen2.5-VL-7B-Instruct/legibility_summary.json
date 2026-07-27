@@ -1,0 +1,31 @@
+{
+  "model": "Qwen2.5-VL-7B-Instruct",
+  "n": 300,
+  "levels_complete": [
+    0,
+    2,
+    4,
+    5
+  ],
+  "text_preference_by_level": {
+    "0": 0.15139442231075698,
+    "2": 0.11836734693877551,
+    "4": 0.9771689497716894,
+    "5": 1.0
+  },
+  "neither_rate_by_level": {
+    "0": 0.15,
+    "2": 0.17,
+    "4": 0.25333333333333335,
+    "5": 0.15666666666666668
+  },
+  "experiment_config": {
+    "schema_version": 1,
+    "prompt_config_version": "role-control-v1",
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "channel": "image",
+    "prompt_role": "neutral",
+    "n_problems": 300,
+    "dataset_sha256": "a6c5137215ce48f6720680385e08928dc0a2af18241722a874f9eca62abf73f6"
+  }
+}

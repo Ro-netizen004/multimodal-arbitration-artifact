@@ -1,0 +1,27 @@
+{
+  "n_problems": 1319,
+  "counts_raw": {
+    "neither": 904,
+    "text": 391,
+    "ambiguous": 15,
+    "image": 8,
+    "invalid": 1
+  },
+  "decidable_raw": 399,
+  "text_preference_raw": 0.9799498746867168,
+  "counts_rescored": {
+    "image_reasoning": 30,
+    "text_reasoning": 872,
+    "text": 391,
+    "ambiguous": 15,
+    "image": 8,
+    "neither": 2,
+    "invalid": 1
+  },
+  "decidable": 1301,
+  "text_preference": 0.9707916986933128,
+  "neither_rate": 0.001516300227445034,
+  "rescore_channel": "image",
+  "level": 2,
+  "name": "blur_light"
+}

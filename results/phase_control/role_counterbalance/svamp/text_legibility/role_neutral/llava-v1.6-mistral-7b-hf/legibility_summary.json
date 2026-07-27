@@ -1,0 +1,31 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "n": 300,
+  "levels_complete": [
+    0,
+    2,
+    4,
+    5
+  ],
+  "text_preference_by_level": {
+    "0": 1.0,
+    "2": 0.9253731343283582,
+    "4": 0.84375,
+    "5": 0.2727272727272727
+  },
+  "neither_rate_by_level": {
+    "0": 0.4533333333333333,
+    "2": 0.7633333333333333,
+    "4": 0.88,
+    "5": 0.9
+  },
+  "experiment_config": {
+    "schema_version": 1,
+    "prompt_config_version": "role-control-v1",
+    "model": "llava-v1.6-mistral-7b-hf",
+    "channel": "text",
+    "prompt_role": "neutral",
+    "n_problems": 300,
+    "dataset_sha256": "a6c5137215ce48f6720680385e08928dc0a2af18241722a874f9eca62abf73f6"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "level": 4,
+  "name": "medium_corruption",
+  "prompt_role": "neutral",
+  "prompt_config_version": "role-control-v1",
+  "n_problems": 1319,
+  "counts": {
+    "image": 256,
+    "neither": 908,
+    "text": 122,
+    "ambiguous": 15,
+    "invalid": 18
+  },
+  "decidable": 378,
+  "text_preference": 0.32275132275132273,
+  "image_preference": 0.6772486772486772,
+  "neither_rate": 0.6884003032600455,
+  "dataset_sha256": "ede050d84b5a1c62df9cb75bc409d42c14744d0ca3666fbe3ba38cb1df8eb7eb"
+}

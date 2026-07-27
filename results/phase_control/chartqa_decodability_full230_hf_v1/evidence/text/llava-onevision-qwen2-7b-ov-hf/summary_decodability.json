@@ -1,0 +1,30 @@
+{
+  "arm": "text",
+  "mode": "decodability",
+  "levels": {
+    "0": {
+      "n": 230,
+      "correct": 203,
+      "accuracy": 0.8826086956521739,
+      "errors": 0
+    },
+    "2": {
+      "n": 230,
+      "correct": 124,
+      "accuracy": 0.5391304347826087,
+      "errors": 0
+    },
+    "4": {
+      "n": 230,
+      "correct": 91,
+      "accuracy": 0.39565217391304347,
+      "errors": 0
+    },
+    "5": {
+      "n": 230,
+      "correct": 26,
+      "accuracy": 0.11304347826086956,
+      "errors": 0
+    }
+  }
+}

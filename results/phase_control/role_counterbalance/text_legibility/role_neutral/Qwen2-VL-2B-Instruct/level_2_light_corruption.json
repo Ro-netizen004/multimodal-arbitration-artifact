@@ -1,0 +1,19 @@
+{
+  "level": 2,
+  "name": "light_corruption",
+  "prompt_role": "neutral",
+  "prompt_config_version": "role-control-v1",
+  "n_problems": 1319,
+  "counts": {
+    "image": 135,
+    "neither": 1056,
+    "text": 102,
+    "invalid": 11,
+    "ambiguous": 15
+  },
+  "decidable": 237,
+  "text_preference": 0.43037974683544306,
+  "image_preference": 0.569620253164557,
+  "neither_rate": 0.800606520090978,
+  "dataset_sha256": "ede050d84b5a1c62df9cb75bc409d42c14744d0ca3666fbe3ba38cb1df8eb7eb"
+}

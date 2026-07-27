@@ -1,0 +1,16 @@
+benchmark=chartqa_conflict
+rows=7557 items=229 models=6 cells=33
+winsorize_each_tail=0.0
+formula: shift ~ leg_loss * text_channel + C(model) + (1|item)
+
+interaction beta3 (text slope - image slope)
+method	estimate	SE	95% CI	p
+mixed_item_intercept	UNAVAILABLE (LinAlgError('Singular matrix'))
+OLS_clustered_by_cell	-0.652660	0.894219	[-2.405297,+1.099976]	0.465472
+OLS_clustered_by_model	-0.652660	0.443394	[-1.792441,+0.487120]	0.201008
+OLS_cell_medians	-0.162790	1.751018	[-3.744023,+3.418444]	0.926568
+
+Cell clustering guards against pseudoreplication because legibility loss is
+constant within model x channel x level cells. Model clustering is the
+generalization check, but it has only six clusters and should be interpreted
+cautiously.

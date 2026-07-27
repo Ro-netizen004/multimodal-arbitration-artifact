@@ -1,0 +1,16 @@
+{
+  "level": 0,
+  "name": "clean",
+  "n_problems": 1319,
+  "counts": {
+    "text": 1168,
+    "neither": 72,
+    "ambiguous": 15,
+    "image": 54,
+    "invalid": 10
+  },
+  "decidable": 1222,
+  "text_preference": 0.955810147299509,
+  "image_preference": 0.044189852700491,
+  "neither_rate": 0.05458680818802123
+}

@@ -1,0 +1,14 @@
+benchmark=gsm8k
+rows=47484 items=1319 models=6 cells=36
+formula: shift ~ leg_loss * text_channel + C(model) + (1|item)
+
+interaction beta3 (text slope - image slope)
+method	estimate	SE	95% CI	p
+mixed_item_intercept	+2.704858	0.049100	[+2.608624,+2.801093]	0
+OLS_clustered_by_cell	+2.704858	0.827814	[+1.082372,+4.327344]	0.00108513
+OLS_clustered_by_model	+2.704858	0.906258	[+0.375249,+5.034468]	0.0306355
+
+Cell clustering guards against pseudoreplication because legibility loss is
+constant within model x channel x level cells. Model clustering is the
+generalization check, but it has only six clusters and should be interpreted
+cautiously.

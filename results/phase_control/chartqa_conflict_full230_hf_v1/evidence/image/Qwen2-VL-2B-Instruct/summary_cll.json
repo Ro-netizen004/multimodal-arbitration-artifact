@@ -1,0 +1,22 @@
+{
+  "arm": "image",
+  "mode": "cll",
+  "levels": {
+    "0": {
+      "n": 230,
+      "valid_margins": 230
+    },
+    "2": {
+      "n": 230,
+      "valid_margins": 230
+    },
+    "4": {
+      "n": 230,
+      "valid_margins": 230
+    },
+    "5": {
+      "n": 230,
+      "valid_margins": 230
+    }
+  }
+}

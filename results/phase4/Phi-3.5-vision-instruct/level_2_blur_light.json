@@ -1,0 +1,19 @@
+{
+  "level": 2,
+  "name": "blur_light",
+  "description": "Light Gaussian blur (radius=1)",
+  "accuracy": 0.74,
+  "error_distribution": {
+    "correct": 148,
+    "arithmetic_error": 52
+  },
+  "ci_95": [
+    0.6734222463428603,
+    0.7993151451236595
+  ],
+  "boot_ci_95": [
+    0.68,
+    0.8
+  ],
+  "n": 200
+}

@@ -1,0 +1,26 @@
+{
+  "n_problems": 300,
+  "counts_raw": {
+    "text": 234,
+    "neither": 58,
+    "ambiguous": 4,
+    "image": 3,
+    "invalid": 1
+  },
+  "decidable_raw": 237,
+  "text_preference_raw": 0.9873417721518988,
+  "counts_rescored": {
+    "text": 234,
+    "text_reasoning": 57,
+    "ambiguous": 4,
+    "image": 3,
+    "invalid": 1,
+    "image_reasoning": 1
+  },
+  "decidable": 295,
+  "text_preference": 0.9864406779661017,
+  "neither_rate": 0.0,
+  "rescore_channel": "text",
+  "level": 0,
+  "name": "clean"
+}

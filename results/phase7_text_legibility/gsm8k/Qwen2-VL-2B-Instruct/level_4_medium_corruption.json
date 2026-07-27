@@ -1,0 +1,16 @@
+{
+  "level": 4,
+  "name": "medium_corruption",
+  "n_problems": 1319,
+  "counts": {
+    "text": 71,
+    "image": 25,
+    "neither": 1206,
+    "ambiguous": 15,
+    "invalid": 2
+  },
+  "decidable": 96,
+  "text_preference": 0.7395833333333334,
+  "image_preference": 0.2604166666666667,
+  "neither_rate": 0.9143290371493555
+}

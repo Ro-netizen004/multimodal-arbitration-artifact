@@ -1,0 +1,21 @@
+{
+  "n_problems": 300,
+  "counts_raw": {
+    "text": 208,
+    "neither": 88,
+    "ambiguous": 4
+  },
+  "decidable_raw": 208,
+  "text_preference_raw": 1.0,
+  "counts_rescored": {
+    "text": 208,
+    "text_reasoning": 88,
+    "ambiguous": 4
+  },
+  "decidable": 296,
+  "text_preference": 1.0,
+  "neither_rate": 0.0,
+  "rescore_channel": "image",
+  "level": 2,
+  "name": "blur_light"
+}

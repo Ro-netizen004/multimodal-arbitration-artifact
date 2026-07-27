@@ -1,0 +1,23 @@
+{
+  "n_problems": 1319,
+  "counts_raw": {
+    "text": 934,
+    "neither": 365,
+    "ambiguous": 15,
+    "image": 5
+  },
+  "decidable_raw": 939,
+  "text_preference_raw": 0.9946751863684771,
+  "counts_rescored": {
+    "text": 934,
+    "text_reasoning": 365,
+    "ambiguous": 15,
+    "image": 5
+  },
+  "decidable": 1304,
+  "text_preference": 0.9961656441717791,
+  "neither_rate": 0.0,
+  "rescore_channel": "image",
+  "level": 5,
+  "name": "heavy_degradation"
+}

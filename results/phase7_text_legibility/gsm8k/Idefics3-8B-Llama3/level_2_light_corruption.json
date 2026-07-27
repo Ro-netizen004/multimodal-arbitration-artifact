@@ -1,0 +1,16 @@
+{
+  "level": 2,
+  "name": "light_corruption",
+  "n_problems": 1319,
+  "counts": {
+    "text": 201,
+    "neither": 1090,
+    "image": 7,
+    "ambiguous": 15,
+    "invalid": 6
+  },
+  "decidable": 208,
+  "text_preference": 0.9663461538461539,
+  "image_preference": 0.03365384615384615,
+  "neither_rate": 0.8263836239575436
+}

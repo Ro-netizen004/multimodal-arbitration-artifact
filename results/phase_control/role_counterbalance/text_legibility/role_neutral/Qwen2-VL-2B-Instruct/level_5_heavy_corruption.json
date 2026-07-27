@@ -1,0 +1,19 @@
+{
+  "level": 5,
+  "name": "heavy_corruption",
+  "prompt_role": "neutral",
+  "prompt_config_version": "role-control-v1",
+  "n_problems": 1319,
+  "counts": {
+    "neither": 861,
+    "image": 426,
+    "ambiguous": 15,
+    "invalid": 3,
+    "text": 14
+  },
+  "decidable": 440,
+  "text_preference": 0.031818181818181815,
+  "image_preference": 0.9681818181818181,
+  "neither_rate": 0.6527672479150872,
+  "dataset_sha256": "ede050d84b5a1c62df9cb75bc409d42c14744d0ca3666fbe3ba38cb1df8eb7eb"
+}

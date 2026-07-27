@@ -1,0 +1,22 @@
+{
+  "level": 5,
+  "name": "heavy_degradation",
+  "description": "Heavy blur (r=3) + strong noise (std=25) + contrast loss",
+  "accuracy": 0.005,
+  "error_distribution": {
+    "no_number": 154,
+    "arithmetic_error": 35,
+    "reasoning_error": 9,
+    "correct": 1,
+    "vision_error": 1
+  },
+  "ci_95": [
+    0.00012658102786701836,
+    0.02754189845720562
+  ],
+  "boot_ci_95": [
+    0.0,
+    0.015
+  ],
+  "n": 200
+}

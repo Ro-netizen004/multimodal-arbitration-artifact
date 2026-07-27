@@ -1,0 +1,748 @@
+#!/usr/bin/env python3
+"""
+Legibility experiment — modality preference under image degradation.
+
+Runs the MISMATCH condition (image of problem i + text of problem i+1) at each
+image-corruption level, measuring how text preference changes as the image
+becomes less legible. A flat curve indicates a fixed text bias insensitive to
+input quality; a sloped curve indicates rational, reliability-aware arbitration.
+
+Reuses the noisy images already rendered by the Phase 4 noise ablation
+(results/phase4/images/level_<L>_<name>/q###.png), so no re-rendering is needed
+if those exist.
+
+Designed to be fanned out across the cluster: run one (model, level) per SLURM
+job (see scripts/the compute cluster_run_legibility_parallel.sh). Each job is self-contained
+and checkpoints per problem, so a job killed at the wall-time limit resumes
+where it left off instead of restarting the level.
+
+Usage:
+    # single cell (one model, one level) — the fan-out unit
+    python scripts/run_legibility.py --models Idefics3-8B-Llama3 --noise-levels 5
+
+    # a few models / levels serially (local / debugging)
+    python scripts/run_legibility.py --models Qwen2.5-VL-7B-Instruct --noise-levels 0 2 4 5
+
+    # merge per-level JSONs into per-model + combined summaries (after the grid finishes)
+    python scripts/run_legibility.py --merge \
+        --models Idefics3-8B-Llama3 Qwen2.5-VL-7B-Instruct
+"""
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+import torch
+from PIL import Image
+from tqdm import tqdm
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+import csv
+
+from src.models import VLMModel
+from src.evaluation import score_mismatch_follows, score_by_reasoning
+from src.noise import NOISE_LEVELS, render_noisy_images, apply_noise_to_images
+from src.text_noise import TEXT_NOISE_LEVELS, degrade_text
+from src.benchmarks import load_benchmark
+
+# Legibility only makes sense on Protocol A (text rendered as an image). We also
+# restrict to NUMERIC-answer benchmarks, because score_mismatch_follows attributes
+# a trial to image/text by numeric match. AQuA-RAT is multiple-choice (letter
+# answers) so it's excluded — its conflict attribution would be unreliable.
+TEXT_MATH_BENCHMARKS = ["gsm8k", "svamp", "math"]
+PROMPT_CONFIG_VERSION = "role-control-v1"
+
+# Same registry/types as the noise runner — must match configs/default.yaml.
+MODEL_REGISTRY = {
+    "Qwen2-VL-2B-Instruct":          {"name": "Qwen/Qwen2-VL-2B-Instruct",          "type": "qwen"},
+    "llava-v1.6-mistral-7b-hf":      {"name": "llava-hf/llava-v1.6-mistral-7b-hf",  "type": "llava"},
+    "Qwen2.5-VL-7B-Instruct":        {"name": "Qwen/Qwen2.5-VL-7B-Instruct",        "type": "qwen"},
+    "Idefics3-8B-Llama3":            {"name": "HuggingFaceM4/Idefics3-8B-Llama3",   "type": "idefics"},
+    "MiniCPM-V-2_6":                 {"name": "openbmb/MiniCPM-V-2_6",              "type": "minicpm"},
+    "InternVL2-8B":                  {"name": "OpenGVLab/InternVL2-8B",             "type": "internvl"},
+    "llava-onevision-qwen2-7b-ov-hf":{"name": "llava-hf/llava-onevision-qwen2-7b-ov-hf", "type": "llava_onevision"},
+    "Phi-3.5-vision-instruct":       {"name": "microsoft/Phi-3.5-vision-instruct",  "type": "phi"},
+    # Frontier API model (no GPU; needs OPENAI_API_KEY). VERIFY the exact "name"
+    # API id against `curl https://api.openai.com/v1/models` before a full run.
+    "GPT-5.6-Luna":                  {"name": "gpt-5.6-luna",                       "type": "openai"},
+    # OpenAI mini (multimodal, needs OPENAI_API_KEY). Unlike Luna it SUPPORTS logprobs,
+    # so the answer-confidence trajectory (scripts/analyze_confidence.py) is available —
+    # a graded API-side signal (NOT the CLL margin, which needs candidate scoring).
+    "GPT-4o-mini":                   {"name": "gpt-4o-mini",                        "type": "openai"},
+    # Frontier API model (no GPU; needs GEMINI_API_KEY). VERIFY the exact id via
+    # the Gemini models list before a full run.
+    "Gemini-2.5-Flash-Lite":         {"name": "gemini-2.5-flash-lite",              "type": "gemini"},
+}
+DEFAULT_MODELS = ["Idefics3-8B-Llama3", "Qwen2.5-VL-7B-Instruct"]  # vulnerable + resilient anchors
+ALL_MODELS = list(MODEL_REGISTRY.keys())  # full 8-model set for the headline run
+
+
+def mismatch_prompt(text_question, role="text_task", item_idx=0):
+    """Mismatch scaffold. See src/models.py NEUTRAL_MISMATCH_PROMPT for the rationale.
+
+    role="text_task" (default, original): labels the TEXT "Problem:" and never mentions
+        the image -- the text is designated the task, so modality preference is
+        confounded with instruction-following.
+    role="neutral": names both channels as interchangeable sources and designates
+        neither; the A/B assignment alternates by item so source order is counterbalanced.
+    """
+    if role == "neutral":
+        img, txt = ("A", "B") if item_idx % 2 == 0 else ("B", "A")
+        return (f"You are given two sources describing a math problem. "
+                f"Source {img} is the attached image. Source {txt} is the text below.\n\n"
+                f"Source {txt}: {text_question}\n\n"
+                "Solve the problem step by step. End with '#### <answer>'.")
+    return ("Solve the following math problem step by step. "
+            "End with '#### <answer>'.\n\n"
+            f"Problem: {text_question}")
+
+
+def _atomic_write_json(path, obj):
+    """Write JSON via temp-file + os.replace so concurrent jobs never see a
+    half-written file (the per-model summary is touched by every level job)."""
+    tmp = f"{path}.tmp.{os.getpid()}"
+    with open(tmp, "w") as f:
+        json.dump(obj, f, indent=2)
+    os.replace(tmp, path)
+
+
+def _experiment_config(model_key, channel, role, questions, references):
+    """Configuration fingerprint used to reject incompatible resumptions."""
+    payload = json.dumps(
+        {"questions": questions, "references": references},
+        ensure_ascii=False, separators=(",", ":"),
+    ).encode("utf-8")
+    return {
+        "schema_version": 1,
+        "prompt_config_version": PROMPT_CONFIG_VERSION,
+        "model": model_key,
+        "channel": channel,
+        "prompt_role": role,
+        "n_problems": len(questions),
+        "dataset_sha256": hashlib.sha256(payload).hexdigest(),
+    }
+
+
+def _ensure_experiment_config(out_dir, config):
+    """Write provenance once; refuse to reuse a directory for another config."""
+    path = os.path.join(out_dir, "experiment_config.json")
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            existing = json.load(f)
+        if existing != config:
+            raise RuntimeError(
+                f"Incompatible existing run configuration in {path}. "
+                "Use a fresh output directory rather than resuming mixed artifacts."
+            )
+    else:
+        _atomic_write_json(path, config)
+    return config
+
+
+def _summarize(follows, n):
+    """Build the level result dict from a list of per-problem 'follows' labels."""
+    counts = Counter(follows)
+    n_img = counts.get("image", 0)
+    n_txt = counts.get("text", 0)
+    decidable = n_img + n_txt
+    return {
+        "n_problems": n,
+        "counts": dict(counts),
+        "decidable": decidable,
+        "text_preference": (n_txt / decidable) if decidable else None,
+        "image_preference": (n_img / decidable) if decidable else None,
+        "neither_rate": counts.get("neither", 0) / n if n else None,
+    }
+
+
+def _effective_n_from_level(data: dict) -> int | None:
+    """Return the problem count stored in a level JSON (or infer from label counts)."""
+    stored = data.get("n_problems")
+    if isinstance(stored, int) and stored > 0:
+        return stored
+    counts = data.get("counts")
+    if counts:
+        return sum(counts.values())
+    return None
+
+
+def _level_paths(level, name, out_dir):
+    base = f"level_{level}_{name}"
+    return (
+        os.path.join(out_dir, f"{base}.json"),
+        os.path.join(out_dir, f"{base}.partial.jsonl"),
+    )
+
+
+def _remove_level_artifacts(level, name, out_dir):
+    for path in _level_paths(level, name, out_dir):
+        try:
+            os.remove(path)
+        except OSError:
+            pass
+
+
+def _clear_stale_partial(partial_path, n):
+    """Drop a checkpoint file if it was written for a different --num-problems."""
+    if not os.path.exists(partial_path):
+        return
+    max_i = -1
+    with open(partial_path) as f:
+        for line in f:
+            try:
+                max_i = max(max_i, int(json.loads(line)["i"]))
+            except (json.JSONDecodeError, KeyError, TypeError, ValueError):
+                continue
+    if max_i < 0:
+        return
+    old_n = max_i + 1
+    if old_n != n:
+        os.remove(partial_path)
+        print(f"  removed stale partial (~n={old_n}, want {n})")
+
+
+def run_level(vlm, level, questions, references, image_dir, n, out_dir, channel="image",
+              role="text_task", config=None):
+    """Run the mismatch condition for all problems at one degradation level.
+
+    channel="image": degrade the image at `level`, text clean (Phase 6).
+    channel="text" : hold the image clean (level 0), degrade the text at `level`
+                     (Phase 7 mirror arm).
+
+    Idempotent + resumable:
+      * if the final level JSON already exists, it's loaded and returned (skip);
+      * otherwise per-problem results are appended to a .partial.jsonl as they
+        complete, and a restarted job skips problems already recorded there.
+    """
+    if channel == "text":
+        name = TEXT_NOISE_LEVELS[level]["name"]
+        level_img_dir = os.path.join(image_dir, f"level_0_{NOISE_LEVELS[0]['name']}")  # image held clean
+    else:
+        name = NOISE_LEVELS[level]["name"]
+        level_img_dir = os.path.join(image_dir, f"level_{level}_{name}")
+    final_path, partial_path = _level_paths(level, name, out_dir)
+    logprobs_path = os.path.join(out_dir, f"level_{level}_{name}.logprobs.jsonl")
+    if os.path.exists(final_path):
+        with open(final_path) as f:
+            existing = json.load(f)
+        old_n = _effective_n_from_level(existing)
+        if old_n == n:
+            return existing
+        print(f"  L{level} {name}: stale results (n={old_n}, want {n}) — rerunning")
+        _remove_level_artifacts(level, name, out_dir)
+
+    _clear_stale_partial(partial_path, n)
+    done = {}
+    if os.path.exists(partial_path):
+        with open(partial_path) as f:
+            for line in f:
+                try:
+                    rec = json.loads(line)
+                    done[int(rec["i"])] = (rec["follows"], rec.get("pred", ""))
+                except (json.JSONDecodeError, KeyError):
+                    continue  # tolerate a torn last line from a hard kill
+        print(f"  L{level} {name}: resuming, {len(done)}/{n} already done")
+
+    follows = [None] * n
+    preds = [""] * n
+
+    with open(partial_path, "a") as pf:
+        for i in tqdm(range(n), desc=f"L{level}"):
+            txt_idx = (i + 1) % n
+            if i in done:
+                follows[i], preds[i] = done[i]
+                continue
+            img_path = os.path.join(level_img_dir, f"q{i:03d}.png")
+            try:
+                img = Image.open(img_path).convert("RGB")
+                q = (degrade_text(questions[txt_idx], level, seed=txt_idx)
+                     if channel == "text" else questions[txt_idx])
+                pred = vlm.generate_with_image(
+                    img, text_prompt=mismatch_prompt(q, role=role, item_idx=i))
+            except Exception as e:
+                pred = f"ERROR: {e}"
+            label = score_mismatch_follows(pred, references[i], references[txt_idx])
+            follows[i] = label
+            preds[i] = pred
+            # Save the prediction in the checkpoint so the CSV (and rescore) survive a resume.
+            pf.write(json.dumps({"i": i, "follows": label, "pred": pred}) + "\n")
+            pf.flush()
+            # Persist API logprobs to a durable sidecar (None for local models).
+            lp = getattr(vlm, "last_logprobs", None)
+            if lp is not None:
+                with open(logprobs_path, "a") as lpf:
+                    lpf.write(json.dumps({"i": i, "logprobs": lp}) + "\n")
+
+    # Save per-problem predictions (Phase-1 style) so the reasoning rescore can run
+    # post-hoc without re-running the model.
+    _write_level_csv(os.path.join(out_dir, f"level_{level}_{name}.csv"),
+                     n, questions, references, preds, follows, role)
+
+    res = {"level": level, "name": name, "prompt_role": role,
+           "prompt_config_version": PROMPT_CONFIG_VERSION,
+           **_summarize(follows, n)}  # includes n_problems
+    if config:
+        res["dataset_sha256"] = config["dataset_sha256"]
+    _atomic_write_json(final_path, res)
+    try:
+        os.remove(partial_path)  # checkpoint no longer needed once level is final
+    except OSError:
+        pass
+    return res
+
+
+def _write_level_csv(csv_path, n, questions, references, preds, follows, role="text_task"):
+    """One row per mismatch trial: image/text problems, the prediction, raw label."""
+    tmp = f"{csv_path}.tmp.{os.getpid()}"
+    with open(tmp, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["problem_id", "image_question", "text_question",
+                    "image_reference", "text_reference", "prediction", "follows",
+                    "prompt_role"])
+        for i in range(n):
+            txt_idx = (i + 1) % n
+            w.writerow([i, questions[i], questions[txt_idx],
+                        references[i], references[txt_idx], preds[i], follows[i], role])
+    os.replace(tmp, csv_path)
+
+
+def rebuild_model_summary(out_dir, model_key, n):
+    """Reconstruct the per-model summary from whatever level_*.json files exist.
+
+    Safe to call from any level job — it reflects all completed levels so far,
+    and the write is atomic, so concurrent level jobs can't corrupt it.
+    """
+    levels_found = {}
+    for fn in os.listdir(out_dir):
+        m = re.match(r"level_(\d+)_.*\.json$", fn)
+        if not m:
+            continue
+        try:
+            with open(os.path.join(out_dir, fn)) as f:
+                levels_found[int(m.group(1))] = json.load(f)
+        except json.JSONDecodeError:
+            continue
+
+    ordered = sorted(levels_found)
+    summary = {
+        "model": model_key,
+        "n": n,
+        "levels_complete": ordered,
+        "text_preference_by_level": {L: levels_found[L]["text_preference"] for L in ordered},
+        "neither_rate_by_level": {L: levels_found[L]["neither_rate"] for L in ordered},
+    }
+    config_path = os.path.join(out_dir, "experiment_config.json")
+    if os.path.exists(config_path):
+        with open(config_path, encoding="utf-8") as f:
+            summary["experiment_config"] = json.load(f)
+    _atomic_write_json(os.path.join(out_dir, "legibility_summary.json"), summary)
+
+    tps = [levels_found[L]["text_preference"] for L in ordered
+           if levels_found[L]["text_preference"] is not None]
+    if tps:
+        print(f"  [{model_key}] text preference across {len(ordered)} levels: "
+              f"{min(tps):.3f}--{max(tps):.3f} (spread {max(tps) - min(tps):.3f})")
+    return summary
+
+
+def rescore_level_from_csv(csv_path, channel="image", level=None):
+    """Read a level's prediction CSV and reclassify 'neither' trials by reasoning
+    trace. Returns raw and rescored counts + text preferences (Phase-1 style).
+
+    channel/level keep the reasoning rescore FAITHFUL to what the model actually saw.
+    In the TEXT channel (Phase 7 mirror arm) the model read a *corrupted* text question,
+    but the CSV stores the CLEAN one. Matching the reasoning trace against the clean text
+    undercounts genuine text-following at high corruption (the model echoes corrupted
+    tokens that don't match the clean keywords), which would fake part of the mirror
+    shift toward the image -- an evaluator-side confound. So for channel=="text" we
+    reconstruct the exact corrupted string (degrade_text is deterministic given
+    text+level+seed, seed=txt_idx=(problem_id+1)%n) before keyword/number matching.
+    The IMAGE is held clean in the text channel, so image_question is left untouched.
+    Phase 6 (channel=="image") is unaffected: corrupt stays False, output is identical.
+    """
+    raw, resc = Counter(), Counter()
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    n = len(rows)
+    corrupt = (channel == "text" and level is not None
+               and TEXT_NOISE_LEVELS.get(level, {}).get("p", 0) > 0)
+    for row in rows:
+        fol = row["follows"]
+        raw[fol] += 1
+        if fol == "neither":
+            text_q = row["text_question"]
+            if corrupt:  # reconstruct the corrupted text the model actually read
+                seed = (int(row["problem_id"]) + 1) % n
+                text_q = degrade_text(text_q, level, seed=seed)
+            resc[score_by_reasoning(row["prediction"],
+                                    row["image_question"],
+                                    text_q)] += 1
+        else:
+            resc[fol] += 1
+
+    raw_img, raw_txt = raw.get("image", 0), raw.get("text", 0)
+    raw_dec = raw_img + raw_txt
+    r_img = resc.get("image", 0) + resc.get("image_reasoning", 0)
+    r_txt = resc.get("text", 0) + resc.get("text_reasoning", 0)
+    r_dec = r_img + r_txt
+    return {
+        "n_problems": n,
+        "counts_raw": dict(raw),
+        "decidable_raw": raw_dec,
+        "text_preference_raw": (raw_txt / raw_dec) if raw_dec else None,
+        "counts_rescored": dict(resc),
+        "decidable": r_dec,
+        "text_preference": (r_txt / r_dec) if r_dec else None,
+        "neither_rate": (resc.get("neither", 0) / n) if n else None,
+        "rescore_channel": channel,  # provenance: "text" => corrupted-text-aware rescore
+    }
+
+
+def rescore_model(out_dir, model_key, channel="image"):
+    """Rescore every level CSV for a model; write a rescored per-model summary.
+
+    channel is forwarded to rescore_level_from_csv so the text channel (Phase 7)
+    reconstructs the corrupted text the model saw before reasoning-trace matching.
+    """
+    levels = {}
+    for fn in sorted(os.listdir(out_dir)):
+        m = re.match(r"level_(\d+)_(.+)\.csv$", fn)
+        if not m:
+            continue
+        L, name = int(m.group(1)), m.group(2)
+        res = rescore_level_from_csv(os.path.join(out_dir, fn), channel=channel, level=L)
+        res["level"], res["name"] = L, name
+        levels[L] = res
+        _atomic_write_json(os.path.join(out_dir, f"level_{L}_{name}_rescored.json"), res)
+
+    ordered = sorted(levels)
+    summary = {
+        "model": model_key,
+        "text_preference_by_level": {L: levels[L]["text_preference"] for L in ordered},
+        "text_preference_raw_by_level": {L: levels[L]["text_preference_raw"] for L in ordered},
+        "decidable_by_level": {L: levels[L]["decidable"] for L in ordered},
+        "decidable_raw_by_level": {L: levels[L]["decidable_raw"] for L in ordered},
+    }
+    _atomic_write_json(os.path.join(out_dir, "legibility_summary_rescored.json"), summary)
+    if ordered:
+        tps = [levels[L]["text_preference"] for L in ordered if levels[L]["text_preference"] is not None]
+        if tps:
+            print(f"  [{model_key}] rescored text pref {min(tps):.3f}--{max(tps):.3f}; "
+                  f"decidable {min(levels[L]['decidable'] for L in ordered)}--"
+                  f"{max(levels[L]['decidable'] for L in ordered)}")
+    return summary
+
+
+def run_model(model_key, questions, references, image_dir, n, levels, out_root, channel="image",
+              role="text_task"):
+    mc = MODEL_REGISTRY[model_key]
+    out_dir = os.path.join(out_root, model_key)
+    os.makedirs(out_dir, exist_ok=True)
+    config = _ensure_experiment_config(
+        out_dir, _experiment_config(model_key, channel, role, questions, references)
+    )
+    level_name = (lambda L: TEXT_NOISE_LEVELS[L]["name"]) if channel == "text" \
+        else (lambda L: NOISE_LEVELS[L]["name"])
+
+    remaining = [
+        L for L in levels
+        if not os.path.exists(os.path.join(out_dir, f"level_{L}_{level_name(L)}.json"))
+    ]
+    if not remaining:
+        print(f"\n{'='*60}\n  {model_key}: all requested levels done — merging only\n{'='*60}")
+        return rebuild_model_summary(out_dir, model_key, n)
+
+    print(f"\n{'='*60}\n  {model_key}  (channel={channel}, levels to run: {remaining})\n{'='*60}")
+    vlm = VLMModel(model_name=mc["name"], model_type=mc["type"],
+                   max_new_tokens=256, torch_dtype="bfloat16")
+    vlm.load()
+
+    for level in levels:  # run_level self-skips any already-final level
+        res = run_level(vlm, level, questions, references, image_dir, n, out_dir,
+                        channel=channel, role=role, config=config)
+        tp = res["text_preference"]
+        if tp is not None:
+            print(f"  L{level} {res['name']:18s}: text_pref={tp:.3f}  "
+                  f"decidable={res['decidable']}  neither={res['neither_rate']*100:.1f}%")
+        else:
+            print(f"  L{level} {res['name']}: no decidable trials")
+        rebuild_model_summary(out_dir, model_key, n)  # refresh after each level
+
+    vlm.report_usage()  # measured token cost for API models (no-op for local)
+    vlm.unload()
+    return rebuild_model_summary(out_dir, model_key, n)
+
+
+# Model types that support conditional-log-likelihood scoring (forward-pass access).
+CLL_TYPES = {"qwen", "llava", "llava_onevision", "phi", "idefics"}
+
+
+def run_cll_level(vlm, level, questions, references, image_dir, n, out_dir, channel="image",
+                  role="text_task", config=None):
+    """Per mismatch trial, compute the arbitration margin CLL(text) - CLL(image), and JOIN
+    the reasoning label from the generation CSV so the downstream stratified analysis is
+    ready. Writes/append level_X.cll.jsonl (resumable).
+
+    channel="image": margin scored on the level's DEGRADED image, text clean (Phase 6).
+    channel="text" : image held CLEAN (level 0), the TEXT in the scaffold degraded at
+                     `level` (Phase 7 mirror arm). The seed matches run_level's
+                     (seed=txt_idx) so the CLL run scores the SAME corrupted string the
+                     generation run saw — the reasoning-label join stays coherent.
+
+    True mirror: as the image degrades the margin should rise toward text; as the text
+    degrades it should fall toward the image, if the model weighs channels by reliability.
+    """
+    if channel == "text":
+        name = TEXT_NOISE_LEVELS[level]["name"]
+        level_img_dir = os.path.join(image_dir, f"level_0_{NOISE_LEVELS[0]['name']}")  # image held clean
+    else:
+        name = NOISE_LEVELS[level]["name"]
+        level_img_dir = os.path.join(image_dir, f"level_{level}_{name}")
+    cll_path = os.path.join(out_dir, f"level_{level}_{name}.cll.jsonl")
+
+    # Reasoning label + binary follows come from the generation CSV, if present.
+    gen = {}
+    csv_path = os.path.join(out_dir, f"level_{level}_{name}.csv")
+    if os.path.exists(csv_path):
+        with open(csv_path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                gen[int(row["problem_id"])] = row
+
+    done = set()
+    if os.path.exists(cll_path):
+        with open(cll_path) as f:
+            for line in f:
+                try:
+                    done.add(int(json.loads(line)["i"]))
+                except (json.JSONDecodeError, KeyError):
+                    continue
+
+    with open(cll_path, "a") as out:
+        for i in tqdm(range(n), desc=f"CLL L{level}"):
+            if i in done:
+                continue
+            txt_idx = (i + 1) % n  # image = problem i, text = problem txt_idx
+            try:
+                img = Image.open(os.path.join(level_img_dir, f"q{i:03d}.png")).convert("RGB")
+                text_q = (degrade_text(questions[txt_idx], level, seed=txt_idx)
+                          if channel == "text" else questions[txt_idx])
+                m = vlm.arbitration_margin(
+                    img, text_answer=references[txt_idx], image_answer=references[i],
+                    text_question=text_q, role=role, item_idx=i)
+            except Exception as e:
+                m = None
+            rec = {"i": i, "level": level, "margin": m,
+                   "prompt_role": role,
+                   "prompt_config_version": PROMPT_CONFIG_VERSION}
+            if config:
+                rec["dataset_sha256"] = config["dataset_sha256"]
+            row = gen.get(i)
+            if row is not None:
+                rec["follows"] = row.get("follows")
+                reasoning_text = row.get("text_question", "")
+                if channel == "text" and TEXT_NOISE_LEVELS[level]["p"] > 0:
+                    reasoning_text = degrade_text(reasoning_text, level,
+                                                  seed=(i + 1) % n)
+                rec["reasoning"] = score_by_reasoning(
+                    row.get("prediction", ""), row.get("image_question", ""),
+                    reasoning_text)
+            out.write(json.dumps(rec) + "\n")
+            out.flush()
+    return cll_path
+
+
+def run_cll_model(model_key, questions, references, image_dir, n, levels, out_root, channel="image",
+                  role="text_task"):
+    """Score CLL arbitration margins across levels for one open model."""
+    mc = MODEL_REGISTRY[model_key]
+    if mc["type"] not in CLL_TYPES:
+        print(f"  {model_key}: type={mc['type']} has no forward-pass access — "
+              f"CLL scoring skipped (open _generate models only).")
+        return
+    out_dir = os.path.join(out_root, model_key)
+    os.makedirs(out_dir, exist_ok=True)
+    config = _ensure_experiment_config(
+        out_dir, _experiment_config(model_key, channel, role, questions, references)
+    )
+    print(f"\n{'='*60}\n  CLL scoring: {model_key}  (channel={channel}, levels {levels})\n{'='*60}")
+    vlm = VLMModel(model_name=mc["name"], model_type=mc["type"],
+                   max_new_tokens=256, torch_dtype="bfloat16")
+    vlm.load()
+    for level in levels:
+        run_cll_level(vlm, level, questions, references, image_dir, n, out_dir,
+                      channel=channel, role=role, config=config)
+    vlm.unload()
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Legibility experiment (mismatch x noise)")
+    parser.add_argument("--models", nargs="+", default=DEFAULT_MODELS)
+    parser.add_argument("--benchmark", default="gsm8k", choices=TEXT_MATH_BENCHMARKS,
+                        help="Which Protocol-A (rendered-text) benchmark to run.")
+    parser.add_argument("--num-problems", type=int, default=300,
+                        help="Problems per benchmark (default 300: full SVAMP; solid GSM8K subset). "
+                             "Changing this auto-invalidates level_*.json from a different N.")
+    parser.add_argument("--noise-levels", nargs="+", type=int, default=list(range(10)))
+    parser.add_argument("--channel", choices=["image", "text"], default="image",
+                        help="Which channel to degrade: 'image' (Phase 6, default) or "
+                             "'text' (Phase 7 mirror arm: image held clean, text corrupted). "
+                             "Text-channel results are namespaced under text_legibility/. "
+                             "Text channel supports levels 0 2 4 5.")
+    parser.add_argument("--noise-image-dir", default=None,
+                        help="Where the noisy images live (reused if present). "
+                             "Defaults to a per-benchmark dir under the output dir. "
+                             "Noise is applied on top of the canonical HF images so "
+                             "Level 0 matches the images used in the main experiments.")
+    parser.add_argument("--prompt-role", choices=["text_task", "neutral"], default="text_task",
+                        help="Role framing of the two channels. 'text_task' (default, "
+                             "original) labels the TEXT 'Problem:' and never mentions the "
+                             "image, confounding modality preference with instruction-"
+                             "following. 'neutral' names both as interchangeable Source A/B "
+                             "and designates neither, counterbalancing A/B per item -- the "
+                             "role-counterbalancing control. Non-default roles are "
+                             "namespaced under role_<role>/ so the main grid is never "
+                             "overwritten. Applies to BOTH generation and --score-cll.")
+    parser.add_argument("--output-dir", default="results/phase6_legibility")
+    parser.add_argument("--merge", action="store_true",
+                        help="Skip inference; just rebuild per-model + combined summaries "
+                             "from existing level_*.json files.")
+    parser.add_argument("--rescore", action="store_true",
+                        help="Skip inference; read the per-level prediction CSVs and "
+                             "reclassify 'neither' trials by reasoning trace, writing "
+                             "rescored summaries (larger decidable, Phase-1 comparable).")
+    parser.add_argument("--render-only", action="store_true",
+                        help="Only render the noisy images for this benchmark, then exit. "
+                             "Run this once before fanning out compute jobs so they don't "
+                             "race to render the same files.")
+    parser.add_argument("--score-cll", action="store_true",
+                        help="Conditional-log-likelihood mode: per trial compute the "
+                             "arbitration margin CLL(text)-CLL(image), joined with the "
+                             "reasoning label from the generation CSV. Honors --channel: "
+                             "'image' degrades the image (text clean); 'text' holds the "
+                             "image clean and degrades the scaffold text (Phase 7 mirror). "
+                             "Open _generate models only. Writes level_X.cll.jsonl. Needs "
+                             "the level-0 clean images (and, for the join, the generation "
+                             "CSVs) present.")
+    args = parser.parse_args()
+
+    torch.manual_seed(42)
+
+    # Namespace outputs by benchmark. gsm8k stays at the root for backward
+    # compatibility (existing results + launcher/plotter paths); other benchmarks
+    # get their own subdir so results never collide.
+    out_root = (args.output_dir if args.benchmark == "gsm8k"
+                else os.path.join(args.output_dir, args.benchmark))
+    if args.channel == "text":
+        bad = [L for L in args.noise_levels if L not in TEXT_NOISE_LEVELS]
+        if bad:
+            raise SystemExit(f"--channel text supports levels {sorted(TEXT_NOISE_LEVELS)}; "
+                             f"got {bad}. Use --noise-levels 0 2 4 5.")
+        out_root = os.path.join(out_root, "text_legibility")  # mirror arm, separate namespace
+    if args.prompt_role != "text_task":
+        # Role-counterbalancing control: never write into the main grid.
+        out_root = os.path.join(out_root, f"role_{args.prompt_role}")
+    os.makedirs(out_root, exist_ok=True)
+
+    # ── Merge-only mode: collate the fanned-out per-level results ──
+    if args.merge:
+        all_summaries = {}
+        for model_key in args.models:
+            out_dir = os.path.join(out_root, model_key)
+            if os.path.isdir(out_dir):
+                all_summaries[model_key] = rebuild_model_summary(
+                    out_dir, model_key, args.num_problems)
+            else:
+                print(f"  {model_key}: no results dir — skipping")
+        _atomic_write_json(os.path.join(out_root, "legibility_all.json"), all_summaries)
+        print(f"\nMerge complete -> {out_root}/legibility_all.json")
+        return
+
+    # ── Rescore-only mode: reclassify 'neither' via reasoning trace from the CSVs ──
+    if args.rescore:
+        all_summaries = {}
+        for model_key in args.models:
+            out_dir = os.path.join(out_root, model_key)
+            if os.path.isdir(out_dir):
+                all_summaries[model_key] = rescore_model(out_dir, model_key, channel=args.channel)
+            else:
+                print(f"  {model_key}: no results dir — skipping")
+        _atomic_write_json(os.path.join(out_root, "legibility_all_rescored.json"), all_summaries)
+        print(f"\nRescore complete -> {out_root}/legibility_all_rescored.json")
+        return
+
+    # Load the CANONICAL HF renders (use_hf=True) so noise is applied on top of the
+    # exact images used in the main experiments — Level 0 is then pixel-identical to
+    # the Phase 1/3 mismatch baseline, per the CLAUDE.md "use canonical PNGs" rule.
+    items = load_benchmark(args.benchmark, args.num_problems, use_hf=True)
+    questions = [it.question for it in items]
+    references = [it.reference_answer for it in items]
+    images = [it.image for it in items]
+    n = len(questions)
+    print(f"Loaded {n} {args.benchmark} problems (canonical HF images)")
+    if args.benchmark == "math":
+        print("  Note: MATH answers are often non-numeric (fractions/expressions); "
+              "expect a smaller decidable set than GSM8K/SVAMP.")
+
+    image_dir = args.noise_image_dir or os.path.join(out_root, "noise_images")
+    # The text (mirror-arm) channel corrupts the STRING and always reads the image
+    # from level_0_clean (see run_level), whatever --noise-levels is requested. So
+    # it needs ONLY the level-0 clean images — never the noisy dirs. Prepping just
+    # level 0 both fixes the missing-image bug (a per-level fan-out job like
+    # --noise-levels 5 would otherwise render only level_5 and fail to open
+    # level_0_clean) and avoids rendering noisy images that are never read.
+    prep_levels = [0] if args.channel == "text" else args.noise_levels
+    have_images = all(
+        os.path.isdir(os.path.join(image_dir, f"level_{L}_{NOISE_LEVELS[L]['name']}"))
+        for L in prep_levels
+    )
+    if not have_images:
+        os.makedirs(image_dir, exist_ok=True)
+        if all(img is not None for img in images):
+            print(f"Applying noise to canonical HF images -> {image_dir} ...")
+            apply_noise_to_images(images, image_dir,
+                                  noise_levels=prep_levels, texts=questions)
+        else:
+            missing = sum(img is None for img in images)
+            print(f"WARNING: {missing} canonical images missing — falling back to "
+                  f"fresh text render (Level 0 may not match the main experiments).")
+            render_noisy_images(questions, image_dir, noise_levels=prep_levels)
+    else:
+        print(f"Reusing existing noisy images from {image_dir}")
+
+    if args.render_only:
+        print(f"Render-only: images ready in {image_dir}. Exiting.")
+        return
+
+    # ── CLL-scoring mode: arbitration margins joined with reasoning labels ──
+    if args.score_cll:
+        for model_key in args.models:
+            if model_key in MODEL_REGISTRY:
+                run_cll_model(model_key, questions, references, image_dir, n,
+                              args.noise_levels, out_root, channel=args.channel,
+                              role=args.prompt_role)
+            else:
+                print(f"Unknown model '{model_key}' — skipping")
+        print(f"\nCLL scoring complete ({args.benchmark}, channel={args.channel}).")
+        return
+
+    all_summaries = {}
+    for model_key in args.models:
+        if model_key not in MODEL_REGISTRY:
+            print(f"Unknown model '{model_key}' — skipping")
+            continue
+        all_summaries[model_key] = run_model(
+            model_key, questions, references, image_dir, n,
+            args.noise_levels, out_root, channel=args.channel, role=args.prompt_role)
+
+    _atomic_write_json(os.path.join(out_root, "legibility_all.json"), all_summaries)
+    print(f"\nLegibility experiment complete ({args.benchmark}).")
+
+
+if __name__ == "__main__":
+    main()

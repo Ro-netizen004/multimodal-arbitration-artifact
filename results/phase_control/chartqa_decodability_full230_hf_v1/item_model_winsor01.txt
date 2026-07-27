@@ -1,0 +1,15 @@
+benchmark=chartqa_conflict
+rows=8244 items=229 models=6 cells=36
+winsorize_each_tail=0.01
+formula: shift ~ leg_loss * text_channel + C(model) + (1|item)
+
+interaction beta3 (text slope - image slope)
+method	estimate	SE	95% CI	p
+mixed_item_intercept	+0.530838	0.172154	[+0.193422,+0.868253]	0.00204577
+OLS_clustered_by_cell	+0.530838	0.847372	[-1.129981,+2.191657]	0.531019
+OLS_clustered_by_model	+0.530838	0.742001	[-1.376536,+2.438211]	0.506361
+
+Cell clustering guards against pseudoreplication because legibility loss is
+constant within model x channel x level cells. Model clustering is the
+generalization check, but it has only six clusters and should be interpreted
+cautiously.

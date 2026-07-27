@@ -1,0 +1,27 @@
+{
+  "n_problems": 1319,
+  "counts_raw": {
+    "text": 384,
+    "neither": 870,
+    "invalid": 29,
+    "ambiguous": 15,
+    "image": 21
+  },
+  "decidable_raw": 405,
+  "text_preference_raw": 0.9481481481481482,
+  "counts_rescored": {
+    "text": 384,
+    "text_reasoning": 814,
+    "invalid": 29,
+    "image_reasoning": 49,
+    "ambiguous": 15,
+    "neither": 7,
+    "image": 21
+  },
+  "decidable": 1268,
+  "text_preference": 0.944794952681388,
+  "neither_rate": 0.00530705079605762,
+  "rescore_channel": "image",
+  "level": 5,
+  "name": "heavy_degradation"
+}

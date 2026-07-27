@@ -1,0 +1,14 @@
+{
+  "level": 2,
+  "name": "blur_light",
+  "n_problems": 300,
+  "counts": {
+    "text": 231,
+    "neither": 65,
+    "ambiguous": 4
+  },
+  "decidable": 231,
+  "text_preference": 1.0,
+  "image_preference": 0.0,
+  "neither_rate": 0.21666666666666667
+}

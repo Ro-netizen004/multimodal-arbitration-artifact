@@ -1,0 +1,15 @@
+benchmark=svamp
+rows=10800 items=300 models=6 cells=36
+winsorize_each_tail=0.01
+formula: shift ~ leg_loss * text_channel + C(model) + (1|item)
+
+interaction beta3 (text slope - image slope)
+method	estimate	SE	95% CI	p
+mixed_item_intercept	+3.077260	0.140402	[+2.802078,+3.352442]	1.76641e-106
+OLS_clustered_by_cell	+3.077260	1.004157	[+1.109149,+5.045371]	0.00218019
+OLS_clustered_by_model	+3.077260	0.828995	[+0.946261,+5.208259]	0.0138257
+
+Cell clustering guards against pseudoreplication because legibility loss is
+constant within model x channel x level cells. Model clustering is the
+generalization check, but it has only six clusters and should be interpreted
+cautiously.

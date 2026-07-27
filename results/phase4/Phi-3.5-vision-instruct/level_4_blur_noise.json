@@ -1,0 +1,20 @@
+{
+  "level": 4,
+  "name": "blur_noise",
+  "description": "Medium blur (r=2) + Gaussian noise (std=15)",
+  "accuracy": 0.67,
+  "error_distribution": {
+    "correct": 134,
+    "arithmetic_error": 65,
+    "no_number": 1
+  },
+  "ci_95": [
+    0.6001707396669452,
+    0.7347017965274383
+  ],
+  "boot_ci_95": [
+    0.605,
+    0.735
+  ],
+  "n": 200
+}

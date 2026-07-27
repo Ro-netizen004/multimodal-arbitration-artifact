@@ -1,0 +1,11 @@
+{
+  "design_version": "chartqa-same-question-conflict-v4",
+  "model": "Idefics3-8B-Llama3",
+  "arm": "image",
+  "mode": "cll",
+  "report_type": "evidence",
+  "n": 230,
+  "manifest_sha256": "388bce0572487024f5ac12261621cbab8931ec3032d8bf0c65a258c134d20842",
+  "dataset_repo": "[ANONYMIZED_DATASET_NAMESPACE]/chartqa-evidence-conflict-v1",
+  "dataset_revision": "3ead711196b4bf75ae6c23be8148bb8417047c4e"
+}

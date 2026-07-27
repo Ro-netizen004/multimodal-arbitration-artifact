@@ -1,0 +1,27 @@
+{
+  "n_problems": 1319,
+  "counts_raw": {
+    "neither": 880,
+    "image": 323,
+    "invalid": 92,
+    "text": 11,
+    "ambiguous": 13
+  },
+  "decidable_raw": 334,
+  "text_preference_raw": 0.03293413173652695,
+  "counts_rescored": {
+    "image_reasoning": 706,
+    "text_reasoning": 91,
+    "neither": 83,
+    "image": 323,
+    "invalid": 92,
+    "text": 11,
+    "ambiguous": 13
+  },
+  "decidable": 1131,
+  "text_preference": 0.09018567639257294,
+  "neither_rate": 0.06292645943896892,
+  "rescore_channel": "text",
+  "level": 5,
+  "name": "heavy_corruption"
+}

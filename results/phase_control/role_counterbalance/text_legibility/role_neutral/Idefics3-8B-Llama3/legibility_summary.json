@@ -1,0 +1,31 @@
+{
+  "model": "Idefics3-8B-Llama3",
+  "n": 1319,
+  "levels_complete": [
+    0,
+    2,
+    4,
+    5
+  ],
+  "text_preference_by_level": {
+    "0": 0.9967320261437909,
+    "2": 0.9817073170731707,
+    "4": 0.7387387387387387,
+    "5": 0.05274725274725275
+  },
+  "neither_rate_by_level": {
+    "0": 0.2926459438968916,
+    "2": 0.6156178923426838,
+    "4": 0.8188021228203184,
+    "5": 0.6398786959818044
+  },
+  "experiment_config": {
+    "schema_version": 1,
+    "prompt_config_version": "role-control-v1",
+    "model": "Idefics3-8B-Llama3",
+    "channel": "text",
+    "prompt_role": "neutral",
+    "n_problems": 1319,
+    "dataset_sha256": "ede050d84b5a1c62df9cb75bc409d42c14744d0ca3666fbe3ba38cb1df8eb7eb"
+  }
+}

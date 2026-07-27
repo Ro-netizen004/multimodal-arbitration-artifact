@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_config_version": "role-control-v1",
+  "model": "llava-v1.6-mistral-7b-hf",
+  "channel": "text",
+  "prompt_role": "neutral",
+  "n_problems": 300,
+  "dataset_sha256": "a6c5137215ce48f6720680385e08928dc0a2af18241722a874f9eca62abf73f6"
+}

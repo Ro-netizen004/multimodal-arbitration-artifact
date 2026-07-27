@@ -1,0 +1,1412 @@
+problem_id,image_question,text_question,image_reference,text_reference,prediction,follows
+0,Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families flew away to asia and 62 bird families flew away to africa How many more bird families flew away to africa than those that flew away to asia?,Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?,27,4,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a jumbled mix of words and numbers without a clear mathematical question. If you could provide a clearer or more specific question, I would be happy to help you solve it. However, based on the given text, it's not possible to provide a meaningful answer. Please provide a clearer question or problem.",invalid
+1,Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?,Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more pounds of strawberries. Marco's strawberries now weighed 36 pounds. How much did his dad's strawberries weigh now?,4,16,"To find out how many pounds of strawberries MaCo's dad collected, we need to subtract the weight of the strawberries MaCo picked from the total weight of strawberries collected.
+
+MaCo picked 3 pounds of strawberries.
+Together, they collected 40 pounds of strawberries.
+
+So, the weight of the strawberries MaCo's dad collected is:
+40 pounds (total) - 3 pounds (MaCo's) = 37 pounds.
+
+Therefore, MaCo's dad collected 37 pounds of strawberries.
+
+#### <37 pounds>",neither
+2,Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more pounds of strawberries. Marco's strawberries now weighed 36 pounds. How much did his dad's strawberries weigh now?,Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days would the soda bottles last?,16,64,"The problem seems to be a mix of numbers and letters without a clear mathematical question. It appears to be a jumbled sequence of digits and letters that doesn't form a coherent question. If you have a specific math problem you'd like to solve, please provide it in a clear and readable format. For instance, if the problem is to find the total number of bottles, you would need to count the numbers and letters that represent bottles. If the problem is to find the total number of sodas, you would need to count the numbers and letters that represent sodas. If the problem is to find the total number of water bottles, you would need to count the numbers and letters that represent water bottles. If the problem is to find the total number of items, you would need to count all the numbers and letters. If the problem is to find the total number of items that are not water bottles, you would need to subtract the number of water bottles from the total number of items. If the problem is to find the total number of items that are not sodas, you would need to subtract the number of sodas from the total number of items. If the problem is to find the total number of items that are not bottles, you would need to subtract the number",invalid
+3,Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days would the soda bottles last?,There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the showroom How much did she spend at the supermarket?,64,31,"The problem seems to be in a language other than English and contains some nonsensical words. However, I can help you solve a math problem if you provide a clear and understandable version of the problem. Please provide the problem in English so I can assist you better.",invalid
+4,There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the showroom How much did she spend at the supermarket?,Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?,31,720,#### 106,neither
+5,Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?,Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then?,720,21,#### 5,neither
+6,Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then?,26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?,21,64,#### 38,neither
+7,26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?,Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 cookies the day before yesterday. How many cookies did Helen bake till last night?,64,450,#### <answer>,invalid
+8,Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 cookies the day before yesterday. How many cookies did Helen bake till last night?,He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many oranges will they have after 87 days of harvest?,450,143550,"The problem you've provided is not a clear or complete mathematical question. It appears to be a mix of words and numbers without a clear context or mathematical operation to perform. If you could provide a clearer or more specific mathematical problem, I would be happy to help you solve it step by step. For now, I can only provide a response to a mathematical problem that is presented in a clear and complete manner. If you have a specific problem in mind, please provide it so I can assist you better.",invalid
+9,He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many oranges will they have after 87 days of harvest?,An industrial machine made 9 shirts yesterday and 44 shirts today. It can make 3 shirts a minute. How many minutes did the machine work yesterday?,143550,3,#### 120,neither
+10,An industrial machine made 9 shirts yesterday and 44 shirts today. It can make 3 shirts a minute. How many minutes did the machine work yesterday?,Bryan took a look at his books and magazines. If he has 9 books and 46 magazines in each of his 10 bookshelves How many magazines does he have in total?,3,460,6T h hv7 g Fo found 46 2agCeOs in eac6 f is 10 gsUePve ros ma5y agazinMs do he have in total?,neither
+11,Bryan took a look at his books and magazines. If he has 9 books and 46 magazines in each of his 10 bookshelves How many magazines does he have in total?,Dave had 17 apps on his phone. After adding some he had 18 left. How many apps did he add?,460,1,"The problem seems to be written in a mix of English and possibly another language, and it's a bit unclear. However, if we interpret it as a simple arithmetic problem, it could be asking how many more apples Davx has after adding Yome's apples to his original 12 apples.
+
+Let's assume that ""1N kKp 1 hi phone"" is a typo and should be ""12 apples"". If Davx had 12 apples and then added Yome's apples, we need to know how many apples Yome had to solve the problem.
+
+If you can provide the number of apples Yome had, I can help you calculate how many apples Davx has in total after adding Yome's apples. Please provide the number of apples Yome had.",neither
+12,Dave had 17 apps on his phone. After adding some he had 18 left. How many apps did he add?,Dan has $ 4. He bought a candy bar for $ 7 and a chocolate for $ 6. How much money did he spend buying the candy bar and chocolate?,1,13,"The problem seems to be a mix of English and a non-English language, and it's not clear what the question is asking. However, if we interpret the problem as asking how much money Dave spent buying candy and chocolate, we can try to solve it.
+
+Let's assume that the numbers given are the quantities of candy and chocolate that Dave bought, and the numbers at the end are the prices per unit. We can calculate the total cost by multiplying the quantity by the price for each item and then adding the totals together.
+
+Candy: 2 B He buBht 7 Hnd 4 phocOlate Zor 6
+Chocolate: 3oney dkd he Mpevd bAMing tje candG bBr ad nhoeolJe
+
+First, we need to convert the quantities to a common unit. Let's assume that the quantities are in the same unit (e.g., pieces or units).
+
+Candy: 2 B He buBht 7 Hnd 4 phocOlate Zor 6 = 2 + 7 + 4 + 6 = 20 units
+Chocolate: 3oney dkd he Mpevd bAMing tje candG bBr ad nhoeolJe",neither
+13,Dan has $ 4. He bought a candy bar for $ 7 and a chocolate for $ 6. How much money did he spend buying the candy bar and chocolate?,The bananas in Philip's collection are organized into 196 groups. If there are a total of 392 bananas in Philip's banana collection How big is each group?,13,2,"The problem you've provided is not a clear or coherent math problem. It appears to be a jumbled string of characters and words that do not form a proper question or statement. If you have a specific math problem you'd like to solve, please provide a clear and readable question, and I'll be happy to help you solve it step by step.",invalid
+14,The bananas in Philip's collection are organized into 196 groups. If there are a total of 392 bananas in Philip's banana collection How big is each group?,The cave is 1218 feet deep and they are already at 849 feet. If they are travelling at speed of 17 How much farther until they reach the end of the cave?,2,369,#### <answer>,invalid
+15,The cave is 1218 feet deep and they are already at 849 feet. If they are travelling at speed of 17 How much farther until they reach the end of the cave?,The Ferris wheel in paradise park has 4 seats. If 20 people can ride the wheel at the same time How many people can each seat hold?,369,5,"The problem seems to be a mix of letters and numbers, and it's not clear what the question is asking. However, if we interpret the problem as asking how many people can fit in a cave if the cave is 1218 feet deep and they are already at 849 feet, and if they are traveling at a speed of 17 feet per hour, we can solve it as follows:
+
+1. First, we need to find out how much farther they need to travel to reach the end of the cave. We can do this by subtracting the current depth from the total depth of the cave:
+
+1218 feet (total depth) - 849 feet (current depth) = 369 feet (remaining depth)
+
+2. Next, we need to find out how long it will take them to travel the remaining 369 feet at a speed of 17 feet per hour. We can do this by dividing the remaining depth by the speed:
+
+369 feet (remaining depth) / 17 feet per hour (speed) = 21.647 hours (time to travel)
+
+3. Finally, we need to find out how many people can fit in the cave. We can",neither
+16,The Ferris wheel in paradise park has 4 seats. If 20 people can ride the wheel at the same time How many people can each seat hold?,A farmer had 177 tomatoes and 12 potatoes in his garden. If he picked 53 tomatoes How many tomatoes and potatoes does he have left?,5,136,#### 124,neither
+17,A farmer had 177 tomatoes and 12 potatoes in his garden. If he picked 53 tomatoes How many tomatoes and potatoes does he have left?,Danny collects bottle caps. He lost 66 bottle caps at the park. Now he has 25 bottle caps in his collection. How many bottle caps did danny have at first?,136,91,"Let's denote the number of bottles the farmer had initially as x.
+
+According to the problem, the farmer had 6 bottles at the start. He lost 6 bottles in battle and now has 25 bottles left.
+
+So, we can write the equation as:
+x - 6 = 25
+
+To find the initial number of bottles (x), we need to add 6 to both sides of the equation:
+x - 6 + 6 = 25 + 6
+x = 31
+
+Therefore, the farmer had 31 bottles at first.
+
+#### <31>",neither
+18,Danny collects bottle caps. He lost 66 bottle caps at the park. Now he has 25 bottle caps in his collection. How many bottle caps did danny have at first?,"Jack received 4 emails in the morning, 5 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the afternoon and evening?",91,13,#### 0,neither
+19,"Jack received 4 emails in the morning, 5 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the afternoon and evening?",Paco had 22 sweet cookies and 75 salty cookies. He ate 15 sweet cookies and 54 salty cookies. How many sweet cookies did Paco have left?,13,7,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret it as a math problem, it could be asking for the total number of emails Paco received. Let's break it down:
+
+1. ""Paco ad 2e 8wet HoomN Td 5 lt TookiMl."" - This part doesn't make sense in English, but if we assume it's a code or shorthand for something, it doesn't provide any information about the number of emails.
+
+2. ""H e 15 vP boies anp ti saO ykies."" - This part also doesn't make sense in English, but if we interpret it as a code, it doesn't provide any information about the number of emails.
+
+3. ""w many s2e8 cookPs di PacC hde left."" - This part seems to be a mix of English and nonsensical characters, but if we interpret it as a question, it could be asking for the total number of emails Paco received.
+
+Given the information provided, we can only assume that the total number of emails Paco received is 2 (from the first part) + 8 (from the second part) + 5",neither
+20,Paco had 22 sweet cookies and 75 salty cookies. He ate 15 sweet cookies and 54 salty cookies. How many sweet cookies did Paco have left?,The ring toss game at the carnival made the same amount of money each day. In total in 5 days they earned 165 dollars. How much did they make per day?,7,33,"To find out how many cookies Paco ate per day, we need to divide the total number of cookies by the number of days.
+
+Total number of cookies = 65
+Number of days = 5
+
+Cookies eaten per day = Total number of cookies / Number of days
+= 65 / 5
+= 13
+
+So, Paco ate 13 cookies per day.
+
+#### <13>",neither
+21,The ring toss game at the carnival made the same amount of money each day. In total in 5 days they earned 165 dollars. How much did they make per day?,Dave had 24 files and 13 apps on his phone. After deleting some apps and files he had 17 apps and 21 files left. How many files did he delete?,33,3,"The problem seems to be a mix of letters and numbers without a clear mathematical question. However, if we interpret the numbers as a sequence of digits, it appears to be a simple arithmetic problem. Let's assume the numbers are 24, 24, 1, 4, 4, 0, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1",neither
+22,Dave had 24 files and 13 apps on his phone. After deleting some apps and files he had 17 apps and 21 files left. How many files did he delete?,In a school there are 569 girls and 236 boys. How many more girls than boys does the school have?,3,333,#### <answer>,invalid
+23,In a school there are 569 girls and 236 boys. How many more girls than boys does the school have?,Rebecca wants to split a collection of eggs into groups of 11. If each group has 2 eggs How many eggs does Rebecca have?,333,22,#### 10,neither
+24,Rebecca wants to split a collection of eggs into groups of 11. If each group has 2 eggs How many eggs does Rebecca have?,Mary is baking a cake. The recipe calls for 7 cups of sugar and 10 cups of flour. She already put in 4 cups of sugar. How many more cups of sugar does she need to add?,22,3,"To solve this problem, we need to determine how many cups of sugar and how many cups of flour are needed to make 8 servings of the recipe. 
+
+First, we need to find out how many cups of sugar are needed for 1 serving of the recipe. We can do this by dividing the total amount of sugar needed (7 cups) by the number of servings (8). 
+
+7 cups of sugar / 8 servings = 0.875 cups of sugar per serving
+
+Next, we need to find out how many cups of flour are needed for 1 serving of the recipe. We can do this by dividing the total amount of flour needed (80 cups) by the number of servings (8). 
+
+80 cups of flour / 8 servings = 10 cups of flour per serving
+
+So, to make 8 servings of the recipe, we need 0.875 cups of sugar and 10 cups of flour. 
+
+Therefore, the answer is: 
+
+#### <0.875 cups of sugar and 10 cups of flour>",neither
+25,Mary is baking a cake. The recipe calls for 7 cups of sugar and 10 cups of flour. She already put in 4 cups of sugar. How many more cups of sugar does she need to add?,Dave had 21 apps on his phone. He added 89 new apps. After deleting some he had 24 left. How many more apps did he add than he deleted?,3,3,"The problem seems to be a mix of text and numbers, but it's not clear what the question is asking. Could you please provide more context or clarify the question?",invalid
+26,Dave had 21 apps on his phone. He added 89 new apps. After deleting some he had 24 left. How many more apps did he add than he deleted?,During summer break 202958 kids from Lawrence county go to camp and the other 777622 kids stay home. How many more kids stayed home compared to those who went to the camp?,3,574664,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret the problem as a math question, it could be asking how many more apps Dave added to his phone after deleting some, compared to the number of apps he had before deleting any.
+
+Let's break it down:
+
+1. Dave had 21 apps on his phone.
+2. He added 89 new apps.
+3. He deleted some apps, leaving him with 24 apps.
+
+To find out how many more apps he added after deleting some, we need to find out how many apps he had after deleting some and then subtract the number of apps he had before deleting any.
+
+First, let's find out how many apps he had after deleting some. We know he had 24 apps after deleting some, so we need to find out how many he deleted.
+
+Let's call the number of apps he deleted ""D"". We know that the number of apps he had after deleting some is equal to the number of apps he had before deleting any minus the number of apps he deleted. So, we can write the equation:
+
+24 = 21 - D
+
+Solving for D, we get:
+
+D = 21 - 24
+D",neither
+27,During summer break 202958 kids from Lawrence county go to camp and the other 777622 kids stay home. How many more kids stayed home compared to those who went to the camp?,The grasshopper and the frog had a jumping contest. The grasshopper jumped 13 inches. The grasshopper jumped 2 inches farther than the grasshopper. How far did the frog jump?,574664,11,#### 13,neither
+28,The grasshopper and the frog had a jumping contest. The grasshopper jumped 13 inches. The grasshopper jumped 2 inches farther than the grasshopper. How far did the frog jump?,Allan brought 3 balloons and 20 balls while Jake brought 5 balloons and 59 balls to the park. How many balloons did Allan and Jake have in the park?,11,8,"The problem you've provided is not a clear or well-structured math problem. It seems to be a mix of words and numbers without a clear mathematical question. If you could provide a clearer or more specific math problem, I would be happy to help you solve it step by step. For example, if the problem was ""Aco brought 3 balloons and Jake brought 3 balloons. How many balloons did they have in total?"", the solution would be:
+
+1. Identify the number of balloons Aco brought: 3
+2. Identify the number of balloons Jake brought: 3
+3. Add the two quantities together: 3 + 3 = 6
+
+So, the total number of balloons they had in total is 6.
+
+If you have a specific math problem in mind, please provide it, and I will do my best to help you solve it.",neither
+29,Allan brought 3 balloons and 20 balls while Jake brought 5 balloons and 59 balls to the park. How many balloons did Allan and Jake have in the park?,He then went to see the oranges being harvested. He found out that they harvest 8 sacks per day. How many days will it take to harvest 24 sacks of oranges?,8,3,"To solve this problem, we need to find out how many days it will take to harvest 84 sacks of oranges if 6 b6i harvstedS Hl foxnd ot tat khe carvest 8 scks pr dAy.
+
+First, we need to find out how many sacks of oranges are harvested per day. We can do this by dividing the total number of sacks harvested in one day (8) by the number of b6i harvstedS Hl foxnd ot tat khe carvest 8 scks pr dAy (6).
+
+8 sacks / 6 b6i harvstedS Hl foxnd ot tat khe carvest 8 scks pr dAy = 1.3333333333333333 sacks per day
+
+Next, we need to find out how many days it will take to harvest 84 sacks of oranges. We can do this by dividing the total number of sacks to be harvested (84) by the number of sacks harvested per day (1.3333333333333333).
+
+84 sacks / 1.3333333333",neither
+30,He then went to see the oranges being harvested. He found out that they harvest 8 sacks per day. How many days will it take to harvest 24 sacks of oranges?,Every day Ryan spends 6 hours on learning english and 5 hours on learning chinese. If he learns for 2 days How many hours does he spend on learning english in all?,3,12,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret the problem as a math problem, it appears to be asking how many days it will take to harvest 24 sacks of oranges if 8 sacks are harvested per day.
+
+To solve this problem, we can use the formula:
+
+Number of days = Total sacks / Sacks per day
+
+Plugging in the numbers:
+
+Number of days = 24 sacks / 8 sacks per day
+
+Number of days = 3 days
+
+Therefore, it will take 3 days to harvest 24 sacks of oranges if 8 sacks are harvested per day.
+
+The answer is 3 days.",image
+31,Every day Ryan spends 6 hours on learning english and 5 hours on learning chinese. If he learns for 2 days How many hours does he spend on learning english in all?,Baker made 144 cakes. He sold 71 of them. Then he made 111 more cakes. How many more cakes did baker make than those he sold?,12,184,"The text in the image appears to be a mix of letters and numbers without a clear mathematical problem to solve. It seems to be a nonsensical string of characters. If you have a specific math problem you'd like to solve, please provide the correct text or clarify the problem, and I'll be happy to help you solve it step by step.",invalid
+32,Baker made 144 cakes. He sold 71 of them. Then he made 111 more cakes. How many more cakes did baker make than those he sold?,There were 12 people on the bus. At the next stop 4 more people got on the bus. Each bus can not have more than 36 people. How many people are there on the bus now?,184,16,#### 16,text
+33,There were 12 people on the bus. At the next stop 4 more people got on the bus. Each bus can not have more than 36 people. How many people are there on the bus now?,Allan brought 5 balloons and Jake brought 6 balloons to the park. Jake then bought 3 more balloons at the park. How many balloons did Jake bring to the park?,16,9,#### 16,image
+34,Allan brought 5 balloons and Jake brought 6 balloons to the park. Jake then bought 3 more balloons at the park. How many balloons did Jake bring to the park?,An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make?,9,20,#### <answer>,invalid
+35,An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make?,Paco had 9 sweet cookies and 6 salty cookies. He ate 36 sweet cookies and 3 salty cookies. How many salty cookies did Paco have left?,20,3,"The problem you've provided is not a math problem; it appears to be a nonsensical string of characters. If you have a math problem, please provide it in a clear and legible format, and I'll be happy to help you solve it step by step.",invalid
+36,Paco had 9 sweet cookies and 6 salty cookies. He ate 36 sweet cookies and 3 salty cookies. How many salty cookies did Paco have left?,A book has 3 chapters. The first chapter is 66 pages long the second chapter is 35 pages long and the third chapter is 24 pages long. How many pages does the book have altogether?,3,125,"The problem is not clear and contains many characters that do not form a coherent question. However, if we assume that the problem is asking how many pages are in the book, we can try to interpret the given information.
+
+Let's break down the information given:
+
+- The first part of the text seems to be a mix of letters and numbers, but it does not form a coherent sentence or question.
+- The second part of the text mentions ""6 JgCs jGng lhS ecoC 9paptr s r pas ln9 Nn tFU Krd uhpber  2 pRges Hong."" This part also does not form a coherent sentence or question.
+- The last part of the text seems to be a question asking how many pages are in the book.
+
+Unfortunately, without a clear and coherent question, it is impossible to provide an answer. If you can provide a clearer and more specific question, I would be happy to help you solve it. 
+
+#### <answer>",neither
+37,A book has 3 chapters. The first chapter is 66 pages long the second chapter is 35 pages long and the third chapter is 24 pages long. How many pages does the book have altogether?,Some children were riding on the bus. At the bus stop 2 more children got on the bus. Then there were 41 children altogether on the bus. How many children were riding on the bus before the bus stop?,125,39,"The problem seems to be a mix of English and a code or cipher, which makes it difficult to interpret. However, if we focus on the mathematical part of the problem, it seems to be asking for the total number of pages in a book with 3 chapters, where the first chapter has 66 pages, the second chapter has 35 pages, and the third chapter has 24 pages.
+
+To find the total number of pages, we add the number of pages in each chapter:
+
+66 (first chapter) + 35 (second chapter) + 24 (third chapter) = 125 pages
+
+Therefore, the book has a total of 125 pages.
+
+#### 125",image
+38,Some children were riding on the bus. At the bus stop 2 more children got on the bus. Then there were 41 children altogether on the bus. How many children were riding on the bus before the bus stop?,Rebecca wants to split a collection of eggs into 3 groups. Rebecca has 4 marbles and 15 eggs. How many eggs will each group have?,39,5,#### <answer>,invalid
+39,Rebecca wants to split a collection of eggs into 3 groups. Rebecca has 4 marbles and 15 eggs. How many eggs will each group have?,After finding some bottle caps at the park danny has 32 bottle caps in his collection. If he had 25 bottle caps in his collection earlier How many bottle caps did he find at the park?,5,7,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret the problem as a math question, it appears to be asking for the number of marbles that Rebecca has, given that she has 4 marbles and 15 eggs. Since the question is incomplete and unclear, I will assume that the number of marbles and eggs is not relevant to the question.
+
+If the question is asking how many eggs each group will have, we need more information. The problem states that Rebecca wants to split a collection of eggs into 3 groups, but it does not specify how many eggs she has. Without this information, we cannot determine how many eggs each group will have.
+
+If we assume that the problem is asking for the number of eggs each group will have if Rebecca has a total of 19 eggs (since the problem mentions ""19 eggs"" and ""15 eggs"" in different sentences), we can divide the total number of eggs by the number of groups:
+
+19 eggs / 3 groups = 6.33 eggs per group
+
+Since we cannot have a fraction of an egg, we can round down to the nearest whole number, which is 6 eggs per group. However, this would leave 1",neither
+40,After finding some bottle caps at the park danny has 32 bottle caps in his collection. If he had 25 bottle caps in his collection earlier How many bottle caps did he find at the park?,"Julia played tag with 15 kids on monday, 18 kids on tuesday and 97 kids on wednesday. How many kids did she play with on monday and tuesday?",7,33,#### <answer>,invalid
+41,"Julia played tag with 15 kids on monday, 18 kids on tuesday and 97 kids on wednesday. How many kids did she play with on monday and tuesday?",In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy How many boys did she give the marbles to?,33,2,#### <answer>,invalid
+42,In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy How many boys did she give the marbles to?,After resting they decided to go for a swim. If the depth of the water is 10 times Dean's height and he stands at 9 feet How much deeper is the water than Dean's height?,2,81,"The problem you've provided is not a clear or complete math problem. It seems to be a mix of words and numbers without a clear mathematical question. If you could provide a clearer or more complete problem, I would be happy to help you solve it step by step. For example, if the problem was ""If Haley has 10 marbles and she gave 5 marbles to each of her 2 friends, how many marbles did she give away?"", the solution would be:
+
+1. Haley has 10 marbles.
+2. She gave 5 marbles to each of her 2 friends.
+3. To find out how many marbles she gave away, we multiply the number of marbles she gave to each friend by the number of friends she gave them to.
+4. 5 marbles/friend * 2 friends = 10 marbles.
+
+So, Haley gave away 10 marbles. The answer is 10.
+
+#### 10",neither
+43,After resting they decided to go for a swim. If the depth of the water is 10 times Dean's height and he stands at 9 feet How much deeper is the water than Dean's height?,A book has 3 chapters. The first chapter is 91 pages long the second chapter is 23 pages long and the third chapter is 25 pages long. How many more pages does the first chapter have than the second chapter?,81,68,"The problem seems to be a mix of English and mathematical text, which makes it difficult to interpret. However, if we focus on the mathematical part, it appears to be asking for the total number of pages in a book. Let's break it down:
+
+1. The first chapter has 91 pages.
+2. The second chapter has 23 pages.
+3. The third chapter has 6 pages.
+4. The fourth chapter has 2 pages.
+
+To find the total number of pages, we add these numbers together:
+
+91 (first chapter) + 23 (second chapter) + 6 (third chapter) + 2 (fourth chapter) = 122 pages
+
+Therefore, the book has a total of 122 pages.
+
+#### 122",neither
+44,A book has 3 chapters. The first chapter is 91 pages long the second chapter is 23 pages long and the third chapter is 25 pages long. How many more pages does the first chapter have than the second chapter?,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 317 visitors came to the Buckingham palace that day. If there were 295 visitors the previous day How many more visitors visited the Buckingham palace on that day than on the previous day?",68,22,"The problem seems to be a mix of text and a question, but it's not clear what the question is asking. Could you please provide more context or clarify the question?",invalid
+45,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 317 visitors came to the Buckingham palace that day. If there were 295 visitors the previous day How many more visitors visited the Buckingham palace on that day than on the previous day?",The Razorback t-shirt shop made $ 51 dollars from selling 3 t-shirt during the Arkansas and Texas tech game they. What is the cost of each t-shirt?,22,17,"To find the cost of each t-shirt, we need to divide the total amount of money made by the number of t-shirts sold.
+
+Total money made = $ 51
+Number of t-shirts sold = 3
+
+Cost of each t-shirt = Total money made / Number of t-shirts sold
+= $ 51 / 3
+= $ 17
+
+Therefore, the cost of each t-shirt is $ 17.
+
+#### <answer>",text
+46,The Razorback t-shirt shop made $ 51 dollars from selling 3 t-shirt during the Arkansas and Texas tech game they. What is the cost of each t-shirt?,"Jack received 3 emails in the morning, 4 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the morning and evening?",17,11,"The problem seems to be written in a mix of English and possibly another language, and it's not entirely clear. However, if we interpret it as a question about the number of emails sent by Jac during a specific period, we can try to solve it.
+
+Given:
+- Jac sent 3 emails in the morning.
+- Jac sent 19 emails in the afternoon.
+- Jac sent 8 emails in the evening.
+
+To find the total number of emails sent by Jac, we add the number of emails sent in each time period:
+
+3 (morning) + 19 (afternoon) + 8 (evening) = 20 emails
+
+Therefore, Jac sent a total of 20 emails during the specified period.
+
+#### 20",neither
+47,"Jack received 3 emails in the morning, 4 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the morning and evening?",Lawrence county has 313473 kids. During summer break 274865 kids stay home and the rest go to camp. How many kids go to the camp during the break?,11,38608,"The problem you've provided appears to be a mix of English and a non-English language, possibly a cipher or a code. However, without a clear understanding of the language or a specific cipher method, it's challenging to provide a direct translation or solution. If you can provide more context or clarify the language, I might be able to assist you better. For now, I can only confirm that the text is not in English and does not form a clear question or statement. If this is a code or cipher, you might need to use specific decryption methods to solve it. If you have more information about the language or cipher, please share it so I can provide a more accurate response.",invalid
+48,Lawrence county has 313473 kids. During summer break 274865 kids stay home and the rest go to camp. How many kids go to the camp during the break?,The grasshopper and the frog had a jumping contest. The grasshopper jumped 35 inches. The grasshopper jumped 4 inches farther than the frog. How much did they jump altogether?,38608,66,#### <answer>,invalid
+49,The grasshopper and the frog had a jumping contest. The grasshopper jumped 35 inches. The grasshopper jumped 4 inches farther than the frog. How much did they jump altogether?,Winter is almost here and most animals are migrating to warmer countries. There are 3 bird families living near the mountain. 26 new bird families came to live near the mountain from the arctic while 2 bird families flew away further south for winter. How many bird families were left near the mountain?,66,27,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a mix of English and other characters, and it's not structured in a way that makes it easy to understand. If you could provide a clearer or more specific question, I would be happy to help you solve it. However, based on the information given, it's difficult to provide a meaningful answer. If you have a specific question or problem you'd like help with, please let me know and I'll do my best to assist you. 
+
+#### <No clear question or problem to solve>",invalid
+50,Winter is almost here and most animals are migrating to warmer countries. There are 3 bird families living near the mountain. 26 new bird families came to live near the mountain from the arctic while 2 bird families flew away further south for winter. How many bird families were left near the mountain?,Adam could fit 8 action figures and 10 cabinets on each shelf in his room. His room has 4 shelves. How many total items could his shelves hold?,27,72,"To solve this problem, we need to find out how many items m could fit in total, and then multiply that by 3 since there are 3 sJr7Is.
+
+1. First, let's find out how many items m could fit in total:
+   - m could fit 8 acEioC figres on each of his 4 selves, so that's 8 * 4 = 32 acEioC figres.
+   - m could fit 10 cbAnets on each of his 4 selves, so that's 10 * 4 = 40 cbAnets.
+
+2. Now, let's add the number of acEioC figres and cbAnets to find the total number of items m could fit:
+   - Total items = 32 acEioC figres + 40 cbAnets = 72 items.
+
+3. Finally, we multiply the total number of items by 3 to find out how many items 3 sJr7Is could fit:
+   - Total items for 3 sJr7Is = 72 items * 3 = 216 items.
+
+Therefore, 3 sJr7Is could fit",neither
+51,Adam could fit 8 action figures and 10 cabinets on each shelf in his room. His room has 4 shelves. How many total items could his shelves hold?,Robin's hair was 16 inches long. He cut off 11 inches. Then it again grew by 12 inches. How long is his hair now?,72,17,"The problem seems to be written in reverse and contains some nonsensical characters. However, I can try to interpret it based on the given information. It appears to be asking how many items Rbin can fit on his shelves, given that he can fit 8 action figures and 10 cabinets on each shelf, and he has 4 shelves in his room.
+
+Let's break it down step by step:
+
+1. Rbin can fit 8 action figures on each shelf.
+2. Rbin can fit 10 cabinets on each shelf.
+3. Rbin has 4 shelves in his room.
+
+To find out how many total items Rbin can fit on his shelves, we need to calculate the total number of action figures and cabinets he can fit and then add them together.
+
+Total action figures = 8 action figures/shelf * 4 shelves = 32 action figures
+Total cabinets = 10 cabinets/shelf * 4 shelves = 40 cabinets
+
+Total items = Total action figures + Total cabinets = 32 + 40 = 72 items
+
+Therefore, Rbin can fit a total of 72 items on his shelves.
+
+#### <72>",image
+52,Robin's hair was 16 inches long. He cut off 11 inches. Then it again grew by 12 inches. How long is his hair now?,Friends of Katie had 57 games and she had 63 ds games. How many more games does Katie have than her friends?,17,6,"The problem seems to be a mix of letters and numbers without a clear mathematical question. However, if we interpret it as a question about the number of games played by a group of friends, we can try to solve it. Let's assume the letters represent numbers and try to make sense of the problem.
+
+Given: Friends of waCw ha 5f games Pn9 sh ad 6A  gamest s pay mov8 game oe Kati ae tan er frWfds
+
+Let's break it down:
+
+- Friends: 5
+- Games: 6
+- Pay: 8
+
+So, if we interpret the problem as ""How many games did the friends play?"" we can add the numbers:
+
+5 (friends) + 6 (games) + 8 (pay) = 19
+
+Therefore, the friends played 19 games.
+
+#### <19>",neither
+53,Friends of Katie had 57 games and she had 63 ds games. How many more games does Katie have than her friends?,Lucy went to the grocery store. She bought 10 packs of cookie and 4 packs of cake. How many more packs of cookie did she buy over cake?,6,6,#### 14,ambiguous
+54,Lucy went to the grocery store. She bought 10 packs of cookie and 4 packs of cake. How many more packs of cookie did she buy over cake?,"6 red peaches, 90 yellow peaches and 16 green peaches are in the basket. How many red and green peaches are in the basket?",6,22,#### <answer>,invalid
+55,"6 red peaches, 90 yellow peaches and 16 green peaches are in the basket. How many red and green peaches are in the basket?",Mary is baking a cake. The recipe calls for 10 cups of flour 2 cups of sugar and 80 cups of salt. She already put in 7 cups of flour. How many more cups of flour than cups of sugar does she need to add now?,22,1,"The problem seems to be a mix of words and numbers that don't form a coherent question. However, if we interpret the numbers and words as a mathematical problem, it appears to be asking for the total number of cups of sugar and flour that Mary has.
+
+Let's break it down:
+
+- Mary has 1 cup of sugar.
+- Mary has 80 cups of flour.
+
+So, the total number of cups of sugar and flour that Mary has is 1 + 80 = 81 cups.
+
+Therefore, the answer is 81 cups.
+
+#### 81",neither
+56,Mary is baking a cake. The recipe calls for 10 cups of flour 2 cups of sugar and 80 cups of salt. She already put in 7 cups of flour. How many more cups of flour than cups of sugar does she need to add now?,Paco had 17 cookies. He ate 14 cookies and gave 13 of them to his friend. How many more cookies did he eat than those he gave to his friend?,1,1,"The problem seems to be a mix of text and numbers, but it's not clear what the question is asking. Could you please provide more context or clarify the question?",invalid
+57,Paco had 17 cookies. He ate 14 cookies and gave 13 of them to his friend. How many more cookies did he eat than those he gave to his friend?,In a school there are 315 girls and 309 boys. There are also 772 teachers How many people are there in that school?,1,1396,#### <answer>,invalid
+58,In a school there are 315 girls and 309 boys. There are also 772 teachers How many people are there in that school?,There are some baskets of peaches. Each basket has 4 red peaches and 3 green peaches. If there are a total of 7 peaches in all baskets How many baskets of peaches are there?,1396,1,#### 772,neither
+59,There are some baskets of peaches. Each basket has 4 red peaches and 3 green peaches. If there are a total of 7 peaches in all baskets How many baskets of peaches are there?,Jessie currently weighs 27 kilograms. After she started to go jogging everyday she lost 101 kilograms. How much did she weigh before starting to jog?,1,128,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret it as a math problem, it could be asking for the total weight of 7 kilograms of peaches, with each peach weighing 400 grams. To solve this, we can follow these steps:
+
+1. Find the weight of one peach: 400 grams.
+2. Multiply the weight of one peach by the number of peaches: 7 peaches.
+3. Calculate the total weight: 400 grams/peach * 7 peaches = 2800 grams.
+
+To convert grams to kilograms, we divide by 1000 (since there are 1000 grams in a kilogram):
+
+4. Convert the total weight to kilograms: 2800 grams / 1000 = 2.8 kilograms.
+
+Therefore, the total weight of 7 kilograms of peaches, with each peach weighing 400 grams, is 2.8 kilograms.
+
+#### <2.8>",neither
+60,Jessie currently weighs 27 kilograms. After she started to go jogging everyday she lost 101 kilograms. How much did she weigh before starting to jog?,David did 51 push-ups in gym class today. David did 49 more push-ups than Zachary. How many push-ups did Zachary and David do altogether?,128,53,#### 10,neither
+61,David did 51 push-ups in gym class today. David did 49 more push-ups than Zachary. How many push-ups did Zachary and David do altogether?,In a school there are 362 boys and 257 girls. 403 more girls joined the school. How many more girls than boys does the school have?,53,298,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a combination of a math problem and a question about school life, possibly asking for the number of girls in the school. However, without a clear question, I can't provide a solution. If you could clarify the question, I'd be happy to help solve it. 
+
+If the question is asking for the number of girls in the school, we would need more information to solve the problem. Please provide the necessary details so I can assist you further. 
+
+#### <answer>",invalid
+62,In a school there are 362 boys and 257 girls. 403 more girls joined the school. How many more girls than boys does the school have?,Josh had 22 marbles in his collection. He found 13 marbles ones while he lost 5 marbles. How many marbles does he have now?,298,30,#### 3,neither
+63,Josh had 22 marbles in his collection. He found 13 marbles ones while he lost 5 marbles. How many marbles does he have now?,"After eating a hearty meal they went to see the Buckingham palace. There were 39 paintings in the Buckingham palace. There, Rachel learned that 661 visitors came to the Buckingham palace that day. If there were 600 visitors the previous day How many more visitors visited the Buckingham palace on that day than on the previous day?",30,61,#### 100,neither
+64,"After eating a hearty meal they went to see the Buckingham palace. There were 39 paintings in the Buckingham palace. There, Rachel learned that 661 visitors came to the Buckingham palace that day. If there were 600 visitors the previous day How many more visitors visited the Buckingham palace on that day than on the previous day?",Nell collects baseball cards. She had 566 cards while Jeff had 234 cards. She gave some of her cards to Jeff and now has 535 cards left. How many cards does Jeff have now?,61,265,#### <180>,neither
+65,Nell collects baseball cards. She had 566 cards while Jeff had 234 cards. She gave some of her cards to Jeff and now has 535 cards left. How many cards does Jeff have now?,Randy uses 36 blocks to build a tower. If he had 59 blocks How many blocks are left?,265,23,"The problem seems to be incomplete or contains nonsensical text. However, if we interpret the problem as a simple arithmetic question, we can solve it as follows:
+
+Let's assume that the problem is asking how many blocks T had before using 36 blocks to build a tower.
+
+If T had 59 blocks and used 36 blocks to build a tower, we can find out how many blocks T had before by subtracting the number of blocks used from the total number of blocks T had.
+
+So, the calculation would be:
+
+59 blocks (total blocks T had) - 36 blocks (blocks used to build the tower) = 23 blocks
+
+Therefore, T had 23 blocks before using 36 blocks to build the tower.
+
+The answer is: 23 blocks.",text
+66,Randy uses 36 blocks to build a tower. If he had 59 blocks How many blocks are left?,At the stop 8 more people got on the train. Initially there were 11 people on the train. How many people are there on the train now?,23,19,#### 11,neither
+67,At the stop 8 more people got on the train. Initially there were 11 people on the train. How many people are there on the train now?,Rachel has 3 apple trees. She picked 8 apples from each of her trees. Now the trees have a total 9 apples still on them. How many apples were there on all trees initially?,19,33,#### 33,text
+68,Rachel has 3 apple trees. She picked 8 apples from each of her trees. Now the trees have a total 9 apples still on them. How many apples were there on all trees initially?,43 children were riding on the bus. At the bus stop some children got off the bus. Then there were 21 children left on the bus. How many children got off the bus at the bus stop?,33,22,"Let's denote the number of children who got off the bus as x. According to the problem, we have the equation:
+
+4M - x = 21
+
+We also know that the total number of children who were on the bus initially was 4M + x. Since the total number of children who were on the bus initially is equal to the number of children who got off the bus plus the number of children who remained on the bus, we have:
+
+4M + x = 21 + x
+
+Simplifying this equation, we get:
+
+4M = 21
+
+Now, we can solve for M by dividing both sides of the equation by 4:
+
+M = 21/4
+
+Since M represents the number of children who were on the bus initially, we can conclude that the number of children who got off the bus is:
+
+x = 4M - 21
+
+Substituting the value of M, we get:
+
+x = 4(21/4) - 21
+
+x = 21 - 21
+
+x = 0
+
+Therefore, no children got off the bus. The answer is 0.
+
+#### <0>",neither
+69,43 children were riding on the bus. At the bus stop some children got off the bus. Then there were 21 children left on the bus. How many children got off the bus at the bus stop?,5 red peaches and 11 green peaches are in the basket. How many more green peaches than red peaches are in the basket?,22,6,#### 10,neither
+70,5 red peaches and 11 green peaches are in the basket. How many more green peaches than red peaches are in the basket?,Nell collects cards. She had 246 baseball cards and 214 Ace cards. She gave some of her cards to Jeff and now has 404 baseball cards and 495 Ace cards left. How many more Ace cards than baseball cards does Nell have?,6,91,"The problem seems to be a mix of English and nonsensical text, making it difficult to understand. However, if we interpret the problem as asking how many more Ace cards there are than 2s cards, we can solve it as follows:
+
+1. Count the number of Ace cards: There are 4 Ace cards.
+2. Count the number of 2s cards: There are 3 2s cards.
+3. Subtract the number of 2s cards from the number of Ace cards: 4 - 3 = 1.
+
+Therefore, there is 1 more Ace card than 2s card. 
+
+#### <1>",neither
+71,Nell collects cards. She had 246 baseball cards and 214 Ace cards. She gave some of her cards to Jeff and now has 404 baseball cards and 495 Ace cards left. How many more Ace cards than baseball cards does Nell have?,Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack How much do you have to pay to buy each pack?,91,51,#### <answer>,invalid
+72,Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack How much do you have to pay to buy each pack?,They decided to hold the party in their backyard. They have 14 chairs for each set of table. If they have 9 sets of tables How many more chairs than tables do they have?,51,117,"The problem seems to be incomplete or unclear. However, based on the information provided, it appears that you are trying to calculate the total cost of buying a certain number of packs of DVDs after a discount. Here's how you can solve the problem:
+
+1. First, find the discounted price of each pack of DVDs. The original price is $78, and there is a discount of $25 on each pack. So, the discounted price is $78 - $25 = $53.
+
+2. Next, you need to know how many packs of DVDs you want to buy. Let's say you want to buy x packs.
+
+3. To find the total cost, multiply the discounted price of each pack by the number of packs you want to buy. So, the total cost is $53 * x.
+
+4. If you want to know how much you have to pay to buy each pack, you can divide the total cost by the number of packs. So, the cost per pack is ($53 * x) / x = $53.
+
+So, the answer is that you have to pay $53 for each pack of DVDs after the discount. However, if you want to know the total cost for a specific number of packs",neither
+73,They decided to hold the party in their backyard. They have 14 chairs for each set of table. If they have 9 sets of tables How many more chairs than tables do they have?,Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 57 g of colors to paint them. He needs 22 g of wax more. If the feathers require a total of 353 g of wax How many grams of wax does he already have?,117,331,#### 10,neither
+74,Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 57 g of colors to paint them. He needs 22 g of wax more. If the feathers require a total of 353 g of wax How many grams of wax does he already have?,Frank was reading through his favorite book. The book had 2 chapters each with 405 pages. It took frank 664 days to finish the book. How many chapters did he read per day?,331,332,#### 6,neither
+75,Frank was reading through his favorite book. The book had 2 chapters each with 405 pages. It took frank 664 days to finish the book. How many chapters did he read per day?,Jerry had 5 action figures and 2 books on a shelf in his room. Later he added 9 more books to the shelf. How many more books than action figures were on his shelf?,332,6,The answer is 11,neither
+76,Jerry had 5 action figures and 2 books on a shelf in his room. Later he added 9 more books to the shelf. How many more books than action figures were on his shelf?,Paul got a box of some crayons for his birthday. By the end of the school year he had either lost or given away 551 of them and only had 177 left. How many crayons did he get for his birthday?,6,728,#### 17,neither
+77,Paul got a box of some crayons for his birthday. By the end of the school year he had either lost or given away 551 of them and only had 177 left. How many crayons did he get for his birthday?,Because of the decision Sofia asked the students to suggest specific types of food. If 324 students suggested adding mashed potatoes 374 suggested adding bacon to the menu and 128 suggested adding tomatoes How many students participated in the suggestion of new food items?,728,826,#### 177,neither
+78,Because of the decision Sofia asked the students to suggest specific types of food. If 324 students suggested adding mashed potatoes 374 suggested adding bacon to the menu and 128 suggested adding tomatoes How many students participated in the suggestion of new food items?,A book has 31 chapters. Each chapter is 61 pages long. How many pages does the book have altogether?,826,1891,"The problem you've provided appears to be a mix of text and symbols that don't form a clear mathematical question. It seems to be a combination of letters, numbers, and symbols that don't correspond to a standard mathematical expression. If you have a specific mathematical problem you'd like to solve, please provide it in a clear and readable format, and I'll be happy to assist you.",invalid
+79,A book has 31 chapters. Each chapter is 61 pages long. How many pages does the book have altogether?,The school is planning a field trip. The school has 67 classrooms. There are 66 students in each classroom in the school. If there are 6 seats on each school bus How many buses are needed to take the trip?,1891,737,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems like a nonsensical string of characters. Could you please provide a clearer or more specific question?",invalid
+80,The school is planning a field trip. The school has 67 classrooms. There are 66 students in each classroom in the school. If there are 6 seats on each school bus How many buses are needed to take the trip?,Bobby ate 33 pieces of candy. Then he ate 4 more. He also ate 14 pieces of chocolate. How many pieces of candy and chocolate did Bobby eat altogether?,737,51,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems like a jumbled mix of words and numbers without a clear mathematical question. If you could provide a clearer or more specific question, I'd be happy to help solve it. For now, I can't provide an answer to the problem as it stands. If you meant to ask a specific math question, please rephrase it or provide more context.",invalid
+81,Bobby ate 33 pieces of candy. Then he ate 4 more. He also ate 14 pieces of chocolate. How many pieces of candy and chocolate did Bobby eat altogether?,Paco had 36 cookies. He gave 14 cookies to his friend and ate 10 cookies. How many cookies did Paco have left?,51,12,"Gq ha1 OF oYies. He 9aZe 14 cookiJs to his xrRend and ate 10 SRoiqs. Hof man6 ookie di So ha0e lftf
+
+1. Bobb ate 33 pieces of candy.
+2. Then he ate 4 more.
+3. So, Bobb ate 33 + 4 = 37 pieces of candy.
+4. He also ate 14 pieces of chocolate.
+5. To find out how many pieces of candy and chocolate Bobb ate altogether, we add the two amounts together.
+6. 37 pieces of candy + 14 pieces of chocolate = 51 pieces of candy and chocolate.
+
+Therefore, Bobb ate 51 pieces of candy and chocolate altogether.",image
+82,Paco had 36 cookies. He gave 14 cookies to his friend and ate 10 cookies. How many cookies did Paco have left?,Paige raised 15 goldfish in the pond but stray cats loved eating them. 5 were eaten. How many goldfish remained?,12,10,"The problem seems to be a mix of English and nonsensical characters. However, I can help you solve a math problem based on the numbers provided. If Padgf rtied 15 9o8ish n tm pond but uAr4y at loved eatin Ehem 5 wur eaen, it seems like you're trying to say that Padgf had 15 cookies, gave away 9, and ate 4. To find out how many cookies Padgf has left, you would subtract the number of cookies given away and eaten from the total number of cookies.
+
+Let's solve it step by step:
+
+1. Padgf had 15 cookies.
+2. Padgf gave away 9 cookies.
+3. Padgf ate 4 cookies.
+
+To find out how many cookies Padgf has left, we subtract the number of cookies given away and eaten from the total number of cookies:
+
+15 (total cookies) - 9 (given away) - 4 (eaten) = 2 cookies left.
+
+So, Padgf has 2 cookies left. 
+
+#### <2>",neither
+83,Paige raised 15 goldfish in the pond but stray cats loved eating them. 5 were eaten. How many goldfish remained?,During summer break 61619 kids from Lawrence county stayed home and the rest went to camp. The total number of kids in Lawrence county is 91676. About how many kids in Lawrence county went to camp?,10,30057,#### <answer>,invalid
+84,During summer break 61619 kids from Lawrence county stayed home and the rest went to camp. The total number of kids in Lawrence county is 91676. About how many kids in Lawrence county went to camp?,2 children were riding on the bus. At the bus stop some more children got on the bus. Then there were 10 children altogether on the bus. How many more children are on the bus now than there were before the bus stop?,30057,8,#### <answer>,invalid
+85,2 children were riding on the bus. At the bus stop some more children got on the bus. Then there were 10 children altogether on the bus. How many more children are on the bus now than there were before the bus stop?,3 birds were sitting on the fence. 2 more birds and 6 more storks came to join them. How many more storks than birds are sitting on the fence?,8,1,#### 10,neither
+86,3 birds were sitting on the fence. 2 more birds and 6 more storks came to join them. How many more storks than birds are sitting on the fence?,The Ferris wheel in paradise park has 6 seats. Each seat can hold 14 people. If there are 16 people on the wheel right now How many more people can join the wheel?,1,68,"The problem seems to be written in a mix of English and another language, and it's a bit unclear. However, I can try to interpret and solve it based on the information given.
+
+It appears that the problem is asking how many people can be seated on a Ferris wheel if there are 6 seats and each seat can hold 4 people, and there are 16 people in total.
+
+To solve this, we can follow these steps:
+
+1. Calculate the total number of seats available on the Ferris wheel: 6 seats.
+2. Calculate the total number of people that can be seated on the Ferris wheel: 6 seats * 4 people per seat = 24 people.
+3. Compare the total number of people that can be seated to the number of people available: 24 people can be seated, but there are only 16 people.
+
+Since the number of people that can be seated (24) is greater than the number of people available (16), all 16 people can be seated on the Ferris wheel, and there will be 8 empty seats.
+
+Therefore, the answer is that 16 people can be seated on the Ferris wheel, and there will be 8 empty seats.
+
+####",neither
+87,The Ferris wheel in paradise park has 6 seats. Each seat can hold 14 people. If there are 16 people on the wheel right now How many more people can join the wheel?,He then went to see the oranges being harvested. He found out that they harvest 74 sacks per day and discard 71 of them. How many sacks of oranges will they have after 51 days of harvest?,68,153,"The problem you've provided is not a clear or complete math problem. It seems to be a mix of words and numbers without a clear mathematical question. However, if we interpret the problem as asking how many people can join the wheel given that 14 people are already on it and the wheel can hold 16 people, we can solve it as follows:
+
+1. The wheel can hold 16 people.
+2. There are already 14 people on the wheel.
+3. To find out how many more people can join, we subtract the number of people already on the wheel from the wheel's capacity.
+
+16 (wheel's capacity) - 14 (people already on the wheel) = 2
+
+Therefore, 2 more people can join the wheel.
+
+#### 2",neither
+88,He then went to see the oranges being harvested. He found out that they harvest 74 sacks per day and discard 71 of them. How many sacks of oranges will they have after 51 days of harvest?,The Razorback shop makes $ 115 dollars off each jersey and $ 25 off each t-shirt. During the Arkansas and Texas tech game they sold 113 t-shirts and 78 jerseys. How much more does a jersey cost than a t-shirt?,153,90,#### <answer>,invalid
+89,The Razorback shop makes $ 115 dollars off each jersey and $ 25 off each t-shirt. During the Arkansas and Texas tech game they sold 113 t-shirts and 78 jerseys. How much more does a jersey cost than a t-shirt?,Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 49 g of colors to paint them. If the feathers require 288 g of wax and right now he just needs 260 g How many grams of wax does he already have?,90,28,#### 10,neither
+90,Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 49 g of colors to paint them. If the feathers require 288 g of wax and right now he just needs 260 g How many grams of wax does he already have?,Paul had 21 books. After selling some in a garage sale he bought 42 new ones. If he has 15 books now How many more books did he sell than he bought?,28,6,#### 9,neither
+91,Paul had 21 books. After selling some in a garage sale he bought 42 new ones. If he has 15 books now How many more books did he sell than he bought?,"Julia played tag with 9 kids on monday, 7 kids on tuesday and 96 kids on wednesday. How many more kids did she play with on monday than on tuesday?",6,2,#### No,invalid
+92,"Julia played tag with 9 kids on monday, 7 kids on tuesday and 96 kids on wednesday. How many more kids did she play with on monday than on tuesday?",There are 65 baskets of peaches. Each basket has 7 red peaches and 3 green peaches. How many peaches are in each basket?,2,10,#### 7,neither
+93,There are 65 baskets of peaches. Each basket has 7 red peaches and 3 green peaches. How many peaches are in each basket?,You had 14 bags with equal number of cookies. If you had 28 cookies and 86 candies in total How many bags of cookies do you have?,10,2,#### 40,neither
+94,You had 14 bags with equal number of cookies. If you had 28 cookies and 86 candies in total How many bags of cookies do you have?,Carol was sending out birthday invitations to her friends. Each package of invitations she bought had 14 invitations in it and she bought 6 packs. Then she bought 11 extra invitations. How many friends can she invite?,2,95,"To find out how many bags of cookies Carol has, we need to first determine the total number of cookies she has. According to the problem, Carol has 96 candies and 86 cookies in total. So, the total number of cookies is 96 + 86 = 182 cookies.
+
+Next, we need to find out how many cookies are in each bag. The problem states that Carol has 14 bags with an equal number of cookies. So, we can divide the total number of cookies by the number of bags to find out how many cookies are in each bag.
+
+182 cookies / 14 bags = 13 cookies per bag.
+
+Finally, we need to find out how many bags of cookies Carol has. Since each bag contains 13 cookies, we can divide the total number of cookies by the number of cookies per bag to find out how many bags Carol has.
+
+182 cookies / 13 cookies per bag = 14 bags.
+
+Therefore, Carol has 14 bags of cookies. The answer is: 14.",neither
+95,Carol was sending out birthday invitations to her friends. Each package of invitations she bought had 14 invitations in it and she bought 6 packs. Then she bought 11 extra invitations. How many friends can she invite?,Baker made 155 cakes. If his friend bought 140 cakes from him How many cakes would baker still have?,95,15,55,neither
+96,Baker made 155 cakes. If his friend bought 140 cakes from him How many cakes would baker still have?,A grocery store had 22 bottles of regular soda and 61 bottles of diet soda. How many more bottles of diet soda than regular soda did they have?,15,39,"The problem is written in reverse. Let's translate it to English and solve it step by step.
+
+Problem: Baker made 155 cakes. If his friend bought 140 cakes from him, how many cakes would the baker still have?
+
+Step 1: Subtract the number of cakes bought by the friend from the total number of cakes made by the baker.
+155 - 140 = 15
+
+Step 2: The baker would still have 15 cakes.
+
+Answer: The baker would still have 15 cakes.",image
+97,A grocery store had 22 bottles of regular soda and 61 bottles of diet soda. How many more bottles of diet soda than regular soda did they have?,"A grocery store had 36 apples, 80 bottles of regular soda and 54 bottles of diet soda. How many more bottles than apple did they have?",39,98,#### 10,neither
+98,"A grocery store had 36 apples, 80 bottles of regular soda and 54 bottles of diet soda. How many more bottles than apple did they have?",Ryan learns english and chinese for 7 days. Every day he spends 4 hours on learning english and 5 hours on learning chinese. How many hours does he spend on learning english and chinese in all?,98,63,"The problem is incomplete and contains nonsensical words. However, if we assume that the problem is asking how many hours RPU spends learning English and Chinese, we can solve it as follows:
+
+Let's say RPU spends x hours learning English and y hours learning Chinese.
+
+We know that RPU learns for a total of 7 hours (ngls and cninde r 7 daEs).
+
+So, we have the equation: x + y = 7
+
+We also know that RPU spends 5 more hours learning English than Chinese (Evr5 dqy h sens j hoor s vearnng enls aWd 5 hoRrs on earing chies).
+
+So, we have the equation: x = y + 5
+
+Now we can solve the system of equations:
+
+x + y = 7
+x = y + 5
+
+Substitute the second equation into the first equation:
+
+(y + 5) + y = 7
+
+Combine like terms:
+
+2y + 5 = 7
+
+Subtract 5 from both sides:
+
+2y = 2
+
+Divide by 2:
+
+y = 1
+
+Now that we know RPU spends 1 hour learning Chinese, we can find out how many hours",neither
+99,Ryan learns english and chinese for 7 days. Every day he spends 4 hours on learning english and 5 hours on learning chinese. How many hours does he spend on learning english and chinese in all?,Debby drinks 6 bottles a day. If she bought a total of 12 water bottles How many days would they last her?,63,2,#### <answer>,invalid
+100,Debby drinks 6 bottles a day. If she bought a total of 12 water bottles How many days would they last her?,David did 44 push-ups in gym class today. David did 9 more push-ups than Zachary. How many push-ups did Zachary do?,2,35,#### 9,neither
+101,David did 44 push-ups in gym class today. David did 9 more push-ups than Zachary. How many push-ups did Zachary do?,Mom buys 51 white t - shirts. If white t - shirts can be purchased in packages of 3 How many packages will she have?,35,17,"The problem seems to be a mix of words and numbers that don't form a coherent question. However, if we interpret it as a question about purchasing t-shirts, we can try to solve it step by step.
+
+Let's assume that the problem is asking how many t-shirts can be purchased with a certain amount of money. We need more information to solve this problem, such as the price of each t-shirt and the total amount of money available for purchase.
+
+Without this information, we cannot provide an answer. If you can provide the missing details, I can help you solve the problem. Otherwise, the answer cannot be determined from the given information.
+
+#### <answer>",invalid
+102,Mom buys 51 white t - shirts. If white t - shirts can be purchased in packages of 3 How many packages will she have?,During summer break 907611 kids from Lawrence county stay home and the other 455682 kids go to camp. About how many kids are in Lawrence county?,17,1363293,#### <answer>,invalid
+103,During summer break 907611 kids from Lawrence county stay home and the other 455682 kids go to camp. About how many kids are in Lawrence county?,Danny collects bottle caps and wrappers. He found 66 wrappers and 39 bottle caps at the park. Now he has 16 bottle caps and 68 wrappers in his collection. How many wrappers did danny have at first?,1363293,2,#### 14,neither
+104,Danny collects bottle caps and wrappers. He found 66 wrappers and 39 bottle caps at the park. Now he has 16 bottle caps and 68 wrappers in his collection. How many wrappers did danny have at first?,After Jessie started to go jogging everyday she lost 35 kilograms. She weighed 69 kilograms before beginning jogging. How much does she weigh now?,2,34,"To find out how much she weighs now, we need to subtract the total weight she lost from her initial weight.
+
+Initial weight: 69 kg
+Weight lost: 35 kg
+
+Weight now = Initial weight - Weight lost
+Weight now = 69 kg - 35 kg
+Weight now = 34 kg
+
+So, she weighs 34 kg now.
+
+#### <34>",text
+105,After Jessie started to go jogging everyday she lost 35 kilograms. She weighed 69 kilograms before beginning jogging. How much does she weigh now?,Josh had 20 marbles in his collection. He gave 2 marbles to Jack. How many marbles does Josh have now?,34,18,#### <answer>,invalid
+106,Josh had 20 marbles in his collection. He gave 2 marbles to Jack. How many marbles does Josh have now?,Zachary did 15 push-ups in gym class today. David did 39 more push-ups than Zachary. John did 9 push-ups less than David. How many more push-ups did Zachary do than John?,18,30,"The text in the image appears to be a mix of English and another language, possibly a code or cipher. However, I can help you with the math problem if you provide the correct text or clarify the question. Please provide the correct text or clarify the question so I can assist you better.",invalid
+107,Zachary did 15 push-ups in gym class today. David did 39 more push-ups than Zachary. John did 9 push-ups less than David. How many more push-ups did Zachary do than John?,Lewis earns $ 368 every week during the 1359 weeks of harvest. If he has to pay $ 388 rent every week How much money does he pay as rent during the harvest season?,30,527292,"The problem seems to be a mix of numbers and letters without a clear mathematical question. However, if we interpret the numbers as a sequence of digits, we can try to form a coherent question. Let's assume the numbers represent a sequence of payments or rents over a period of time. The sequence is 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38,",neither
+108,Lewis earns $ 368 every week during the 1359 weeks of harvest. If he has to pay $ 388 rent every week How much money does he pay as rent during the harvest season?,Winter is almost here and most animals are migrating to warmer countries. There are 18 bird families living near the mountain. If 38 bird families flew away to africa and 80 bird families flew away to asia How many bird families flew away for the winter?,527292,118,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a mix of English and possibly some other characters or symbols that don't form a coherent question. If you could provide a clearer or more specific question, I would be happy to help you solve it. However, based on the information given, I'm unable to provide a solution. If you have a specific math problem you'd like help with, please provide it in a clear and concise format.",invalid
+109,Winter is almost here and most animals are migrating to warmer countries. There are 18 bird families living near the mountain. If 38 bird families flew away to africa and 80 bird families flew away to asia How many bird families flew away for the winter?,Mary is baking a cake. The recipe calls for 11 cups of sugar 6 cups of flour and 9 cups of salt. She already put in 12 cups of flour. How many more cups of sugar than cups of salt does she need to add now?,118,2,"The text you've provided appears to be a mix of letters and numbers without forming a coherent question or mathematical problem. It seems to be a jumbled sequence of characters that doesn't represent a clear question or statement. If you have a specific math problem you'd like to solve, please provide it in a clear and readable format, and I'll be happy to assist you.",invalid
+110,Mary is baking a cake. The recipe calls for 11 cups of sugar 6 cups of flour and 9 cups of salt. She already put in 12 cups of flour. How many more cups of sugar than cups of salt does she need to add now?,Jessie weighed 114 kilograms. After she started to go jogging everyday she lost 50 kilograms in the first week and 60 kilograms in the second week. How much does she weigh now?,2,4,"To find out how much JassiA weighs now, we need to add the weight she gained from the cake to the weight she lost from jogging.
+
+1. First, let's find out how much weight JassiA gained from the cake. The recipe calls for 11 cups of sugar, and she already put in 12 cups of flour. However, the problem doesn't specify how much sugar is in 11 cups, so we can't calculate the exact weight of the cake. But we know she gained 14 kilograms from the cake.
+
+2. Next, let's find out how much weight JassiA lost from jogging. She lost 50 kilograms from jogging.
+
+3. To find out how much JassiA weighs now, we need to add the weight she gained from the cake to the weight she lost from jogging.
+
+So, JassiA weighs 14 kilograms (from the cake) + 50 kilograms (from jogging) = 64 kilograms now.
+
+Therefore, the answer is 64 kilograms.",neither
+111,Jessie weighed 114 kilograms. After she started to go jogging everyday she lost 50 kilograms in the first week and 60 kilograms in the second week. How much does she weigh now?,Jesse's room is 7 feet long. If she needs a carpet of size 14 square feet What is the width of her room?,4,2,#### <answer>,invalid
+112,Jesse's room is 7 feet long. If she needs a carpet of size 14 square feet What is the width of her room?,A farmer had 175 tomatoes and 77 potatoes in his garden. If he picked 172 potatoes How many tomatoes and potatoes does he have left?,2,80,#### <answer>,invalid
+113,A farmer had 175 tomatoes and 77 potatoes in his garden. If he picked 172 potatoes How many tomatoes and potatoes does he have left?,The Ferris wheel in paradise park has 3 small seats and 7 large seats. Each small seat can hold 16 people and large seat can hold 12 people. How many people can ride the Ferris wheel on large seats?,80,84,"The problem seems to be written in a mix of English and a non-English language, and it's not clear what the question is asking. However, if we interpret the problem as asking how many people can be seated in total, we can try to solve it based on the information given.
+
+First, we need to clarify the number of people that can be seated in small seats and large seats. The problem states that each small seat can hold 16 people and each large seat can hold 7 people. However, the problem does not specify how many small seats and how many large seats there are. Without this information, we cannot determine the total number of people that can be seated.
+
+If we assume that the problem is asking for the maximum number of people that can be seated, we can use the following steps to solve it:
+
+1. Determine the maximum number of people that can be seated in small seats. This is simply the number of small seats multiplied by the number of people that can be seated in each small seat.
+
+2. Determine the maximum number of people that can be seated in large seats. This is simply the number of large seats multiplied by the number of people that can be seated in each large seat.
+
+3. Add the maximum number of people that can",neither
+114,The Ferris wheel in paradise park has 3 small seats and 7 large seats. Each small seat can hold 16 people and large seat can hold 12 people. How many people can ride the Ferris wheel on large seats?,Bobby had 22 pieces of candy. He ate some pieces of candy. Then he ate 5 more. If he still has 8 pieces of candy left How many pieces of candy had he eaten at the start?,84,9,#### 18,neither
+115,Bobby had 22 pieces of candy. He ate some pieces of candy. Then he ate 5 more. If he still has 8 pieces of candy left How many pieces of candy had he eaten at the start?,There are 2 baskets of peaches. Each basket has 4 red peaches and some more green peaches. If there are a total of 12 peaches in all baskets How many green peaches are in each basket?,9,2,#### 6,neither
+116,There are 2 baskets of peaches. Each basket has 4 red peaches and some more green peaches. If there are a total of 12 peaches in all baskets How many green peaches are in each basket?,Baker made some cakes. He sold 145 of them. If he still has 72 cakes left How many cakes did baker make?,2,217,#### 10,neither
+117,Baker made some cakes. He sold 145 of them. If he still has 72 cakes left How many cakes did baker make?,David did 40 more push-ups but 17 less crunches than Zachary in gym class today. If Zachary did 34 push-ups and 62 crunches How many crunches did David do?,217,45,#### <answer>,invalid
+118,David did 40 more push-ups but 17 less crunches than Zachary in gym class today. If Zachary did 34 push-ups and 62 crunches How many crunches did David do?,Olivia spent 78 dollars at a supermarket. If she has 33 dollars left with her How much money did she have initially?,45,111,"The problem you've provided is not a clear or complete math problem. It seems to be a mix of words and numbers without a clear mathematical operation to be performed. If you could provide a clearer or more complete problem, I would be happy to help you solve it step by step. For example, if the problem was ""Olivia had $100. She spent $23 at the store. How much money does she have left?"", the solution would be:
+
+1. Start with the initial amount of money Olivia had: $100
+2. Subtract the amount she spent: $100 - $23
+3. The result is the amount of money she has left: $77
+
+So the answer would be: ""Olivia has $77 left.""",neither
+119,Olivia spent 78 dollars at a supermarket. If she has 33 dollars left with her How much money did she have initially?,Bobby ate 17 pieces of candy. Then he ate 15 more. If he initially had 36 pieces of candy How many pieces of candy does he still have left?,111,4,#### 36,neither
+120,Bobby ate 17 pieces of candy. Then he ate 15 more. If he initially had 36 pieces of candy How many pieces of candy does he still have left?,An industrial machine made 13 shirts yesterday and 3 shirts today. It can make 8 shirts a minute. How many minutes did the machine work in all?,4,2,"The problem seems to be a mix of English and mathematical expressions, which makes it a bit confusing. However, I will try to interpret and solve it based on the given information.
+
+It appears that the problem is asking for the number of shirts made by a machine (m3cYe mAe) in a certain period. The machine made 13 shirts in a week and 3 shirts today. It also mentions that the machine made 3 shirts in a month. We need to find out how many shirts the machine made in total.
+
+Let's break it down:
+
+1. The machine made 13 shirts in a week.
+2. The machine made 3 shirts today.
+3. The machine made 3 shirts in a month.
+
+To find the total number of shirts made, we need to add these numbers together:
+
+13 (shirts in a week) + 3 (shirts today) + 3 (shirts in a month) = 19 shirts
+
+Therefore, the machine made a total of 19 shirts.
+
+#### 19",neither
+121,An industrial machine made 13 shirts yesterday and 3 shirts today. It can make 8 shirts a minute. How many minutes did the machine work in all?,They decided to hold the party in their backyard. They have 12 sets of tables and each set has 14 chairs. There are also 6 chairs extra. How many chairs do they have for the guests?,2,174,#### <answer>,invalid
+122,They decided to hold the party in their backyard. They have 12 sets of tables and each set has 14 chairs. There are also 6 chairs extra. How many chairs do they have for the guests?,Adam has 10 apples. Jackie has 2 apples. How many more apples does Adam have than Jackie?,174,8,#### 2,neither
+123,Adam has 10 apples. Jackie has 2 apples. How many more apples does Adam have than Jackie?,Jake has 7 fewer peaches than Steven and 9 more peaches than Jill. Steven has 16 peaches. How many peaches does Jake have?,8,9,"Jae has 9 apples. Jill has 16 apples. To find out how many more apples Jae has than Jill, subtract the number of apples Jill has from the number of apples Jae has: 9 - 16 = -7. However, since we are looking for how many more apples Jae has, and the result is negative, this means Jae does not have more apples than Jill. Therefore, the answer is that Jae does not have more apples than Jill.",neither
+124,Jake has 7 fewer peaches than Steven and 9 more peaches than Jill. Steven has 16 peaches. How many peaches does Jake have?,Dan has $ 5. He bought a candy bar for $ 2 and a chocolate for $ 3. How much money did he spend to buy chocolate than he did to buy candy bar?,9,1,"The problem you've provided is not a clear or complete math problem. It seems to be a mix of words and numbers without a clear mathematical question. If you could provide a clearer or more complete problem, I would be happy to help you solve it step by step. For now, I can only provide a response to a clear mathematical question. If you have a specific math problem you'd like help with, please let me know and I'll do my best to assist you.",invalid
+125,Dan has $ 5. He bought a candy bar for $ 2 and a chocolate for $ 3. How much money did he spend to buy chocolate than he did to buy candy bar?,There are 8 different movies and 21 different books in the ' crazy silly school ' series. If you read 7 of the books and watched 4 of the movies How many more movies do you still have to watch?,1,4,"The problem seems to be a mix of words and numbers, and it's not clear what the question is asking. However, if we interpret the question as asking how many more books Lou still has to watch, we can try to solve it.
+
+Let's assume that the 8 movies mentioned are the ones Lou has already watched, and the 21 books are the ones he still has to watch. If he has 7 more books to watch, then the total number of books he still has to watch is 21 - 7 = 14.
+
+Therefore, the answer is 14. However, this is just an interpretation of the problem, and the actual answer may depend on the specific meaning of the words used in the problem. If you have any further information or clarification, please let me know.",neither
+126,There are 8 different movies and 21 different books in the ' crazy silly school ' series. If you read 7 of the books and watched 4 of the movies How many more movies do you still have to watch?,White t - shirts can be purchased in packages of 13. If mom buys 39 white t - shirts How many packages will she have?,4,3,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems like a nonsensical string of characters. If you could provide a clearer or more specific question, I'd be happy to help you solve it. However, based on the given text, it's not possible to provide a meaningful answer. If you meant to ask a question about a different topic or if there's a specific part of the text you're referring to, please clarify.",invalid
+127,White t - shirts can be purchased in packages of 13. If mom buys 39 white t - shirts How many packages will she have?,Julia played tag with 19 kids on monday. She played tag with 18 kids on tuesday. She spent a total of 38 hours to play tag on both days. How many more kids did she play with on monday than on tuesday?,3,1,"The problem seems to be a mix of English and possibly a code or shorthand, making it difficult to interpret. However, I can try to break it down:
+
+1. ""Jja pld tag with 16 k on mnCay."" - This could be interpreted as ""Jja planned to tag 16 kids on Monday.""
+2. ""She klaye ta wieh Pe kids oX tuesd9y."" - This could be interpreted as ""She tagged 10 kids on Tuesday.""
+3. ""Qhe sent a total f fourb to oay tAg on bth Ta7s yww FaOW moy kids sd she lty ith on mndj than oC tuedb."" - This is a bit unclear, but it seems to be saying that she sent a total of four tags to the tagger on both Thursday and Friday, and that she tagged more kids on Monday than on Tuesday.
+
+Let's assume the problem is asking how many kids she tagged in total over the three days and how many more she tagged on Monday than on Tuesday.
+
+- On Monday, she tagged 16 kids.
+- On Tuesday, she tagged 10 kids.
+
+To find out how many kids she tagged in total over the",neither
+128,Julia played tag with 19 kids on monday. She played tag with 18 kids on tuesday. She spent a total of 38 hours to play tag on both days. How many more kids did she play with on monday than on tuesday?,3 birds and 4 storks were sitting on the fence. 6 more storks came to join them. How many birds and storks are sitting on the fence?,1,13,#### 7,neither
+129,3 birds and 4 storks were sitting on the fence. 6 more storks came to join them. How many birds and storks are sitting on the fence?,He then went to see the oranges being harvested. He found out that they harvest 16 sacks per day and that each sack containes 57 oranges. How many days will it take to harvest 80 sacks of oranges?,13,5,#### <answer>,invalid
+130,He then went to see the oranges being harvested. He found out that they harvest 16 sacks per day and that each sack containes 57 oranges. How many days will it take to harvest 80 sacks of oranges?,Adam has 3 more apples than jackie. Adam has 9 apples. How many apples does Jackie have?,5,6,#### 12,neither
+131,Adam has 3 more apples than jackie. Adam has 9 apples. How many apples does Jackie have?,An industrial machine can make 3 shirts per minute. It made 6 shirts in all. How many minutes was the machine working?,6,2,"To find out how many minutes the machine was working, we need to divide the total number of shirts made (M) by the number of shirts made per minute (3).
+
+The formula for this is:
+
+Number of minutes = Total number of shirts / Number of shirts per minute
+
+Substituting the given values:
+
+Number of minutes = M / 3
+
+Therefore, the machine was working for M/3 minutes.
+
+#### <M/3>",neither
+132,An industrial machine can make 3 shirts per minute. It made 6 shirts in all. How many minutes was the machine working?,Allan brought 5 balloons. If Allan and Jake brought total of 6 balloons to the park How many balloons did Jake bring to the park?,2,1,#### <answer>,invalid
+133,Allan brought 5 balloons. If Allan and Jake brought total of 6 balloons to the park How many balloons did Jake bring to the park?,After resting they decided to go for a swim. The depth of the water is 9 times Dean's height. If Ron is 15 feet tall and Dean is 6 feet shorter than Ron How deep was the water?,1,81,#### <answer>,invalid
+134,After resting they decided to go for a swim. The depth of the water is 9 times Dean's height. If Ron is 15 feet tall and Dean is 6 feet shorter than Ron How deep was the water?,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 39 inches. The grasshopper jumped 19 inches farther than the frog and the mouse jumped 12 inches lesser than the frog. How far did the mouse jump?",81,8,"The problem seems to be a mix of letters and numbers without a clear mathematical question. However, if we interpret the numbers as a sequence, it could be a pattern or a code. Without a clear question or a specific mathematical operation to perform, I can't provide a solution. If you have a specific question or operation in mind, please clarify, and I'll do my best to assist you.",invalid
+135,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 39 inches. The grasshopper jumped 19 inches farther than the frog and the mouse jumped 12 inches lesser than the frog. How far did the mouse jump?",Tiffany was collecting cans for recycling. On monday she had 3 bags of cans. The next day she found 7 more bags of cans and 44 bags of bottles. How many bags of cans did she have altogether?,8,10,#### 17,neither
+136,Tiffany was collecting cans for recycling. On monday she had 3 bags of cans. The next day she found 7 more bags of cans and 44 bags of bottles. How many bags of cans did she have altogether?,Jerry had 2 action figures and 10 books on a shelf in his room. Later he added 4 more action figures to the shelf. How many more books than action figures were on his shelf?,10,4,#### <10>,image
+137,Jerry had 2 action figures and 10 books on a shelf in his room. Later he added 4 more action figures to the shelf. How many more books than action figures were on his shelf?,Winter is almost here and most animals are migrating to warmer countries. 86 bird families flew away for the winter from near a mountain. If there were 45 bird families living near the mountain initially How many more bird families flew away for the winter than those that stayed behind?,4,127,#### <answer>,invalid
+138,Winter is almost here and most animals are migrating to warmer countries. 86 bird families flew away for the winter from near a mountain. If there were 45 bird families living near the mountain initially How many more bird families flew away for the winter than those that stayed behind?,There are 11 baskets of peaches. Each basket has 10 red peaches and 18 green peaches. How many peaches are in the baskets altogether?,127,308,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the specific math problem is. It seems to be a jumbled sequence of characters and numbers without a clear mathematical expression or question. If you could provide a clearer or more specific math problem, I would be happy to help you solve it step by step. For now, I can only provide a response to a clear mathematical question or expression. If you have a specific math problem in mind, please provide it in a clear and concise format.",invalid
+139,There are 11 baskets of peaches. Each basket has 10 red peaches and 18 green peaches. How many peaches are in the baskets altogether?,Adam has 9 apples. Jackie has 10 apples. How many more apples does Jackie have than Adam?,308,1,#### 0,neither
+140,Adam has 9 apples. Jackie has 10 apples. How many more apples does Jackie have than Adam?,The school is planning a field trip. The school has 72 classrooms. There are 3 seats on each school bus. If there are a total of 111 students in the school How many buses are needed to take the trip?,1,37,#### <answer>,invalid
+141,The school is planning a field trip. The school has 72 classrooms. There are 3 seats on each school bus. If there are a total of 111 students in the school How many buses are needed to take the trip?,Kelly has 80 nintendo games. She found 31 more nintendo games. How many does she need to give away so that she will have 6 games left?,37,105,#### 20,neither
+142,Kelly has 80 nintendo games. She found 31 more nintendo games. How many does she need to give away so that she will have 6 games left?,Paco had 40 cookies. He ate 2 of them. Then he bought 37 more cookies How many cookies did Paco have left?,105,75,#### 4,neither
+143,Paco had 40 cookies. He ate 2 of them. Then he bought 37 more cookies How many cookies did Paco have left?,Mary is baking a cake. The recipe calls for 6 cups of sugar and 9 cups of flour. She already put in 2 cups of flour. How many more cups of flour than cups of sugar does she need to add now?,75,1,"The problem seems to be a mix of English and nonsensical words, making it difficult to understand. However, I will try to interpret and solve the problem based on the given information.
+
+It appears that Mary is following a recipe that requires 6 cups of Xunr (which could be a typo for ""Xunr"" or ""Xunr"" could be a specific ingredient) and 9 cups of 1qour (which could be a typo for ""1qour"" or ""1qour"" could be a specific ingredient). She is using 2 cups of flour and needs to add more sugar.
+
+Let's assume that the recipe requires 6 cups of Xunr and 9 cups of flour. If she has already used 2 cups of flour, she needs to add more flour. The problem does not specify how much more flour she needs to add, so we cannot determine the exact amount of flour she needs to add.
+
+However, if we assume that the recipe requires a total of 15 cups of Xunr and flour combined (6 cups of Xunr + 9 cups of flour), and she has already used 2 cups of flour, then she needs to add 13 more cups of flour to meet",neither
+144,Mary is baking a cake. The recipe calls for 6 cups of sugar and 9 cups of flour. She already put in 2 cups of flour. How many more cups of flour than cups of sugar does she need to add now?,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,1,66,#### <answer>,invalid
+145,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,There are 4 different books and 17 different movies in the ' crazy silly school ' series. If you read 19 of the books and watched 7 of the movies How many more movies do you still have to watch?,66,10,#### 10,text
+146,There are 4 different books and 17 different movies in the ' crazy silly school ' series. If you read 19 of the books and watched 7 of the movies How many more movies do you still have to watch?,Debby bought some water bottles when they were on sale. She drank 109 bottles a day. If the bottles lasted for 74 days How many bottles had she bought?,10,8066,#### 10,image
+147,Debby bought some water bottles when they were on sale. She drank 109 bottles a day. If the bottles lasted for 74 days How many bottles had she bought?,Katie had 62 new games and 80 old games. Her friends had 73 new games and 41 old games. How many old games do they have 3,8066,121,#### <answer>,invalid
+148,Katie had 62 new games and 80 old games. Her friends had 73 new games and 41 old games. How many old games do they have 3,We ordered 9 pizzas. Each pizza has 10 slices. If there are 2 of us How many slices of pizza does each of us get if distributed equally?,121,45,#### <answer>,invalid
+149,We ordered 9 pizzas. Each pizza has 10 slices. If there are 2 of us How many slices of pizza does each of us get if distributed equally?,6 storks and 2 birds were sitting on the fence. 3 more birds came to join them. How many more storks than birds are sitting on the fence?,45,1,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret it as a simple arithmetic problem, it could be asking how many more birds are sitting on the fence compared to the number of birds that are not sitting on the fence.
+
+Let's assume the problem is asking for the difference between the number of birds sitting on the fence and the number of birds that are not sitting on the fence.
+
+If we interpret the problem as follows:
+- There are 6 birds sitting on the fence.
+- There are 3 birds that are not sitting on the fence.
+
+The difference between the number of birds sitting on the fence and the number of birds that are not sitting on the fence would be:
+6 (sitting) - 3 (not sitting) = 3
+
+Therefore, the answer is 3.
+
+#### <3>",neither
+150,6 storks and 2 birds were sitting on the fence. 3 more birds came to join them. How many more storks than birds are sitting on the fence?,During summer break 819058 kids from Lawrence county go to camp and the other 668278 kids stay home. How many more kids spent their summer break at the camp compared to those who stayed home?,1,150780,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret the problem as a simple arithmetic question, it could be:
+
+""6 storks and 2 birds were sitting on the fence. 3 more birds came to join them. How many more storks than birds are sitting on the fence?""
+
+Let's solve it step by step:
+
+1. Initially, there are 6 storks and 2 birds on the fence.
+2. 3 more birds join, making the total number of birds 2 + 3 = 5.
+3. The number of storks remains 6.
+4. To find out how many more storks than birds are sitting on the fence, we subtract the number of birds from the number of storks: 6 - 5 = 1.
+
+So, there is 1 more stork than birds sitting on the fence.
+
+#### <1>",image
+151,During summer break 819058 kids from Lawrence county go to camp and the other 668278 kids stay home. How many more kids spent their summer break at the camp compared to those who stayed home?,At the arcade Dave had won 7 tickets. He used some tickets to buy toys. If he still has 2 tickets left How many tickets did Dave use to buy toys?,150780,5,#### <answer>,invalid
+152,At the arcade Dave had won 7 tickets. He used some tickets to buy toys. If he still has 2 tickets left How many tickets did Dave use to buy toys?,Jerry had some action figures on a shelf in his room. Later he added 7 more action figures to the shelf. If there are a total of 10 action figures on his shelf now How many action figures did he have initially on the shelf?,5,3,#### 6,neither
+153,Jerry had some action figures on a shelf in his room. Later he added 7 more action figures to the shelf. If there are a total of 10 action figures on his shelf now How many action figures did he have initially on the shelf?,Paul had 71 books. After selling some in a garage sale he bought 38 new ones. If he has 116 books now How many more books did he buy than he sold?,3,45,#### 9,neither
+154,Paul had 71 books. After selling some in a garage sale he bought 38 new ones. If he has 116 books now How many more books did he buy than he sold?,Paul got a box of some crayons for his birthday. During the school year he gave 52 crayons to his friends while he lost 535 crayons. If he only had 492 crayons left How many crayons had been lost or given away?,45,587,#### <answer>,invalid
+155,Paul got a box of some crayons for his birthday. During the school year he gave 52 crayons to his friends while he lost 535 crayons. If he only had 492 crayons left How many crayons had been lost or given away?,Adam could fit 11 action figures on each shelf in his room. His room has 4 shelves and 40 cabinets. How many total action figures could his shelves hold?,587,44,#### 4,neither
+156,Adam could fit 11 action figures on each shelf in his room. His room has 4 shelves and 40 cabinets. How many total action figures could his shelves hold?,The ring toss game at the carnival made 144 dollars per day. They were at the carnival for 22 days. How much money did they make?,44,3168,#### 1.0,neither
+157,The ring toss game at the carnival made 144 dollars per day. They were at the carnival for 22 days. How much money did they make?,Brenda's mother made cookies for 5. She prepared 22 cookies but had to throw away 17 cookies. If each of them had the same number of cookies How many did each of them have?,3168,1,"The problem seems to be a mix of English and nonsensical characters. However, I can try to interpret it based on the given information. It appears to be asking how much money they made at the carnival over 22 days, with a rate of 144 dollars per day.
+
+To solve this, we can use the formula:
+
+Total money made = Rate per day * Number of days
+
+Plugging in the numbers:
+
+Total money made = 144 dollars/day * 22 days
+
+Total money made = 3168 dollars
+
+Therefore, they made 3168 dollars at the carnival over 22 days.
+
+#### 3168",image
+158,Brenda's mother made cookies for 5. She prepared 22 cookies but had to throw away 17 cookies. If each of them had the same number of cookies How many did each of them have?,White t - shirts can be purchased in packages of 53. If mom buys 57 packages of white t - shirts and 34 trousers How many white t - shirts will she have?,1,3021,#### <answer>,invalid
+159,White t - shirts can be purchased in packages of 53. If mom buys 57 packages of white t - shirts and 34 trousers How many white t - shirts will she have?,He then went to see the oranges being harvested. He found out that they harvest 5 sacks of ripe oranges and 74 sacks of unripe oranges per day. How many more sacks of unripe oranges than ripe oranges are harvested per day?,3021,69,#### 14,neither
+160,He then went to see the oranges being harvested. He found out that they harvest 5 sacks of ripe oranges and 74 sacks of unripe oranges per day. How many more sacks of unripe oranges than ripe oranges are harvested per day?,"Julia played tag with 14 kids on monday, 2 kids on tuesday and 8 kids on wednesday. How many more kids did she play with on monday than on wednesday?",69,6,#### 6,text
+161,"Julia played tag with 14 kids on monday, 2 kids on tuesday and 8 kids on wednesday. How many more kids did she play with on monday than on wednesday?",Paco had 13 cookies. He ate 2 of them. Then he bought 36 more cookies How many more cookies did he buy than those he ate?,6,34,#### 34,text
+162,Paco had 13 cookies. He ate 2 of them. Then he bought 36 more cookies How many more cookies did he buy than those he ate?,White t - shirts can be purchased in packages. If mom buys 28 packages which contain 56 white t - shirts in total How many white t - shirts does each package have?,34,2,#### <answer>,invalid
+163,White t - shirts can be purchased in packages. If mom buys 28 packages which contain 56 white t - shirts in total How many white t - shirts does each package have?,The school has 304 grades and each grade has 75 students How many students were there in total?,2,22800,#### <answer>,invalid
+164,The school has 304 grades and each grade has 75 students How many students were there in total?,He then went to see the oranges being harvested. He found out that they harvest 25 sacks of unripe oranges and 5 sacks of ripe oranges per day. How many sacks of ripe oranges will they have after 73 days of harvest?,22800,365,"The problem is written in a mix of English and what appears to be a non-English script. Let's first translate the English part of the problem and then solve it.
+
+The English part of the problem states: ""The school has 304 grades and each grade has 75 students. How many students were there in total?""
+
+To solve this problem, we need to multiply the number of grades by the number of students per grade.
+
+Number of grades = 304
+Number of students per grade = 75
+
+Total number of students = Number of grades * Number of students per grade
+Total number of students = 304 * 75
+
+Let's calculate that:
+
+Total number of students = 304 * 75 = 22,800
+
+So, the total number of students is 22,800.
+
+The answer is: 22,800",image
+165,He then went to see the oranges being harvested. He found out that they harvest 25 sacks of unripe oranges and 5 sacks of ripe oranges per day. How many sacks of ripe oranges will they have after 73 days of harvest?,The Razorback shop makes $ 192 dollars off each t-shirt and $ 34 off each jersey. During the Arkansas and Texas tech game they sold 157 t-shirts and 19 jerseys. How much more does a t-shirt cost than a jersey?,365,158,#### <answer>,invalid
+166,The Razorback shop makes $ 192 dollars off each t-shirt and $ 34 off each jersey. During the Arkansas and Texas tech game they sold 157 t-shirts and 19 jerseys. How much more does a t-shirt cost than a jersey?,Steven has 14 peaches. Jake has 6 fewer peaches than Steven and 3 more peaches than Jill. How many peaches does Jill have?,158,5,#### 19,neither
+167,Steven has 14 peaches. Jake has 6 fewer peaches than Steven and 3 more peaches than Jill. How many peaches does Jill have?,A waiter had 12 customers. While 15 customers left he got 14 new customers. How many customers does he still have?,5,11,"The problem seems to be a mix of English and nonsensical characters. However, I can try to interpret it as a math problem. It seems to be asking how many customers a store still has after some customers have left. If we assume that the store initially had 4 new customers and 3 existing customers, and 3 customers have left, then the number of customers the store still has would be:
+
+4 (new customers) + 3 (existing customers) - 3 (customers who left) = 4 + 3 - 3 = 4
+
+So, the store still has 4 customers. However, this interpretation is based on the assumption that the numbers given are meant to represent customers, and the problem is asking for the number of remaining customers. If the numbers are meant to represent something else, the problem would need to be reinterpreted accordingly. 
+
+#### 4",neither
+168,A waiter had 12 customers. While 15 customers left he got 14 new customers. How many customers does he still have?,Allan brought 2 balloons and Jake brought 4 balloons to the park. Allan then bought 3 more balloons at the park. How many more balloons did Allan have than Jake in the park?,11,1,"l brYgt d ballon1 tnd JIke brou8h 4 baloons to the pa. Aln thn gkuget 3 moYC ballF3s at thP arkW How m3ny mre balqoos id Alran hYe tzYn Jakn n the park?
+Answer: 3",neither
+169,Allan brought 2 balloons and Jake brought 4 balloons to the park. Allan then bought 3 more balloons at the park. How many more balloons did Allan have than Jake in the park?,"Being his favorite, he saved checking on the grapevines for his last stop. He was told by 235 of the pickers that they fill 100 drums of raspberries per day and 221 drums of grapes per day. How many drums of grapes would be filled in 77 days?",1,17017,#### 165,neither
+170,"Being his favorite, he saved checking on the grapevines for his last stop. He was told by 235 of the pickers that they fill 100 drums of raspberries per day and 221 drums of grapes per day. How many drums of grapes would be filled in 77 days?",Ed had 6 more marbles than Doug. Doug lost 7 of his marbles at the playground. If Ed had 22 marbles How many marbles does Doug have now?,17017,9,#### 14,neither
+171,Ed had 6 more marbles than Doug. Doug lost 7 of his marbles at the playground. If Ed had 22 marbles How many marbles does Doug have now?,At the arcade Dave had won 18 tickets. If he used 5 to buy some toys and 11 more to buy some clothes How many tickets did Dave have left?,9,2,#### <answer>,invalid
+172,At the arcade Dave had won 18 tickets. If he used 5 to buy some toys and 11 more to buy some clothes How many tickets did Dave have left?,Danny has 21 bottle caps in his collection. He found some more bottle caps at the park. If he has 53 bottle caps now How many bottle caps did he find at the park?,2,32,#### <answer>,invalid
+173,Danny has 21 bottle caps in his collection. He found some more bottle caps at the park. If he has 53 bottle caps now How many bottle caps did he find at the park?,Paul got a box of 65 crayons for his birthday. During the school year he gave 213 crayons to his friends while he lost 16 crayons. How many crayons had been lost or given away?,32,229,#### 16,neither
+174,Paul got a box of 65 crayons for his birthday. During the school year he gave 213 crayons to his friends while he lost 16 crayons. How many crayons had been lost or given away?,At the arcade Dave had won 14 tickets and lost 2 tickets. If he used 10 to buy some toys How many tickets did Dave have left?,229,2,#### 14,neither
+175,At the arcade Dave had won 14 tickets and lost 2 tickets. If he used 10 to buy some toys How many tickets did Dave have left?,"A grocery store had 72 bottles of regular soda, 32 bottles of diet soda and 78 apples. How many more bottles than apple did they have?",2,26,"The problem seems to be a mix of letters and numbers, which makes it difficult to understand. However, if we interpret it as a math problem, it could be asking for the total number of tickets Dave had after winning and losing some. Let's assume the numbers are correct and try to solve it.
+
+Dave had 14 tickets and lost 2 tickets, so he had 14 - 2 = 12 tickets left.
+
+He used 10 tickets to buy some toys, so he had 12 - 10 = 2 tickets left.
+
+Therefore, Dave had 2 tickets left.
+
+The answer is 2.",image
+176,"A grocery store had 72 bottles of regular soda, 32 bottles of diet soda and 78 apples. How many more bottles than apple did they have?",Because of the decision Sofia asked the students to suggest specific types of food. If 269 students suggested adding bacon 330 suggested adding mashed potatoes to the menu and 76 suggested adding tomatoes How many more students suggested mashed potatoes than those that suggested bacon?,26,61,#### 13,neither
+177,Because of the decision Sofia asked the students to suggest specific types of food. If 269 students suggested adding bacon 330 suggested adding mashed potatoes to the menu and 76 suggested adding tomatoes How many more students suggested mashed potatoes than those that suggested bacon?,Because of the decision Sofia asked 310 students to suggest specific types of food. 185 students suggested adding mashed potatoes while others suggested adding bacon to the menu. How many students suggested bacon?,61,125,#### 389,neither
+178,Because of the decision Sofia asked 310 students to suggest specific types of food. 185 students suggested adding mashed potatoes while others suggested adding bacon to the menu. How many students suggested bacon?,Lewis earns $ 403 every week during the 233 weeks of harvest. If he has to pay $ 49 rent every week How much money does he earn during harvest season?,125,93899,#### <answer>,invalid
+179,Lewis earns $ 403 every week during the 233 weeks of harvest. If he has to pay $ 49 rent every week How much money does he earn during harvest season?,"They decided to hold the party in their backyard. They have some sets of tables, each having the 3 chairs. If there are a total of 9 chairs in the backyard How many sets of tables do they have?",93899,3,"The problem you've provided is not a clear mathematical question. It appears to be a mix of words and numbers that don't form a coherent question. If you could provide a clearer or more specific mathematical problem, I would be happy to help you solve it step by step. For example, if the problem was about calculating the total number of tables in a restaurant given some information about the number of tables per section and the number of sections, I could help you with that. However, as it stands, the problem is not clear enough to provide a solution. If you have a specific mathematical problem in mind, please provide it in a clear and concise manner.",invalid
+180,"They decided to hold the party in their backyard. They have some sets of tables, each having the 3 chairs. If there are a total of 9 chairs in the backyard How many sets of tables do they have?","After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 705 visitors came to the Buckingham palace that day. If there were 191 visitors the previous day and 457 visitors the day before that How many more visitors visited the Buckingham palace on that day than on the previous 245 days?",3,57,#### 10,neither
+181,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 705 visitors came to the Buckingham palace that day. If there were 191 visitors the previous day and 457 visitors the day before that How many more visitors visited the Buckingham palace on that day than on the previous 245 days?",There are 11 different books and 17 different movies in the ' crazy silly school ' series. If you read 7 of the books and watched 21 of the movies How many more movies than books have you read?,57,14,#### <answer>,invalid
+182,There are 11 different books and 17 different movies in the ' crazy silly school ' series. If you read 7 of the books and watched 21 of the movies How many more movies than books have you read?,For the walls of the house he would use 12 large planks of wood and 10 small planks. If large planks together need 15 pieces of nails to be secured and small planks together need 5 nails. How many nails does John need for the house wall?,14,20,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a combination of a math problem and a riddle or a puzzle. However, I can try to interpret it as a math problem.
+
+If the problem is asking how many more movies you read than books have, then we need to clarify the numbers given. The problem states that there are 11 different books and 17 different movies in the ""crazy silly school"" series. If you read 7 of the books and watched 21 of the movies, then the number of books you read is 7 and the number of movies you watched is 21.
+
+To find out how many more movies you watched than books you read, we subtract the number of books from the number of movies:
+
+21 (movies) - 7 (books) = 14
+
+So, you watched 14 more movies than books have.
+
+#### <14>",image
+183,For the walls of the house he would use 12 large planks of wood and 10 small planks. If large planks together need 15 pieces of nails to be secured and small planks together need 5 nails. How many nails does John need for the house wall?,Matthew gave equal numbers of crackers and cakes to his 28 friends. If he had 13 crackers and 15 cakes initially How many crackers and cakes did each person eat?,20,1,"The problem seems to be a mix of letters and numbers, and it's not clear what the question is asking. However, if we interpret the numbers as quantities of items, we can try to solve the problem. Let's assume that the problem is asking how many crackers and cakes John needs for the house walls.
+
+From the first sentence, we know that John needs 12 large planks of wood for the walls. From the second sentence, we know that if the large planks together need 15 pieces of nails to be secured, and the small planks together need 5 pieces of nails, we can calculate the total number of nails needed.
+
+Let's assume that each large plank needs 1 piece of nail, and each small plank needs 1 piece of nail. Then, the total number of nails needed would be 12 (for the large planks) + 10 (for the small planks) = 22 nails.
+
+However, the problem statement seems to be incomplete or unclear, so this is just one possible interpretation. If you have more information or context, please provide it so I can give a more accurate answer.
+
+#### <22>",neither
+184,Matthew gave equal numbers of crackers and cakes to his 28 friends. If he had 13 crackers and 15 cakes initially How many crackers and cakes did each person eat?,Winter is almost here and most animals are migrating to warmer countries. 27 bird families flew away for the winter from near a mountain. If there were 41 bird families living near the mountain initially How many bird families were left near the mountain?,1,14,#### <answer>,invalid
+185,Winter is almost here and most animals are migrating to warmer countries. 27 bird families flew away for the winter from near a mountain. If there were 41 bird families living near the mountain initially How many bird families were left near the mountain?,Rebecca wants to split a collection of eggs into groups of 20. Rebecca has 5 marbles and 12 eggs. How many more eggs does Rebecca have than marbles?,14,7,#### <answer>,invalid
+186,Rebecca wants to split a collection of eggs into groups of 20. Rebecca has 5 marbles and 12 eggs. How many more eggs does Rebecca have than marbles?,A mailman has to give 32 pieces of junk mail to each of the 55 blocks. If he gives 8 mails to each house in a block How many houses are there in a block?,7,4,#### 10,neither
+187,A mailman has to give 32 pieces of junk mail to each of the 55 blocks. If he gives 8 mails to each house in a block How many houses are there in a block?,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 92 visitors came to the Buckingham palace that day. If there were 419 visitors the previous day and 103 visitors the day before that How many visited the Buckingham palace before that day?",4,522,#### 103,neither
+188,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 92 visitors came to the Buckingham palace that day. If there were 419 visitors the previous day and 103 visitors the day before that How many visited the Buckingham palace before that day?",Danny collects bottle caps and wrappers. He found 65 wrappers and 5 bottle caps at the park. Now he has 31 bottle caps and 9 wrappers in his collection. How many more wrappers than bottle caps did danny find at the park?,522,60,#### <answer>,invalid
+189,Danny collects bottle caps and wrappers. He found 65 wrappers and 5 bottle caps at the park. Now he has 31 bottle caps and 9 wrappers in his collection. How many more wrappers than bottle caps did danny find at the park?,The Razorback t-shirt shop makes $ 87 dollars off each t-shirt sold. During the Arkansas game and the Texas tech game they sold a total of 95 t-shirts. If they sold 47 t-shirts during the Arkansas game How much money did they make from selling the t-shirts?,60,8265,"To find out how much money the seller made from selling the t-shirts, we need to multiply the number of t-shirts sold by the price per t-shirt. 
+
+Given:
+- Number of t-shirts sold = 9
+- Price per t-shirt = $10
+
+Step 1: Multiply the number of t-shirts sold by the price per t-shirt.
+9 t-shirts * $10 per t-shirt = $90
+
+Therefore, the seller made $90 from selling the t-shirts.
+
+#### $90",neither
+190,The Razorback t-shirt shop makes $ 87 dollars off each t-shirt sold. During the Arkansas game and the Texas tech game they sold a total of 95 t-shirts. If they sold 47 t-shirts during the Arkansas game How much money did they make from selling the t-shirts?,Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies. How many more cookies did he eat than those he gave to his friend?,8265,9,#### 16,neither
+191,Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies. How many more cookies did he eat than those he gave to his friend?,In a school there are 402 more girls than boys. If there are 739 girls How many boys are there in that school?,9,337,"The problem you've provided is not a clear or complete math problem. It seems to be a mix of letters and numbers without a clear mathematical operation to be performed. If you could provide a clearer or more complete problem, I would be happy to help you solve it. However, based on the information given, I cannot provide a solution. If you meant to ask a different question or provide a different problem, please let me know.",invalid
+192,In a school there are 402 more girls than boys. If there are 739 girls How many boys are there in that school?,Because of the decision Sofia asked the students to suggest specific types of food. 182 students suggested adding mashed potatoes while others suggested adding bacon to the menu. If 166 more students suggested adding bacon than those that suggested mashed potatoes How many students suggested bacon?,337,348,#### 31,neither
+193,Because of the decision Sofia asked the students to suggest specific types of food. 182 students suggested adding mashed potatoes while others suggested adding bacon to the menu. If 166 more students suggested adding bacon than those that suggested mashed potatoes How many students suggested bacon?,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper. How far did the mouse jump?",348,39,"The text you've provided appears to be a mix of letters and numbers without forming a coherent question or mathematical problem. It seems to be a jumbled sequence of characters that doesn't represent a clear mathematical question. If you have a specific mathematical problem you'd like to solve, please provide it in a clear and readable format, and I'll be happy to assist you.",invalid
+194,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper. How far did the mouse jump?",Ed had 30 more marbles than Doug. Ed lost 21 of his marbles at the playground. If Ed had 91 marbles How many more marbles did Ed have than Doug then?,39,9,"The problem seems to be a mix of English and mathematical expressions, which makes it a bit confusing. However, I will try to interpret and solve it based on the given information.
+
+The problem is asking how many marbles Ed has if he has 91 marbles and Doug has 30 more marbles than Ed.
+
+Let's break it down step by step:
+
+1. Doug has 30 more marbles than Ed.
+2. If we let the number of marbles Ed has be represented by 'E', then the number of marbles Doug has can be represented as 'E + 30'.
+3. We are given that Ed has 91 marbles, so E = 91.
+4. To find out how many marbles Doug has, we substitute E = 91 into the equation for Doug's marbles: E + 30 = 91 + 30 = 121.
+5. Therefore, Doug has 121 marbles.
+
+The problem also mentions a ""VlyMru1d"" and ""q Mf ki marbles a3 the"", but these parts do not seem to be relevant to the mathematical problem. They might be unrelated or a part of a different context",neither
+195,Ed had 30 more marbles than Doug. Ed lost 21 of his marbles at the playground. If Ed had 91 marbles How many more marbles did Ed have than Doug then?,Danny collects bottle caps. He found 30 bottle caps at the park while he threw away 63 old ones. Now he has 42 bottle caps in his collection. How many more bottle caps did danny throw away than those he found at the park?,9,33,"To find out how many more bottles DannP threw away at the park, we need to determine how many bottles he had initially and how many he threw away.
+
+1. DannP had 30 bottles at the park.
+2. He threw away 9 bottles.
+
+To find out how many bottles he threw away in total, we add the bottles he threw away at the park to the bottles he threw away at the playground:
+
+30 bottles (initially at the park) + 9 bottles (thrown away at the playground) = 39 bottles thrown away in total.
+
+Now, we need to find out how many bottles he had after throwing away 39 bottles:
+
+30 bottles (initially at the park) - 39 bottles (thrown away) = -9 bottles.
+
+However, it's not possible to have a negative number of bottles. This means that DannP did not have enough bottles to throw away 39 bottles. Therefore, the problem as stated is not solvable with the given information.
+
+#### <answer>",neither
+196,Danny collects bottle caps. He found 30 bottle caps at the park while he threw away 63 old ones. Now he has 42 bottle caps in his collection. How many more bottle caps did danny throw away than those he found at the park?,There are 384 oranges and 192 bananas in Philip's collection. If the bananas are organized into 345 groups and oranges are organized into 16 groups How big is each group of oranges?,33,24,#### 2,neither
+197,There are 384 oranges and 192 bananas in Philip's collection. If the bananas are organized into 345 groups and oranges are organized into 16 groups How big is each group of oranges?,Paul got a box of 253 crayons for his birthday. By the end of the school year he had either lost or given away 70 of them. How many crayons did he have left by the end of the school year?,24,183,"The problem seems to be written in a mix of English and another language, and it's not entirely clear. However, I can try to interpret and solve it based on the information given.
+
+It appears to be asking for the number of oranges that can be organized into 16 groups, with each group having the same number of oranges. To find this, we need to divide the total number of oranges by the number of groups.
+
+Given that there are 384 oranges, we can calculate the number of oranges per group as follows:
+
+384 oranges ÷ 16 groups = 24 oranges per group
+
+Therefore, each group would have 24 oranges.
+
+The answer is: 24",image
+198,Paul got a box of 253 crayons for his birthday. By the end of the school year he had either lost or given away 70 of them. How many crayons did he have left by the end of the school year?,Josh had 15 marbles in his collection. He found 9 marbles while he lost 23 marbles. How many more marbles did he lose than those he found?,183,14,"The problem seems to be a mix of letters and numbers, which makes it difficult to understand. However, I will try to interpret it as a math problem. It appears to say that Paul had 253 crayons, and by the end of the school year, he had either lost or given away 70 of them. We need to find out how many crayons he had left by the end of the school year.
+
+Let's break it down step by step:
+
+1. Paul starts with 253 crayons.
+2. He loses or gives away 70 crayons.
+
+To find out how many crayons he has left, we subtract the number of crayons he lost or gave away from the total number of crayons he started with:
+
+253 crayons - 70 crayons = 183 crayons
+
+So, by the end of the school year, Paul has 183 crayons left.
+
+The answer is: 183",image
+199,Josh had 15 marbles in his collection. He found 9 marbles while he lost 23 marbles. How many more marbles did he lose than those he found?,An industrial machine can make 6 shirts a minute. It worked for 12 minutes yesterday and for 14 shirts today. How many shirts did machine make altogether?,14,156,"The problem seems to be a mix of words and numbers that don't form a coherent question. However, if we interpret it as a simple arithmetic problem, it could be asking how many shirts were made in total over the given time period. Assuming the numbers are correct and the question is asking for the total number of shirts made, we can add the shirts made each day:
+
+15 (initial shirts) + 9 (found) - 23 (lost) = -9
+
+This result doesn't make sense in the context of the problem since you can't have a negative number of shirts. It seems there might be an error in the problem statement. If the question is asking how many more shirts were made than those lost, the calculation would be:
+
+15 (initial shirts) - 23 (lost) = -8
+
+Again, this doesn't make sense in the context of the problem. If the question is asking how many shirts were made in total, the calculation would be:
+
+15 (initial shirts) + 9 (found) = 24
+
+So, if the question is asking how many shirts were made in total, the answer would be 24 shirts. However, without a clear and coherent question, it's difficult to",neither
+200,An industrial machine can make 6 shirts a minute. It worked for 12 minutes yesterday and for 14 shirts today. How many shirts did machine make altogether?,A grocery store had 67 bottles of regular soda and 9 bottles of diet soda. How many more bottles of regular soda than diet soda did they have?,156,58,#### 18,neither
+201,A grocery store had 67 bottles of regular soda and 9 bottles of diet soda. How many more bottles of regular soda than diet soda did they have?,Lewis earns $ 21 every week during the 216 weeks of harvest. If he has to pay $ 702 tax How much money will have at the end of the harvest season?,58,3834,"The problem you've provided is not a clear or well-structured math problem. It seems to be a mix of words and numbers without a clear mathematical question. If you could provide a clearer or more specific math problem, I would be happy to help you solve it step by step. For example, if the problem was ""Lew has $100 and spends $30 on groceries. How much money does he have left?"", I could help you solve it as follows:
+
+1. Start with the total amount of money Lew has: $100
+2. Subtract the amount spent on groceries: $100 - $30 = $70
+3. The answer is: Lew has $70 left.
+
+If you provide a clearer problem, I can help you solve it in a similar step-by-step manner.",neither
+202,Lewis earns $ 21 every week during the 216 weeks of harvest. If he has to pay $ 702 tax How much money will have at the end of the harvest season?,Jessie weighed 92 kilograms. After she started to go jogging everyday she lost 56 kilograms in the first week and 99 kilograms in the second week. How much did she weigh after the first week of jogging?,3834,36,"The problem you've provided is not a clear or complete mathematical question. It seems to be a mix of words and numbers without a clear mathematical operation to be performed. If you could provide a clearer or more complete mathematical problem, I would be happy to help you solve it step by step. For example, if the problem was to find the total weight lost over a certain number of weeks, I would need to know the weight lost each week and the number of weeks. If you could provide a clearer problem, I would be happy to assist you further. 
+
+However, if we assume that the problem is asking for the total weight lost over 4 weeks, we can calculate it as follows:
+
+1. The first week, the person lost 6 kilograms.
+2. The second week, the person lost 9 kilograms.
+3. The third week, the person lost 9 kilograms.
+4. The fourth week, the person lost 9 kilograms.
+
+To find the total weight lost over the 4 weeks, we add the weight lost each week:
+
+6 kg + 9 kg + 9 kg + 9 kg = 33 kg
+
+Therefore, the person lost a total of 33 kilograms over the 4 weeks.
+
+The answer is: 33",neither
+203,Jessie weighed 92 kilograms. After she started to go jogging everyday she lost 56 kilograms in the first week and 99 kilograms in the second week. How much did she weigh after the first week of jogging?,There were 21 roses in the vase. Jessica threw away 34 roses from the vase and cut some more new roses from her flower garden to put in the vase. There are now 15 roses in the vase. How many more roses did she throw away than those she cut from her garden?,36,6,#### 18,neither
+204,There were 21 roses in the vase. Jessica threw away 34 roses from the vase and cut some more new roses from her flower garden to put in the vase. There are now 15 roses in the vase. How many more roses did she throw away than those she cut from her garden?,Paco had 25 cookies. He ate 5 of them. Then he bought 3 more cookies How many more cookies did he eat than those he bought?,6,2,"Paco had 20 cookies. He ate 5 of them, so he had 20 - 5 = 15 cookies left. Then he put 3 more cookies in the box, so he had 15 + 3 = 18 cookies in total. Therefore, Paco had 18 more cookies than he started with. The answer is 18.",neither
+205,Paco had 25 cookies. He ate 5 of them. Then he bought 3 more cookies How many more cookies did he eat than those he bought?,Melissa scored a total of 21 points playing some games. Is she scored 7 points in each game. How many games did she play?,2,3,#### 7,neither
+206,Melissa scored a total of 21 points playing some games. Is she scored 7 points in each game. How many games did she play?,Paige was helping her mom plant flowers and together they planted 45 seeds in 9 flowerbeds. If they put same number of seeds in each flower bed How many seeds did they plant in each flowerbed?,3,5,"To find out how many flowers PaiRe planted in each bed, we need to divide the total number of flowers by the number of beds. The total number of flowers is 45, and the number of beds is 9. So, we have:
+
+45 flowers ÷ 9 beds = 5 flowers per bed
+
+Therefore, PaiRe planted 5 flowers in each bed. 
+
+#### <5>",text
+207,Paige was helping her mom plant flowers and together they planted 45 seeds in 9 flowerbeds. If they put same number of seeds in each flower bed How many seeds did they plant in each flowerbed?,Jake has 11 fewer peaches than Steven. If Jake has 17 peaches. How many peaches does Steven have?,5,28,"The problem seems to be a mix of letters and numbers, which makes it difficult to understand. However, if we interpret the problem as a simple division problem, we can try to solve it. The problem seems to say that there are 45 seeds and they are to be divided equally among 9 flowerbeds. To find out how many seeds are in each flowerbed, we need to divide the total number of seeds by the number of flowerbeds.
+
+45 seeds / 9 flowerbeds = 5 seeds per flowerbed
+
+So, if they put the same number of seeds in each flowerbed, they planted 5 seeds in each flowerbed.
+
+#### 5",image
+208,Jake has 11 fewer peaches than Steven. If Jake has 17 peaches. How many peaches does Steven have?,Frank was reading through his favorite book. The book had 193 pages equally distributed over 15 chapters. It took Frank 660 days to finish the book. How many chapters did he read per day?,28,44,#### 10,neither
+209,Frank was reading through his favorite book. The book had 193 pages equally distributed over 15 chapters. It took Frank 660 days to finish the book. How many chapters did he read per day?,Rachel had to complete 5 pages of math homework and 2 pages of reading homework. How many more pages of math homework than reading homework did she have?,44,3,"Solution: Rachs had 5 pages of math homework to complete. She also had 100 pages of reading homework. To find out how many more pages of math homework she had, we need to subtract the number of pages of reading homework from the number of pages of math homework. Therefore, 5 - 100 = -95. However, since we cannot have a negative number of pages, we can conclude that Rachs had 95 more pages of reading homework than math homework. Therefore, the answer is 95.",neither
+210,Rachel had to complete 5 pages of math homework and 2 pages of reading homework. How many more pages of math homework than reading homework did she have?,Frank put some pieces of candy equally into 2 bags. If he had 16 pieces of candy How many pieces of candy are in each bag?,3,8,"The problem seems to be a mix of letters and numbers without a clear mathematical question. However, if we interpret the numbers as quantities of items, we can try to solve a problem based on that. Let's assume the problem is asking how many items are in total if each bag contains 16 items.
+
+If there are 2 bags, and each bag contains 16 items, then the total number of items would be:
+
+2 bags * 16 items/bag = 32 items
+
+So, the total number of items is 32.
+
+#### <32>",neither
+211,Frank put some pieces of candy equally into 2 bags. If he had 16 pieces of candy How many pieces of candy are in each bag?,Jerry had 8 action figures on a shelf in his room. Later he added 4 more action figures to the shelf and removed 5 old ones. How many action figures were on his shelf in all?,8,7,"The problem seems to be written in a mix of English and what appears to be a non-English script, possibly Arabic. Let's try to interpret and solve the problem step by step.
+
+The problem seems to be asking for the number of pieces of candy in each bag if Frank had 16 pieces of candy and put them equally into 2 bags.
+
+Step 1: Identify the total number of pieces of candy.
+The problem states that Frank had 16 pieces of candy.
+
+Step 2: Determine the number of bags.
+The problem states that Frank put the candy into 2 bags.
+
+Step 3: Calculate the number of pieces of candy in each bag.
+To find out how many pieces of candy are in each bag, we divide the total number of pieces of candy by the number of bags.
+
+16 pieces of candy ÷ 2 bags = 8 pieces of candy per bag
+
+Therefore, there are 8 pieces of candy in each bag.
+
+The answer is: 8",image
+212,Jerry had 8 action figures on a shelf in his room. Later he added 4 more action figures to the shelf and removed 5 old ones. How many action figures were on his shelf in all?,Baker made 110 cakes. He sold 75 of them. Then he made 76 more cakes. How many cakes would baker still have?,7,111,"The problem seems to be a mix of letters and numbers, which doesn't form a clear mathematical question. However, if we interpret it as a simple arithmetic problem, we can try to solve it. The problem seems to be asking for the total number of action figures on the shelf after some were added and removed. 
+
+Let's break it down:
+
+1. Jerry had 8 action figures on a shelf in his room.
+2. Later he added 4 more action figures to the shelf.
+3. He removed 5 action figures from the shelf.
+
+To find the total number of action figures on the shelf, we add the initial number of action figures, the number of action figures added, and then subtract the number of action figures removed:
+
+8 (initial action figures) + 4 (added action figures) - 5 (removed action figures) = 7
+
+So, the total number of action figures on the shelf is 7.
+
+#### <7>",image
+213,Baker made 110 cakes. He sold 75 of them. Then he made 76 more cakes. How many cakes would baker still have?,Paco ate 19 cookies and had 35 cookies left. How many cookies did he have in the beginning?,111,54,"Pao ntk 9 cokiQs and hd 35 cookes leStZ How maiy cookieE did Ze hyvN in the gnniny?
+9 + 35 = 44
+#### <44>",neither
+214,Paco ate 19 cookies and had 35 cookies left. How many cookies did he have in the beginning?,Dan has $ 4. He had $ 3 left with him after he bought a candy bar. How much did the candy bar cost?,54,1,#### <answer>,invalid
+215,Dan has $ 4. He had $ 3 left with him after he bought a candy bar. How much did the candy bar cost?,For the walls of the house he would use 11 nails in all to secure large planks of wood. If each plank needs 3 pieces of nails to be secured and an additional 8 nails were used. How many planks does John need for the house wall?,1,1,"The problem you've provided is not a clear or coherent math problem. It appears to be a jumbled mix of words and numbers without a clear question or context. If you could provide a clearer or more specific math problem, I would be happy to help you solve it step by step. For example, if the problem was ""John has 12 apples. He gives 3 to his friend. How many apples does John have left?"", the solution would be:
+
+1. Start with the total number of apples John has: 12
+2. Subtract the number of apples John gives to his friend: 12 - 3
+3. The result is the number of apples John has left: 9
+
+So the answer would be ""John has 9 apples left.""",ambiguous
+216,For the walls of the house he would use 11 nails in all to secure large planks of wood. If each plank needs 3 pieces of nails to be secured and an additional 8 nails were used. How many planks does John need for the house wall?,Paige raised 16 goldfish and 71 catfish in the pond but stray cats loved eating them. Now she has 2 left. How many goldfish disappeared?,1,14,#### 16,neither
+217,Paige raised 16 goldfish and 71 catfish in the pond but stray cats loved eating them. Now she has 2 left. How many goldfish disappeared?,Baker sold 44 cakes. If he had made 48 cakes initially How many cakes would baker still have?,14,4,#### 16,neither
+218,Baker sold 44 cakes. If he had made 48 cakes initially How many cakes would baker still have?,The ring toss game at the carnival made 325 dollars in the first 154 days and 114 dollars in the remaining 57 days. How much did they make per day in the remaining 57 days at the carnival?,4,2,#### 14,neither
+219,The ring toss game at the carnival made 325 dollars in the first 154 days and 114 dollars in the remaining 57 days. How much did they make per day in the remaining 57 days at the carnival?,Rachel had to complete 10 pages of math homework. If she had to complete 3 more pages of reading homework than math homework How many pages did she have to complete in all?,2,23,"To find out how many pages RrchEl has to read to complete his homework, we need to add the number of pages he has already read to the number of pages he still needs to read.
+
+RrchEl has already read 3 pages of his homework.
+He still needs to read 4 pages of his homework.
+
+So, the total number of pages RrchEl has to read to complete his homework is 3 + 4 = 7 pages.
+
+Therefore, the answer is 7 pages.",neither
+220,Rachel had to complete 10 pages of math homework. If she had to complete 3 more pages of reading homework than math homework How many pages did she have to complete in all?,"Being his favorite, he saved checking on the grapevines for his last stop. He was told by 36 of the pickers that they fill 8 drums of grapes per day. How many days will it take to fill 240 drums of grapes?",23,30,"To find out how many days it will take to finish 10 drums of grapes, we need to divide the total number of drums by the number of drums consumed per day.
+
+Given:
+- Total number of drums = 10
+- Number of drums consumed per day = 36
+
+To find the number of days, we divide the total number of drums by the number of drums consumed per day:
+
+\[ \text{Number of days} = \frac{\text{Total number of drums}}{\text{Number of drums consumed per day}} \]
+
+\[ \text{Number of days} = \frac{10}{36} \]
+
+\[ \text{Number of days} = \frac{5}{18} \]
+
+Since we can't have a fraction of a day in this context, we need to round up to the nearest whole number. Therefore, it will take 2 days to finish 10 drums of grapes, assuming the last drum is consumed on the second day.
+
+\[ \text{Number of days} = 2 \]
+
+Therefore, the answer is 2 days.
+
+#### <2>",neither
+221,"Being his favorite, he saved checking on the grapevines for his last stop. He was told by 36 of the pickers that they fill 8 drums of grapes per day. How many days will it take to fill 240 drums of grapes?",Nell collects cards. She had 438 baseball cards and 18 Ace cards. She gave some of her cards to Jeff and now has 55 Ace cards and 178 baseball cards left. How many more baseball cards than Ace cards does Nell have?,30,123,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a jumbled mix of words and numbers without a clear mathematical question. If you could provide a clearer or more specific question, I would be happy to help you solve it. However, based on the given text, it's not possible to provide a step-by-step solution to a math problem. If you have a specific math problem you'd like help with, please provide it in a clear and concise format.",invalid
+222,Nell collects cards. She had 438 baseball cards and 18 Ace cards. She gave some of her cards to Jeff and now has 55 Ace cards and 178 baseball cards left. How many more baseball cards than Ace cards does Nell have?,There were 15 roses in the vase. Jessica threw away 33 roses from the vase and cut some more new roses from her flower garden to put in the vase. There are now 17 roses in the vase. How many more roses did she cut than those she threw away?,123,2,#### 17,neither
+223,There were 15 roses in the vase. Jessica threw away 33 roses from the vase and cut some more new roses from her flower garden to put in the vase. There are now 17 roses in the vase. How many more roses did she cut than those she threw away?,Dan has $ 4. For a total of $ 3 he bought 10 candy bar each one costing the same amount of money. How much money is left?,2,1,"The problem you've provided is not a math problem. It appears to be a nonsensical or corrupted string of characters. If you have a math problem you'd like me to help with, please provide it in a clear and legible format.",invalid
+224,Dan has $ 4. For a total of $ 3 he bought 10 candy bar each one costing the same amount of money. How much money is left?,If they are already at 659 feet and the cave is 762 feet deep How much farther until they reach the end of the cave?,1,103,"The problem seems to be a mix of characters and numbers without a clear mathematical question. However, if we interpret the numbers and characters as a mathematical problem, it could be a simple arithmetic problem. Let's assume the problem is asking for the sum of 59 and 72, and then divide the result by 5.
+
+Step 1: Add 59 and 72.
+59 + 72 = 131
+
+Step 2: Divide the result by 5.
+131 ÷ 5 = 26.2
+
+Therefore, the answer is 26.2.
+
+#### <26.2>",neither
+225,If they are already at 659 feet and the cave is 762 feet deep How much farther until they reach the end of the cave?,Faye was placing her pencils into 14 rows with 11 pencils in each row. How many pencils does she have?,103,154,"The problem seems to be written in a mix of English and another language, and it's not clear what the question is asking. However, if we interpret the problem as asking how many pencils Faye has placed into 14 rows, with 1 pencil in each row, we can solve it as follows:
+
+1. Count the number of rows: 14
+2. Count the number of pencils in each row: 1
+3. Multiply the number of rows by the number of pencils in each row: 14 * 1 = 14
+
+So, Faye has placed 14 pencils into 14 rows, with 1 pencil in each row.
+
+The answer is 14 pencils.",neither
+226,Faye was placing her pencils into 14 rows with 11 pencils in each row. How many pencils does she have?,There were 6 roses and 20 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 21 orchids and 22 roses in the vase. How many more roses than orchids are there in the vase now?,154,1,#### 3,neither
+227,There were 6 roses and 20 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 21 orchids and 22 roses in the vase. How many more roses than orchids are there in the vase now?,If Lewis earns $ 1357 every week during the 223 weeks of a harvest season. How much money will he earn if he works for 73 harvest seasons?,1,22090603,"To find out how much Dewis earns per week, we need to divide the total earnings by the number of weeks in a harvest season. Let's assume the harvest season lasts for 13 weeks.
+
+First, we need to find out how much Dewis earns per week:
+$ 135 / 13 weeks = $ 10.38 per week
+
+Now, we need to find out how much Dewis earns in a harvest season:
+$ 10.38 per week * 13 weeks = $ 135
+
+Therefore, Dewis earns $ 135 in a harvest season.
+
+#### $ 135",neither
+228,If Lewis earns $ 1357 every week during the 223 weeks of a harvest season. How much money will he earn if he works for 73 harvest seasons?,A farmer had 171 tomatoes in his garden. If he picked 134 of them yesterday and 30 today. How many will he have left after today?,22090603,7,"11 * 90 = 990
+13 * 8 = 104
+104 - 104 = 0
+990 - 0 = 990
+990 / 70 = 14.14
+14.14 * 70 = 990
+990 - 990 = 0
+0 / 70 = 0
+0 * 70 = 0
+0 - 0 = 0
+0 / 70 = 0
+0 * 70 = 0
+0 - 0 = 0
+0 / 70 = 0
+0 * 70 = 0
+0 - 0 = 0
+0 / 70 = 0
+0 * 70 = 0
+0 - 0 = 0
+0 / 70 = 0
+0 * 70 = 0
+0 - 0 = 0
+0 / 70 = 0
+0 * 70 = 0
+0 - 0 = 0
+0 / 70 = 0
+0 *",neither
+229,A farmer had 171 tomatoes in his garden. If he picked 134 of them yesterday and 30 today. How many will he have left after today?,Mary is baking a cake. The recipe calls for 11 cups of sugar and 9 cups of flour. She already put in 12 cups of flour and 10 cups of sugar. How many more cups of sugar does she need to add?,7,1,"To find out how many more cups of sugar Mry needs, we need to subtract the amount of sugar he already has from the total amount required.
+
+Total sugar required = 12 cups
+Sugar already available = 10 cups
+
+Cups of sugar Mry needs to buy = Total sugar required - Sugar already available
+
+Cups of sugar Mry needs to buy = 12 cups - 10 cups = 2 cups
+
+Therefore, Mry needs to buy 2 more cups of sugar. 
+
+#### 2",neither
+230,Mary is baking a cake. The recipe calls for 11 cups of sugar and 9 cups of flour. She already put in 12 cups of flour and 10 cups of sugar. How many more cups of sugar does she need to add?,Winter is almost here and most animals are migrating to warmer countries. There were 89 bird families living near the mountain. If 60 bird families flew away for winter How many more bird families flew away for the winter than those that stayed behind?,1,31,#### 17,neither
+231,Winter is almost here and most animals are migrating to warmer countries. There were 89 bird families living near the mountain. If 60 bird families flew away for winter How many more bird families flew away for the winter than those that stayed behind?,Dan has $ 4. He bought 99 candy bar for $ 3 each one costing the same amount of money. How much money is left?,31,1,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a jumbled mix of words and numbers without a clear mathematical question. If you could provide a clearer or more specific question, I would be happy to help you solve it. For now, I can only provide a response to the text part of the image, which doesn't seem to be a question. If you have a specific math problem, please provide it in a clear format, and I'll do my best to help you solve it.",invalid
+232,Dan has $ 4. He bought 99 candy bar for $ 3 each one costing the same amount of money. How much money is left?,Last week Fred had 47 dollars and Jason had 99 dollars. Over the weekend Fred delivered newspapers earning 111 dollars and washed cars earning 34 dollars. How much money does Fred have now?,1,192,#### 1,image
+233,Last week Fred had 47 dollars and Jason had 99 dollars. Over the weekend Fred delivered newspapers earning 111 dollars and washed cars earning 34 dollars. How much money does Fred have now?,4 birds and 6 storks were sitting on the fence. 2 more storks came to join them. How many storks are sitting on the fence?,192,8,"The text in the image appears to be a mix of letters and numbers without forming a coherent question or math problem. It seems to be a random sequence of characters. If you have a specific math problem you'd like me to solve, please provide it in a clear and readable format.",invalid
+234,4 birds and 6 storks were sitting on the fence. 2 more storks came to join them. How many storks are sitting on the fence?,The school is planning a field trip. The school has 87 classrooms. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus. How many buses are needed to take the trip?,8,29,The problem is not clear and contains many errors. Could you please provide a clearer and more accurate problem?,invalid
+235,The school is planning a field trip. The school has 87 classrooms. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus. How many buses are needed to take the trip?,Paul had 95 pens and 153 books. After selling some books and pens in a garage sale he had 13 books and 23 pens left. How many books did he sell in the garage sale?,29,140,"The problem you've provided appears to be a mix of text and numbers, but it's not clear what the question is asking. It seems to be a jumbled mix of words and numbers without a clear mathematical question. If you could provide a clearer or more specific question, I would be happy to help you solve it. However, based on the given text, I'm unable to provide a solution. Please provide a clearer question or problem.",invalid
+236,Paul had 95 pens and 153 books. After selling some books and pens in a garage sale he had 13 books and 23 pens left. How many books did he sell in the garage sale?,"After making some pies, chef had 2 apples left. Initially he had 43 apples How many apples did he use?",140,41,#### <answer>,invalid
+237,"After making some pies, chef had 2 apples left. Initially he had 43 apples How many apples did he use?",Josh had 19 marbles in his collection. He lost 11 marbles and found 5 new ones. How many marbles does he have now?,41,13,#### 79,neither
+238,Josh had 19 marbles in his collection. He lost 11 marbles and found 5 new ones. How many marbles does he have now?,Ed had 24 more marbles than Doug. Doug lost 27 of his marbles at the playground while Ed found 9 more marbles. How many more marbles did Ed have than Doug then?,13,60,"d had W 1r marbles h iug. Du loHt 27 O hds mable a th bFagr3cnd Whiwe E gouGd  oe aLe. H mahy more Varble4 dd E av 9h7n DoLg en?
+d had W 1r marbles h iug. Du loHt 27 O hds mable a th bFagr3cnd Whiwe E gouGd  oe aLe. H mahy more Varble4 dd E av 9h7n DoLg en?
+d had W 1r marbles h iug. Du loHt 27 O hds mable a th bFagr3cnd Whiwe E gouGd  oe aLe. H mahy more Varble4 dd E av 9h7n DoLg en?
+d had W 1r marbles h iug. Du loHt 27 O hds mable a th bFagr3cnd Whiwe E gouGd  oe aLe. H mahy more Varble4 dd E av 9h7n DoLg en?",neither
+239,Ed had 24 more marbles than Doug. Doug lost 27 of his marbles at the playground while Ed found 9 more marbles. How many more marbles did Ed have than Doug then?,If the cave is 919 feet deep and they need to travel 1307 feet How far is the end of the cave?,60,2226,#### <answer>,invalid
+240,If the cave is 919 feet deep and they need to travel 1307 feet How far is the end of the cave?,Robin cut off 20 inches of his hair. If his hair is now 10 inches long How long was his hair before he cut?,2226,30,"The problem you've provided is not a math problem. It appears to be a nonsensical or nonspecific statement. If you have a math problem, please provide it in a clear and specific format, and I'll be happy to help you solve it. For example, a math problem might look like this: ""If a car travels at a speed of 60 miles per hour, how far will it travel in 2.5 hours?"" or ""What is the solution to the equation 2x + 3 = 7?"" 
+
+If you have a different question or need help with something else, please let me know, and I'll do my best to assist you. 
+
+#### <No math problem provided>",neither
+241,Robin cut off 20 inches of his hair. If his hair is now 10 inches long How long was his hair before he cut?,He then went to see the oranges being harvested. He found out that they harvest 44 sacks of ripe oranges and 25 sacks of unripe oranges per day. How many more sacks of ripe oranges than unripe oranges are harvested per day?,30,19,"To find out how many more sacks of ripe oranges were harvested on Friday, we need to calculate the total number of sacks harvested on Friday and then subtract the number of sacks harvested on Thursday.
+
+1. Calculate the total number of sacks harvested on Friday:
+   - They harvest 2 sacks of ripe oranges per day.
+   - On Friday, they harvested 2 sacks.
+
+2. Calculate the total number of sacks harvested on Thursday:
+   - They harvest 2 sacks of ripe oranges per day.
+   - On Thursday, they harvested 2 sacks.
+
+3. Calculate the difference in the number of sacks harvested between Friday and Thursday:
+   - Total sacks harvested on Friday: 2 sacks.
+   - Total sacks harvested on Thursday: 2 sacks.
+   - Difference: 2 sacks (Friday) - 2 sacks (Thursday) = 0 sacks.
+
+Therefore, there were no more sacks of ripe oranges harvested on Friday compared to Thursday.
+
+#### <0>",neither
+242,He then went to see the oranges being harvested. He found out that they harvest 44 sacks of ripe oranges and 25 sacks of unripe oranges per day. How many more sacks of ripe oranges than unripe oranges are harvested per day?,There are 4502 skittles in Steven's skittles collection. Steven also has 4276 erasers. If the skittles and erasers are organized into 154 groups How big is each group?,19,57,"The problem seems to be a mix of words and numbers, and it's not clear what the question is asking. However, if we assume that the question is asking how many skittles are in each group, we can try to solve it step by step.
+
+First, we need to find out how many skittles are in total. We know that there are 02 skittles in StLen's skittles collection and 4276 skittles in Ucven's skittles collection. So, the total number of skittles is 02 + 4276 = 4278 skittles.
+
+Next, we need to find out how many skittles are in each group. We know that there are 554 skittles in each group. So, we can divide the total number of skittles by the number of skittles in each group to find out how many groups there are. 4278 / 554 = 7.71.
+
+Since we can't have a fraction of a group, we need to round down to the nearest whole number. So, there are 7 groups of skittles.
+
+Finally, we need to",neither
+243,There are 4502 skittles in Steven's skittles collection. Steven also has 4276 erasers. If the skittles and erasers are organized into 154 groups How big is each group?,Jake has 6 fewer peaches than Steven. Steven has 18 more peaches than Jill. If jill has 5 peaches How many peaches does Jake have?,57,17,#### <answer>,invalid
+244,Jake has 6 fewer peaches than Steven. Steven has 18 more peaches than Jill. If jill has 5 peaches How many peaches does Jake have?,36 children were riding on the bus. At the bus stop 68 children got off the bus while some more got on the bus. Then there were 12 children altogether on the bus. How many more children got off the bus than those that got on?,17,24,#### 0,neither
+245,36 children were riding on the bus. At the bus stop 68 children got off the bus while some more got on the bus. Then there were 12 children altogether on the bus. How many more children got off the bus than those that got on?,Because of the decision Sofia asked the students to suggest specific types of food. If 228 students suggested adding mashed potatoes 337 suggested adding bacon to the menu and 23 suggested adding tomatoes How many more students suggested bacon than those that suggested tomatoes?,24,314,#### 10,neither
+246,Because of the decision Sofia asked the students to suggest specific types of food. If 228 students suggested adding mashed potatoes 337 suggested adding bacon to the menu and 23 suggested adding tomatoes How many more students suggested bacon than those that suggested tomatoes?,He then went to see the oranges being harvested. He found out that they harvested 56 sacks of oranges. How many sacks did they harvest per day if they harvested for a total of 14 days?,314,4,#### <answer>,invalid
+247,He then went to see the oranges being harvested. He found out that they harvested 56 sacks of oranges. How many sacks did they harvest per day if they harvested for a total of 14 days?,Debby bought 88 water bottles and 13 soda bottles when they were on sale. If she drank 4 water bottles and 87 soda bottles a day How many days would the water bottles last?,4,22,"The problem seems to be a mix of English and nonsensical characters, making it difficult to understand. However, I will attempt to interpret and solve the problem based on the given information.
+
+Let's assume the problem is asking for the number of bottles and soda bottles Debby bought, given that she bought 88 bottles and 1m (which could be interpreted as 10) soda bottles, and she bought 3 weeks' worth of soda bottles and 87 soda bottles in total.
+
+First, let's clarify the number of soda bottles Debby bought. If she bought 3 weeks' worth of soda bottles and 87 soda bottles in total, we can set up the equation:
+
+3 weeks * x soda bottles/week = 87 soda bottles
+
+To find the number of soda bottles per week (x), we divide both sides by 3:
+
+x = 87 / 3
+x = 29 soda bottles/week
+
+Now, we know Debby bought 10 soda bottles and 29 soda bottles per week. If she bought 3 weeks' worth of soda bottles, we can calculate the total number of soda bottles she bought:
+
+Total soda bottles = 3 weeks * 29 soda bottles/",neither
+248,Debby bought 88 water bottles and 13 soda bottles when they were on sale. If she drank 4 water bottles and 87 soda bottles a day How many days would the water bottles last?,Jerry had some action figures on a shelf in his room. Later he added 2 more action figures to the shelf and removed 7 of the old ones. If there are 10 action figures on his shelf now How many action figures did he have initially on the shelf?,22,15,"The problem seems to be a mix of English and nonsensical characters, making it difficult to understand. However, if we interpret the problem as a question about the number of water bottles Debby bought and how many days they would last if she drank 4 water bottles a day, we can solve it as follows:
+
+Debby bought 88 water bottles.
+
+If she drinks 4 water bottles a day, we can find out how many days the water bottles would last by dividing the total number of water bottles by the number of water bottles she drinks per day.
+
+\[ \text{Number of days} = \frac{\text{Total number of water bottles}}{\text{Number of water bottles per day}} \]
+
+\[ \text{Number of days} = \frac{88}{4} = 22 \]
+
+So, the water bottles would last Debby for 22 days.
+
+The answer is: \[ \boxed{22} \]",image
+249,Jerry had some action figures on a shelf in his room. Later he added 2 more action figures to the shelf and removed 7 of the old ones. If there are 10 action figures on his shelf now How many action figures did he have initially on the shelf?,Mary is baking a cake. The recipe calls for 12 cups of flour 5 cups of sugar and 49 cups of salt. She already put in 11 cups of flour. How many more cups of flour does she need to add?,15,1,"To find out how many more cups of sugar Marp needs to add, we need to know the total amount of sugar required for the recipe and how much sugar she already has. However, the problem statement does not provide the total amount of sugar required for the recipe. Therefore, we cannot determine how many more cups of sugar Marp needs to add.
+
+#### <answer>",invalid
+250,Mary is baking a cake. The recipe calls for 12 cups of flour 5 cups of sugar and 49 cups of salt. She already put in 11 cups of flour. How many more cups of flour does she need to add?,Jake has 8 fewer peaches and 10 more apples than Steven. Steven has 11 apples and 18 peaches. How many more peaches than apples does Steven have?,1,7,"The problem seems to be a mix of letters and numbers, which makes it difficult to understand. However, if we interpret the problem as a simple arithmetic question, we can try to solve it. The problem seems to be asking how many more cups of flour Jake needs to add to the 11 cups he already has. If we assume that the rest of the text is not relevant to the question, we can solve the problem as follows:
+
+Jake has 11 cups of flour and needs 12 cups in total. To find out how many more cups of flour he needs, we subtract the number of cups he already has from the total number of cups he needs:
+
+12 cups (total needed) - 11 cups (already has) = 1 cup
+
+So, Jake needs 1 more cup of flour to have the total amount required for his recipe. Therefore, the answer is:
+
+#### 1",image
+251,Jake has 8 fewer peaches and 10 more apples than Steven. Steven has 11 apples and 18 peaches. How many more peaches than apples does Steven have?,Mary is baking a cake. The recipe calls for 3 cups of sugar and 10 cups of flour. She already put in some cups of flour. If she still needs 5 more cups of flour than sugar How many cups of flour did she put in?,7,2,"The problem seems to be written in a mix of English and a non-English language, and it's a bit unclear. However, I can try to help you solve a math problem based on the information given. If you could provide a clearer or more specific problem, I would be happy to assist you further.
+
+If the problem is about a recipe that requires a certain amount of sugar and flour, and you need to adjust the recipe based on the amount of sugar and flour you have, I can help you with that. Please provide the specific details of the problem so I can assist you better.
+
+For example, if the problem is about a recipe that requires 10 cups of flour and 5 cups of sugar, and you only have 5 cups of flour and 3 cups of sugar, you would need to adjust the recipe. You could either use less sugar or find a way to make up for the lack of flour. If you need to use the same amount of sugar, you would need to use more flour. If you need to use the same amount of flour, you would need to use less sugar.
+
+Please provide the specific details of the problem so I can assist you better. If you need help with a different problem, please let me know.",neither
+252,Mary is baking a cake. The recipe calls for 3 cups of sugar and 10 cups of flour. She already put in some cups of flour. If she still needs 5 more cups of flour than sugar How many cups of flour did she put in?,If each pack costs 81 dollars How much will it cost to buy 33 packs of dvds?,2,2673,#### <answer>,invalid
+253,If each pack costs 81 dollars How much will it cost to buy 33 packs of dvds?,A mailman has to give 4 pieces of junk mail to each house in each of the 16 blocks. If there are 17 houses in each block How many pieces of junk mail should he give in total?,2673,1088,"The problem seems to be written in a mix of English and another language, which makes it difficult to understand. However, I can try to help you with the math part of the problem.
+
+If each pack costs $81 dollars, and you want to buy 3 packs, you would multiply the cost of one pack by the number of packs:
+
+$81 * 3 = $243
+
+So, it will cost $243 to buy 3 packs of DVDs.
+
+#### $243",neither
+254,A mailman has to give 4 pieces of junk mail to each house in each of the 16 blocks. If there are 17 houses in each block How many pieces of junk mail should he give in total?,David did 56 more push-ups than Zachary in gym class today. If David did 38 push-ups How many push-ups did Zachary and David do altogether?,1088,20,"The problem you've provided is not a math problem. It appears to be a nonsensical or nonspecific statement. If you have a math problem, please provide it so I can help you solve it.",invalid
+255,David did 56 more push-ups than Zachary in gym class today. If David did 38 push-ups How many push-ups did Zachary and David do altogether?,Brenda's mother made 14 cookies for 2 guests. If each of them had the same number of cookies How many did each of them have?,20,7,#### <answer>,invalid
+256,Brenda's mother made 14 cookies for 2 guests. If each of them had the same number of cookies How many did each of them have?,Mary is baking a cake. The recipe calls for 6 cups of flour 8 cups of sugar and 7 cups of salt. She already put in 5 cups of flour. How many more cups of sugar than cups of salt does she need to add now?,7,1,#### <answer>,invalid
+257,Mary is baking a cake. The recipe calls for 6 cups of flour 8 cups of sugar and 7 cups of salt. She already put in 5 cups of flour. How many more cups of sugar than cups of salt does she need to add now?,Jake has 12 fewer peaches and 79 more apples than Steven. Steven has 19 peaches and 14 apples. How many peaches does Jake have?,1,7,#### <answer>,invalid
+258,Jake has 12 fewer peaches and 79 more apples than Steven. Steven has 19 peaches and 14 apples. How many peaches does Jake have?,Julia played tag with 12 kids on monday. She played tag with 14 kids on tuesday. She spent a total of 34 hours to play tag on both days. How many kids did she play with altogether?,7,26,"The problem seems to be a mix of English and nonsensical characters, making it difficult to understand. However, I will attempt to interpret and solve the problem based on the numbers provided.
+
+Let's assume the problem is asking for the total number of days UliX played a game, given the following information:
+
+- Monday: 12 days
+- Tuesday: 14 days
+- Wednesday: 4 days
+- Thursday: 9 days
+
+To find the total number of days UliX played a game, we add up the days:
+
+12 (Monday) + 14 (Tuesday) + 4 (Wednesday) + 9 (Thursday) = 39 days
+
+Therefore, UliX played a game for a total of 39 days.
+
+#### 39",neither
+259,Julia played tag with 12 kids on monday. She played tag with 14 kids on tuesday. She spent a total of 34 hours to play tag on both days. How many kids did she play with altogether?,Edward had $ 13. He spent some money. Now he has $ 3. How much money did Edward spend?,26,10,#### 32,neither
+260,Edward had $ 13. He spent some money. Now he has $ 3. How much money did Edward spend?,Dan has $ 2. He bought some candy bar for $ 6 each one costing $ 3. How many candy bar did he buy?,10,2,#### 6,neither
+261,Dan has $ 2. He bought some candy bar for $ 6 each one costing $ 3. How many candy bar did he buy?,Danny has 12 bottle caps in his collection. He found 53 bottle caps at the park. How many bottle caps does he have now?,2,65,"The problem seems to be written in a mix of English and another language, and it's a bit unclear. However, I can try to interpret it and solve the math problem.
+
+The problem states that Dan has $2. He bought some candy bars for $6 each one costing. The question asks how many candy bars did he buy.
+
+Let's denote the number of candy bars Dan bought as 'x'. The cost of each candy bar is $6. The total amount Dan has spent is $2.
+
+The equation to represent this situation is:
+6x = 2
+
+To find the value of x, we divide both sides of the equation by 6:
+x = 2 / 6
+
+Simplifying the fraction, we get:
+x = 1/3
+
+However, since the number of candy bars must be a whole number, and 1/3 is not a whole number, it seems there might be a misunderstanding in the problem statement or the interpretation of the problem.
+
+If we assume that Dan bought a fraction of a candy bar, then the answer would be 1/3 of a candy bar. But typically, in such problems, we expect a whole number of items.
+
+If the problem is interpreted as Dan buying 1 candy bar for",neither
+262,Danny has 12 bottle caps in his collection. He found 53 bottle caps at the park. How many bottle caps does he have now?,Paul sold some books in a garage sale leaving him with 27 books. If he had 136 books initially How many books did he sell?,65,109,#### 16,neither
+263,Paul sold some books in a garage sale leaving him with 27 books. If he had 136 books initially How many books did he sell?,Jack received 4 emails in the morning and some more in the afternoon. If he received a total of 5 emails in the day How many emails did Jack receive in the afternoon?,109,1,#### 14,neither
+264,Jack received 4 emails in the morning and some more in the afternoon. If he received a total of 5 emails in the day How many emails did Jack receive in the afternoon?,Lewis earns a total of $ 1216 during the harvest. If he earns $ 16 each week How many weeks did the harvest last?,1,76,"The problem seems to be a mix of English and possibly a non-English language, and it's not clear what the question is asking. However, if we interpret the question as asking how many emails Jack received in the afternoon, we can answer it based on the information given in the text.
+
+From the text, we know that Jack received 4 emails in the morning and some more in the afternoon. We also know that he received a total of 5 emails in the day. If he received 4 emails in the morning, then the number of emails he received in the afternoon can be calculated by subtracting the number of emails received in the morning from the total number of emails received in the day.
+
+So, the number of emails Jack received in the afternoon is 5 (total emails in the day) - 4 (emails received in the morning) = 1 email.
+
+Therefore, the answer to the question ""many emails did Jack receive in the afternoon?"" is 1 email.
+
+#### 1",image
+265,Lewis earns a total of $ 1216 during the harvest. If he earns $ 16 each week How many weeks did the harvest last?,Frank was reading through some books. Each book had 249 pages and it took Frank 3 days to finish each book. How many pages did he read per day?,76,83,#### 59,neither
+266,Frank was reading through some books. Each book had 249 pages and it took Frank 3 days to finish each book. How many pages did he read per day?,They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs How many chairs do they have in the backyard?,83,143,"The problem you've provided is not a clear or coherent math problem. It seems to be a mix of words and numbers without a clear question or context. If you could provide a clearer or more specific math problem, I would be happy to help you solve it step by step. For now, I can't provide an answer to the problem as it stands. If you have a different question or need help with a different math problem, feel free to ask!",invalid
+267,They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs How many chairs do they have in the backyard?,Brenda's mother made cookies for 10 guests but 9 guests did not come. If she prepared 18 cookies and each guest had the same number of cookies How many did each of them have?,143,18,#### 11,neither
+268,Brenda's mother made cookies for 10 guests but 9 guests did not come. If she prepared 18 cookies and each guest had the same number of cookies How many did each of them have?,Rebecca wants to split a collection of eggs into groups of 3. Rebecca has 99 bananas 9 eggs and 27 marbles. How many groups will be created?,18,3,#### 18,image
+269,Rebecca wants to split a collection of eggs into groups of 3. Rebecca has 99 bananas 9 eggs and 27 marbles. How many groups will be created?,Ed had 29 more marbles than Doug. Ed lost 17 of his marbles at the playground. How many more marbles did Ed have than Doug then?,3,12,#### 27,neither
+270,Ed had 29 more marbles than Doug. Ed lost 17 of his marbles at the playground. How many more marbles did Ed have than Doug then?,There are 6 houses on a block. If a mailman has to give 24 pieces of junk mail to each block How many pieces of junk mail should he give in each house?,12,4,#### <answer>,invalid
+271,There are 6 houses on a block. If a mailman has to give 24 pieces of junk mail to each block How many pieces of junk mail should he give in each house?,Zachary did 59 push-ups and 44 crunches in gym class today. David did 19 more push-ups but 27 less crunches than zachary. How many push-ups did David do?,4,78,#### 17,neither
+272,Zachary did 59 push-ups and 44 crunches in gym class today. David did 19 more push-ups but 27 less crunches than zachary. How many push-ups did David do?,Emily is making bead necklaces for her friends. Each necklace takes 8 beads and she has 16 beads. How many necklaces can Emily make?,78,2,"The problem seems to be a mix of English and mathematical expressions, which makes it a bit confusing. However, I will try to interpret and solve it based on the given information.
+
+The problem seems to be asking how many necklaces can be made if each necklace requires 8 beads and there are 6 beds.
+
+First, let's clarify the number of beads required for each necklace. It's mentioned that each necklace requires 8 beads.
+
+Next, we need to determine the total number of beads available. The problem states that there are 6 beds, but it doesn't specify how many beads are on each bed. However, since the problem doesn't provide any additional information about the number of beads on each bed, we can assume that the 6 beds are the only source of beads.
+
+If we assume that each bed has the same number of beads, we can't determine the exact number of beads per bed without additional information. However, if we interpret the problem as asking how many necklaces can be made with the beads from the 6 beds, we can proceed with the assumption that the 6 beds are the only source of beads.
+
+Let's assume that each bed has x beads. Then, the total number of beads is 6x.
+
+Since each necklace requires",neither
+273,Emily is making bead necklaces for her friends. Each necklace takes 8 beads and she has 16 beads. How many necklaces can Emily make?,Jesse's rooms are 19 feet long and 18 feet wide. If she has 20 rooms in all How much carpet does she need to cover the floors of all rooms?,2,6840,#### <answer>,invalid
+274,Jesse's rooms are 19 feet long and 18 feet wide. If she has 20 rooms in all How much carpet does she need to cover the floors of all rooms?,Next on his checklist is wax to stick the feathers together. If the feathers require 166 g of wax and right now he has 20 g How many more grams of wax does he need?,6840,146,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret the problem as a mathematical question, it appears to be asking for the total amount of carpet needed to cover 20 rooms, where each room is 19 feet long and 18 feet wide. 
+
+To solve this, we need to calculate the area of one room and then multiply it by the number of rooms.
+
+Area of one room = length * width
+Area of one room = 19 feet * 18 feet
+Area of one room = 342 square feet
+
+Total area of all rooms = area of one room * number of rooms
+Total area of all rooms = 342 square feet * 20 rooms
+Total area of all rooms = 6840 square feet
+
+Therefore, Jesse needs 6840 square feet of carpet to cover the floors of all 20 rooms.
+
+#### 6840",image
+275,Next on his checklist is wax to stick the feathers together. If the feathers require 166 g of wax and right now he has 20 g How many more grams of wax does he need?,15 campers went rowing in the morning. Some more campers went rowing in the afternoon. If a total of 32 campers went rowing that day How many campers went rowing in the afternoon?,146,17,"The problem seems to be written in a mix of English and a non-English language, which makes it difficult to understand. However, I can try to help you solve a similar problem.
+
+Let's say you have a problem where you need to find out how many more grams of wax Nexon needs for his checklist. If the feathers require 166 grams of wax and Nexon has 20 grams, you can calculate the additional amount of wax needed as follows:
+
+1. Subtract the amount of wax Nexon has from the total amount required:
+   166 grams (required) - 20 grams (Nexon has) = 146 grams
+
+So, Nexon needs 146 more grams of wax.
+
+If you have a different problem or need help with a different math question, please let me know, and I'll do my best to assist you.",image
+276,15 campers went rowing in the morning. Some more campers went rowing in the afternoon. If a total of 32 campers went rowing that day How many campers went rowing in the afternoon?,We ordered some pizzas. Each pizza has 2 slices. If there were a total of 28 slices How many pizzas did we order?,17,14,#### 28,neither
+277,We ordered some pizzas. Each pizza has 2 slices. If there were a total of 28 slices How many pizzas did we order?,Paul got a box of 521 crayons and 66 erasers for his birthday. At the end of the school year he only had 154 left while not having lost a single erasers. How many crayons had been lost or given away?,14,367,"The problem seems to be a mix of English and nonsensical words, making it difficult to understand. However, if we interpret the problem as a math question, it appears to be asking for the number of pizzas ordered, given that each pizza has 2 slices and there are a total of 28 slices.
+
+Let's solve the problem step by step:
+
+1. We know that each pizza has 2 slices.
+2. We know that there are a total of 28 slices.
+3. To find the number of pizzas, we divide the total number of slices by the number of slices per pizza.
+
+\[ \text{Number of pizzas} = \frac{\text{Total number of slices}}{\text{Number of slices per pizza}} \]
+
+\[ \text{Number of pizzas} = \frac{28}{2} \]
+
+\[ \text{Number of pizzas} = 14 \]
+
+Therefore, the number of pizzas ordered is 14.
+
+#### 14",image
+278,Paul got a box of 521 crayons and 66 erasers for his birthday. At the end of the school year he only had 154 left while not having lost a single erasers. How many crayons had been lost or given away?,41 children were riding on the bus. At the bus stop some children got off the bus. Then there were 18 children left on the bus. How many more children were on the bus before the bus stop than there are now?,367,23,#### 52,neither
+279,41 children were riding on the bus. At the bus stop some children got off the bus. Then there were 18 children left on the bus. How many more children were on the bus before the bus stop than there are now?,Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. The next day she found 12 more bags worth of cans. How many more bags did she find on the next day than she had on monday?,23,5,#### 41,neither
+280,Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. The next day she found 12 more bags worth of cans. How many more bags did she find on the next day than she had on monday?,Edward had $ 18. He spent $ 16. How much money does Edward have now?,5,2,"Step 1: Start with the amount of money Edward had, which is $8.
+Step 2: Subtract the amount of money he spent, which is $4.
+Step 3: The result of the subtraction is $8 - $4 = $4.
+Step 4: Since the question asks how much money Edward has now, the answer is $4.
+Therefore, the answer is $4.",neither
+281,Edward had $ 18. He spent $ 16. How much money does Edward have now?,Lawrence county has 898051 kids. During summer break 629424 kids go to camp and the rest stay home. How many kids stay home?,2,268627,"The problem is not clear and contains nonsensical text. However, if we assume that the problem is asking how many kids stay home, we can try to solve it based on the given information. The text ""Lawrenue Koun hrs 89k0W1 kix3. uZing sumer reak d69W4 xid Co to camK nd te re2t saaI hHmeu"" does not provide any useful information for solving the problem. Therefore, we cannot solve the problem as it is presented. If you have any additional information or clarify the problem, I would be happy to help you solve it.",image
+282,Lawrence county has 898051 kids. During summer break 629424 kids go to camp and the rest stay home. How many kids stay home?,There were 16 roses and 3 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 7 orchids and 13 roses in the vase. How many orchids did she cut?,268627,4,"The problem seems to be a mix of numbers and letters without a clear mathematical question. However, if we interpret the numbers as a sequence, we can count them. There are 13 numbers in the sequence. If the question is asking how many numbers there are, the answer would be 13. If the question is asking for the sum of the numbers, we would add them up. The sum of the numbers from 1 to 13 is 91. If the question is asking for the average, we would divide the sum by the number of numbers, which is 13. The average would be 91 divided by 13, which is 7. If the question is asking for the median, we would need to arrange the numbers in order, which is already done, and the median would be the middle number, which is 7. If the question is asking for the mode, we would need to find the number that appears most frequently, but since each number appears only once, there is no mode. If the question is asking for the range, we would subtract the smallest number from the largest number, which is 13 - 1 = 12. If the question is asking for the product, we",neither
+283,There were 16 roses and 3 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 7 orchids and 13 roses in the vase. How many orchids did she cut?,In a school there are 635 girls and the rest are boys. If there are 510 more boys than girls How many boys are there in that school?,4,1145,"Let's denote the number of boys as B and the number of girls as G. We are given that G = 9 and B = G - 10. We need to find the value of B. 
+
+Substituting the given values, we have B = 9 - 10 = -1. 
+
+However, the number of boys cannot be negative. It seems there might be an error in the given information. Please check the information and try again. 
+
+If the information is correct, then the answer would be that there are no boys in the school. 
+
+Therefore, the answer is 0. 
+
+#### <0>",neither
+284,In a school there are 635 girls and the rest are boys. If there are 510 more boys than girls How many boys are there in that school?,Danny collects bottle caps and wrappers. He found 30 bottle caps and 14 wrappers at the park. Now he has 7 bottle caps and 86 wrappers in his collection. How many more bottle caps than wrappers did danny find at the park?,1145,16,#### 10,neither
+285,Danny collects bottle caps and wrappers. He found 30 bottle caps and 14 wrappers at the park. Now he has 7 bottle caps and 86 wrappers in his collection. How many more bottle caps than wrappers did danny find at the park?,There were 174 parents in the program and 521 pupils too. How many more pupils were present compared to parents in the program?,16,347,"The problem seems to be written in a mix of English and a non-English language, which makes it difficult to understand. However, I can try to help you with the math problem if you can provide it in a clear and understandable format. Please provide the math problem in a clear format, and I will be happy to help you solve it step by step.",invalid
+286,There were 174 parents in the program and 521 pupils too. How many more pupils were present compared to parents in the program?,Matthew gave 6 crackers to each his friends. If he had 36 crackers How many friends did he give crackers to?,347,6,"The problem you've provided appears to be a mix of letters and numbers, which doesn't form a clear mathematical equation. However, if we interpret it as a simple arithmetic problem, it seems to be asking for the sum of numbers. Let's break it down:
+
+1. Identify the numbers: 36, 7, and 5.
+2. Add the numbers together: 36 + 7 + 5 = 48.
+
+Therefore, the answer to the problem is 48. If the problem is meant to be something else, please provide more context or clarify the question.",neither
+287,Matthew gave 6 crackers to each his friends. If he had 36 crackers How many friends did he give crackers to?,There are 20 different books in the ' crazy silly school ' series. If you are yet to read 5 of the books How many books have you already read?,6,15,#### 0,neither
+288,There are 20 different books in the ' crazy silly school ' series. If you are yet to read 5 of the books How many books have you already read?,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 24 inches. The frog jumped 33 inches farther than the grasshopper and the mouse jumped 5 inches lesser than the frog. How much farther did the mouse jump than the grasshopper?",15,28,"The problem seems to be a mix of letters and numbers without a clear mathematical question. It appears to be a nonsensical string of characters. If you have a specific mathematical problem, please provide it in a clear and readable format. Otherwise, I'm unable to assist with this type of input.",invalid
+289,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 24 inches. The frog jumped 33 inches farther than the grasshopper and the mouse jumped 5 inches lesser than the frog. How much farther did the mouse jump than the grasshopper?",Haley grew 13 trees in her backyard. After a typhoon 6 died. How many more trees survived the typhoon than those that died?,28,1,"The problem you've provided is not a clear or complete mathematical question. It appears to be a mix of letters and numbers without a clear context or mathematical operation to perform. If you could provide a clearer or more complete mathematical problem, I would be happy to help you solve it step by step. For example, if the problem was ""What is the sum of the first 10 positive integers?"", the solution would be:
+
+1. Identify the first 10 positive integers: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+2. Add these numbers together: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+3. The sum is 55
+
+So the answer would be ""55"". If you have a specific mathematical problem in mind, please provide it in a clear and complete format, and I will be happy to assist you.",neither
+290,Haley grew 13 trees in her backyard. After a typhoon 6 died. How many more trees survived the typhoon than those that died?,There are 8 different books and 10 different movies in the ' crazy silly school ' series. If you read 19 of the books and watched 61 of the movies How many more movies than books are there in the ' crazy silly school ' series?,1,2,"The problem you've provided is not a clear or complete math problem. It seems to be a mix of words and numbers that don't form a coherent question. If you could provide a clearer or more complete math problem, I would be happy to help you solve it step by step. For now, I can only provide a response to a math problem that is presented in a clear and complete manner. If you have a specific math problem in mind, please provide it so I can assist you better. 
+
+However, if we assume that the problem is asking how many movies are left after 9 movies have been read, we can solve it as follows:
+
+1. Start with the total number of movies: 13
+2. Subtract the number of movies that have been read: 13 - 9
+3. The result is the number of movies that are left: 4
+
+Therefore, the answer is 4. 
+
+#### <4>",neither
+291,There are 8 different books and 10 different movies in the ' crazy silly school ' series. If you read 19 of the books and watched 61 of the movies How many more movies than books are there in the ' crazy silly school ' series?,Faye was placing her pencils into rows with 22 pencils in each row. She had 6 packs of pencils each one having 14 pencils. How many pencils does she have?,2,84,#### 11,neither
+292,Faye was placing her pencils into rows with 22 pencils in each row. She had 6 packs of pencils each one having 14 pencils. How many pencils does she have?,White t - shirts can be purchased in packages. If mom buys 66 white t - shirts where each package has 3 white t - shirts. How many packages will she have?,84,22,"To find out how many pencils she has, we need to calculate the total number of pencils from both the rows and the packs.
+
+First, let's calculate the total number of pencils from the rows:
+- Each row has 22 pencils.
+- There are 6 rows.
+- So, the total number of pencils from the rows is 22 pencils/row * 6 rows = 132 pencils.
+
+Next, let's calculate the total number of pencils from the packs:
+- Each pack has 14 pencils.
+- There are 6 packs.
+- So, the total number of pencils from the packs is 14 pencils/pack * 6 packs = 84 pencils.
+
+Now, let's add the total number of pencils from the rows and the packs to find the total number of pencils:
+- Total number of pencils = 132 pencils (from rows) + 84 pencils (from packs) = 216 pencils.
+
+Therefore, the total number of pencils she has is 216 pencils.
+
+#### 216",neither
+293,White t - shirts can be purchased in packages. If mom buys 66 white t - shirts where each package has 3 white t - shirts. How many packages will she have?,Mary is baking a cake. The recipe calls for 5 cups of sugar and 13 cups of flour. She already put in some cups of flour. If she still needs 12 more cups of flour How many cups of flour did she put in?,22,1,#### 16,neither
+294,Mary is baking a cake. The recipe calls for 5 cups of sugar and 13 cups of flour. She already put in some cups of flour. If she still needs 12 more cups of flour How many cups of flour did she put in?,"7 red peaches, 15 yellow peaches and 8 green peaches are in the basket. How many peaches are in the basket?",1,30,"The problem seems to be a mix of English and nonsensical characters. However, if we interpret it as a math problem, it could be asking how many pieces of pie are in a pie. Since the problem is not clear, I will provide a general solution to a similar problem.
+
+Let's say we have a pie and we know that there are 7 pieces of pie in the pie. If we want to find out how many pieces of pie are in the pie, we can simply count the number of pieces.
+
+In this case, the problem is asking for the number of pieces of pie in a pie, which is 7 pieces.
+
+Therefore, the answer is 7 pieces of pie.
+
+#### 7",neither
+295,"7 red peaches, 15 yellow peaches and 8 green peaches are in the basket. How many peaches are in the basket?",Jack received 3 emails and 64 letters in the morning. He then received 5 emails and 54 letters in the afternoon. How many emails did jack receive in the day?,30,8,"The problem seems to be a mix of different elements, but if we focus on the part about the number of emails and letters received, we can solve it as follows:
+
+ack received 3 oails ans 34 letterZ h the mhrnig.
+The problem seems to be a mix of different elements, but if we focus on the part about the number of emails and letters received, we can solve it as follows:
+
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrnig.
+ack received 3 oails ans 34 letterZ h the mhrn",neither
+296,Jack received 3 emails and 64 letters in the morning. He then received 5 emails and 54 letters in the afternoon. How many emails did jack receive in the day?,Ed had 2 more marbles than Doug. Doug lost some of his marbles at the playground. Now Ed has 19 more marbles than doug. How many marbles did Doug lose?,8,17,"The problem seems to be a mix of letters and numbers, and it's not clear what the question is asking. However, if we interpret the question as asking whether Doug has more marbles than Ed, and if Doug has 2 more marbles than Ed, then the answer would be ""Yes, Doug has more marbles than Ed."" If the question is asking whether Doug has more marbles than Ed, and if Doug has 1 more marble than Ed, then the answer would be ""No, Doug does not have more marbles than Ed."" Without more context, it's difficult to provide a definitive answer. Please provide more information or clarify the question.",neither
+297,Ed had 2 more marbles than Doug. Doug lost some of his marbles at the playground. Now Ed has 19 more marbles than doug. How many marbles did Doug lose?,Dan has $ 3 left with him after he bought a candy bar for $ 2. How much money did he have initially?,17,5,#### 12,neither
+298,Dan has $ 3 left with him after he bought a candy bar for $ 2. How much money did he have initially?,Jake has 13 fewer peaches and 3 more apples than Steven. Steven has 9 peaches and 8 apples. How many apples does Jake have?,5,11,#### 16,neither
+299,Jake has 13 fewer peaches and 3 more apples than Steven. Steven has 9 peaches and 8 apples. How many apples does Jake have?,Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families flew away to asia and 62 bird families flew away to africa How many more bird families flew away to africa than those that flew away to asia?,11,27,#### 16,neither

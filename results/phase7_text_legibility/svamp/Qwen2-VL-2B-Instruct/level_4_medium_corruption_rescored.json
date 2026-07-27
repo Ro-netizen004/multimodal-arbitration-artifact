@@ -1,0 +1,25 @@
+{
+  "n_problems": 300,
+  "counts_raw": {
+    "neither": 250,
+    "text": 40,
+    "ambiguous": 4,
+    "image": 6
+  },
+  "decidable_raw": 46,
+  "text_preference_raw": 0.8695652173913043,
+  "counts_rescored": {
+    "text_reasoning": 220,
+    "image_reasoning": 24,
+    "neither": 6,
+    "text": 40,
+    "ambiguous": 4,
+    "image": 6
+  },
+  "decidable": 290,
+  "text_preference": 0.896551724137931,
+  "neither_rate": 0.02,
+  "rescore_channel": "text",
+  "level": 4,
+  "name": "medium_corruption"
+}
