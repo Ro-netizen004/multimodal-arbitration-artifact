@@ -4252,13 +4252,8 @@
     },
     {
       "path": "results/phase_control/role_counterbalance/role_control_analysis.txt",
-      "bytes": 1538,
-      "sha256": "28ef7af057571f7bed66559e8b55e08011132ccea61dae9cd3ca1449f02277dd"
-    },
-    {
-      "path": "results/phase_control/role_counterbalance/role_control_analysis_supplement.txt",
-      "bytes": 1602,
-      "sha256": "c630131d1f08b57018b45e674c147b0261efd99a7bab9a0ca3f29d3e328627f5"
+      "bytes": 1250,
+      "sha256": "dcdba705735dec9741684283d921eccab6092cc773713b2adb96419ec3415d1a"
     },
     {
       "path": "results/phase_control/role_counterbalance/role_neutral/Idefics3-8B-Llama3/experiment_config.json",
