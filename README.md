@@ -20,6 +20,23 @@ confidence intervals, statistical tests, tables, and figures from the saved
 item-level outputs. Reviewers do not need to download a benchmark or rerun a
 vision-language model for those checks.
 
+## Canonical inference path
+
+The artifact also includes the canonical code used to produce the item-level
+outputs:
+
+- `src/models.py`: model loading, multimodal generation, and candidate CLL;
+- `src/benchmarks.py`: benchmark and frozen-render loading;
+- `src/rendering.py`, `src/noise.py`, and `src/text_noise.py`: stimulus creation;
+- `scripts/run_legibility.py`: matched GSM8K/SVAMP degradation experiments;
+- `scripts/run_chartqa_conflict.py`: ChartQA-Conflict inference;
+- `scripts/prepare_chartqa_evidence.py`: reviewed ChartQA manifest compilation.
+
+Rerunning inference is not required to verify the reported statistics. It
+additionally requires model weights, upstream benchmark access, suitable GPU
+hardware, and—only for optional proprietary-model checks—provider API keys.
+No model weights, caches, credentials, or private cluster paths are included.
+
 The artifact includes an inspection-ready release of the 229 ChartQA-Conflict
 items used in the reported analyses: each native chart, shared question,
 chart-supported answer, conflicting evidence-bearing report, and

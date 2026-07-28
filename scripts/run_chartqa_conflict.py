@@ -14,6 +14,7 @@ import math
 import os
 import random
 import re
+import tempfile
 import sys
 from collections import Counter
 from decimal import Decimal, InvalidOperation
@@ -234,8 +235,11 @@ def neutral_prompt(row, report, chain_of_thought):
     # models to exhaust their output budget before emitting the marked answer and
     # makes strict source attribution needlessly dependent on trace parsing.
     ending = (
+        "Select exactly one source-supported answer, even though the sources disagree. "
+        "Do not abstain, hedge, combine the answers, or list alternatives. "
         "Respond with exactly one line in the form '#### <answer>'. "
-        "After ####, give only the answer value; do not explain your reasoning."
+        "After ####, copy only the bare answer value (for example, 3.89 or 12.8%); "
+        "do not include words, source names, or an explanation."
     )
     return (
         f"Question: {row['question']}\n\n"
@@ -349,6 +353,41 @@ def load_jsonl(path):
     return rows
 
 
+def reuse_image_l0_for_text_arm(condition_root, model_key, model_dir, expected):
+    """Reuse the identical clean endpoint instead of making a second API call.
+
+    The L0 chart and report are identical in both arms. Reusing the image-arm
+    generations removes API nondeterminism from the arm contrast.
+    """
+    source = (
+        condition_root / "image" / model_key /
+        "level_0_clean.generation.jsonl"
+    )
+    target = model_dir / "level_0_clean.generation.jsonl"
+    rows = load_jsonl(source)
+    if len(rows) != expected:
+        raise RuntimeError(
+            f"Cannot reuse L0: expected {expected} rows in {source}; found {len(rows)}"
+        )
+    if target.exists():
+        existing = load_jsonl(target)
+        if len(existing) == expected:
+            return
+        raise RuntimeError(
+            f"Refusing to overwrite incomplete text-arm L0 file: {target}"
+        )
+    with tempfile.NamedTemporaryFile(
+        "w", encoding="utf-8", delete=False, dir=model_dir, suffix=".jsonl.tmp"
+    ) as handle:
+        temp_path = Path(handle.name)
+        for i in sorted(rows):
+            record = dict(rows[i])
+            record["arm"] = "text"
+            handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+    os.replace(temp_path, target)
+    print(f"Reused image-arm L0 generations -> {target}")
+
+
 def run_level(vlm, items_by_id, manifest, model_dir, arm, level, mode):
     name = TEXT_NOISE_LEVELS[level]["name"] if arm == "text" else NOISE_LEVELS[level]["name"]
     path = model_dir / f"level_{level}_{name}.{mode}.jsonl"
@@ -370,7 +409,10 @@ def run_level(vlm, items_by_id, manifest, model_dir, arm, level, mode):
                     prediction = vlm.generate_with_image(image, text_prompt=prompt)
                     follows, extracted, normalized = classify(prediction, row)
                     result = {"prediction": prediction, "extracted_final": extracted,
-                              "normalized_final": repr(normalized), "follows": follows}
+                              "normalized_final": repr(normalized), "follows": follows,
+                              "api_response_meta": getattr(
+                                  vlm, "last_response_meta", None
+                              )}
                 elif mode == "cll":
                     prompt = neutral_prompt(row, report, chain_of_thought=False)
                     margin = vlm.candidate_margin(
@@ -451,6 +493,23 @@ def main():
     parser.add_argument("--mode", choices=("generation", "cll", "decodability"))
     parser.add_argument("--levels", nargs="+", type=int, default=list(LEVELS))
     parser.add_argument("--num-problems", type=int, default=300)
+    parser.add_argument(
+        "--api-output-tokens", type=int, default=1024,
+        help="Completion-token budget for frontier API models (default: 1024).",
+    )
+    parser.add_argument(
+        "--openai-reasoning-effort", default="none",
+        help="Reasoning effort for OpenAI API models; use 'default' to omit it.",
+    )
+    parser.add_argument(
+        "--gemini-thinking-level", default="minimal",
+        choices=("minimal", "low", "medium", "high", "default"),
+        help="Thinking level for Gemini API models; 'default' omits the setting.",
+    )
+    parser.add_argument(
+        "--reuse-image-l0", action="store_true",
+        help="For text-arm generation, copy the identical image-arm L0 responses.",
+    )
     parser.add_argument("--seed", type=int, default=20260721)
     parser.add_argument("--output-dir", type=Path,
                         default=Path("results/phase_control/chartqa_conflict"))
@@ -521,6 +580,10 @@ def main():
         model_dir.mkdir(parents=True, exist_ok=True)
         config = {"design_version": DESIGN_VERSION, "model": model_key, "arm": args.arm,
                   "mode": args.mode, "report_type": args.report_type, "n": len(manifest),
+                  "api_output_tokens": args.api_output_tokens,
+                  "openai_reasoning_effort": args.openai_reasoning_effort,
+                  "gemini_thinking_level": args.gemini_thinking_level,
+                  "reuse_image_l0": args.reuse_image_l0,
                   "manifest_sha256": manifest_digest(manifest),
                   "dataset_repo": args.dataset_repo,
                   "dataset_revision": args.dataset_revision}
@@ -529,8 +592,27 @@ def main():
             raise RuntimeError(f"Incompatible existing configuration: {config_path}")
         atomic_json(config_path, config)
         spec = MODEL_REGISTRY[model_key]
-        vlm = VLMModel(model_name=spec["name"], model_type=spec["type"],
-                       max_new_tokens=128, torch_dtype="bfloat16")
+        is_api = spec["type"] in {"openai", "gemini"}
+        if args.reuse_image_l0:
+            if args.arm != "text" or args.mode != "generation":
+                parser.error("--reuse-image-l0 requires --arm text --mode generation")
+            reuse_image_l0_for_text_arm(
+                condition_root, model_key, model_dir, len(manifest)
+            )
+        vlm = VLMModel(
+            model_name=spec["name"],
+            model_type=spec["type"],
+            max_new_tokens=args.api_output_tokens if is_api else 128,
+            torch_dtype="bfloat16",
+            openai_reasoning_effort=(
+                None if args.openai_reasoning_effort == "default"
+                else args.openai_reasoning_effort
+            ),
+            gemini_thinking_level=(
+                None if args.gemini_thinking_level == "default"
+                else args.gemini_thinking_level
+            ),
+        )
         vlm.load()
         try:
             for level in args.levels:

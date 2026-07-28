@@ -1217,8 +1217,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2376,
-      "sha256": "a7b86d9bf880d4b0996e09ded65efc5cabe961b82d042112ad23b17c58c1326f"
+      "bytes": 3259,
+      "sha256": "d6c35784d5bbef8d1f0b4bc23cf3572e7bb22b0deb30bc7403c505ae6aca5e12"
     },
     {
       "path": "requirements.txt",
@@ -7741,6 +7741,11 @@
       "sha256": "a00cb4da4fc7fb48aad46f02b96b5f86573cd9c08b40a30e05e294fa49ca8f7f"
     },
     {
+      "path": "scripts/audit_frontier_chartqa.py",
+      "bytes": 2827,
+      "sha256": "0259f2f90b79a8792f099fe3d7198cd75e69e381d4cfb5bdf0e9c2604bbb23c7"
+    },
+    {
       "path": "scripts/build_legibility_all.py",
       "bytes": 3236,
       "sha256": "6b32a306b15a94ebf116101eb776ada4fbcb7ed8d0365a00104209518ec6496b"
@@ -7787,13 +7792,13 @@
     },
     {
       "path": "scripts/run_chartqa_conflict.py",
-      "bytes": 24134,
-      "sha256": "934e8de96953fedbb835c70c651df43f177d65757a8feb765d4607269857a25f"
+      "bytes": 27726,
+      "sha256": "458d80bfb061d1db8af89059faf06bd6e0e808fc3b299edfb0b6cfd48ead0940"
     },
     {
       "path": "scripts/run_legibility.py",
-      "bytes": 36881,
-      "sha256": "3668bcd6768b242d8d08be0b75f53c767bbd7d8fce1f22b5126f46a73143f1cb"
+      "bytes": 36985,
+      "sha256": "dbee566343cf4de7f1044b13d905efb35d98e000d67477e8bc6a212d19269dcc"
     },
     {
       "path": "src/__init__.py",
@@ -7827,8 +7832,8 @@
     },
     {
       "path": "src/models.py",
-      "bytes": 41589,
-      "sha256": "487580b10962f3d94b6a092961567ee8eb6fc9a150ce347bff73e274ade1b244"
+      "bytes": 44057,
+      "sha256": "366c266ea712462d8e6a9b272f26e1364cb092f022f038ed533138888bb4538e"
     },
     {
       "path": "src/noise.py",
