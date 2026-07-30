@@ -2027,8 +2027,8 @@
     },
     {
       "path": "results/main_arithmetic/analysis/neutral_cll_paired_statistics.txt",
-      "bytes": 10406,
-      "sha256": "eeee475d14c9410f00d3d5888b13f429435f6cc1c169a8390d6f60750fc85941"
+      "bytes": 5229,
+      "sha256": "d3dec148f7ef3655e1b346ba89e4fda7e7f86550c78e105df8338e323a1c268b"
     },
     {
       "path": "results/main_arithmetic/gsm8k/image_degradation/Idefics3-8B-Llama3/experiment_config.json",
