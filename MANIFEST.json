@@ -6,9 +6,9 @@
   ],
   "files": [
     {
-      "path": "configs/default.yaml",
-      "bytes": 4073,
-      "sha256": "e7a78d6a7a45d6d0ffd48c03baec37a4ef9454868784b0e10592a51aeb77b012"
+      "path": "configs/paper_experiments.yaml",
+      "bytes": 1430,
+      "sha256": "4d215153723f14bf3783cc35b7c4e8faf92d1c4090da0cfd38dfa51209e6ae49"
     },
     {
       "path": "data/chartqa_conflict/DATASET_OVERVIEW.md",
@@ -1196,6 +1196,16 @@
       "sha256": "9551e8816b2c47fe5c56411ac9ace64778d4c68c882d8d20eb7f6325f918c699"
     },
     {
+      "path": "EXPECTED_RESULTS.md",
+      "bytes": 1257,
+      "sha256": "8d83369b4eb1a4dca59947b3ed1c9b0e3cf374d9f9beec5e745f10ceacfe1aab"
+    },
+    {
+      "path": "EXPERIMENT_METADATA.md",
+      "bytes": 1682,
+      "sha256": "c59267a6833e0890056865bb0ad3b6e60f38a269f2b773fb89f9e6fce529dfaa"
+    },
+    {
       "path": "paper/figures/chartqa_example.png",
       "bytes": 32703,
       "sha256": "c82a6131412f95f5e97ef40b1f7882bf275c2af61461586c5a94648b6c4403c4"
@@ -1217,13 +1227,23 @@
     },
     {
       "path": "README.md",
-      "bytes": 5781,
-      "sha256": "91e019d7db42e9b20338e0752c737af1d2bb2ecbbfa80f7e0e63deb1b37cf249"
+      "bytes": 6762,
+      "sha256": "069a843074e56a2ff7265e5bd6356ecec840d48219a79a3ad4cdf9619ec84895"
+    },
+    {
+      "path": "requirements-analysis.txt",
+      "bytes": 61,
+      "sha256": "e4552c7a1e1a61a5f77c23041778e9d2fda41a8557f439535410f2f190fab5ad"
+    },
+    {
+      "path": "requirements-inference.txt",
+      "bytes": 117,
+      "sha256": "2ecebb99764ceeb5e16d9ae3b018a52e691bcb1147542037de923465fc422055"
     },
     {
       "path": "requirements.txt",
-      "bytes": 148,
-      "sha256": "1e3ef4a6753179d5eb3e9c4cfee136b62b9c8c0ec7b00599761523dfeb1853f0"
+      "bytes": 117,
+      "sha256": "2ecebb99764ceeb5e16d9ae3b018a52e691bcb1147542037de923465fc422055"
     },
     {
       "path": "results/calibration/arithmetic_unimodal/gsm8k/decodability_all.json",
@@ -7781,6 +7801,11 @@
       "sha256": "bedaccf445d1f467145c9ea7cc77ef1ac1dacd3d6447254c3560a220e61eeb46"
     },
     {
+      "path": "scripts/reproduce_all.py",
+      "bytes": 1881,
+      "sha256": "fe4a3168a1776eee593f7f8a5068f46daa1759324e02ef3799db625683541d0e"
+    },
+    {
       "path": "scripts/rescore_legibility_results.py",
       "bytes": 5716,
       "sha256": "113b33a022a1b8ce006e332fbee8cb6d1a3b083fe89b5ccad612fe1ac93aa483"
@@ -7799,6 +7824,11 @@
       "path": "scripts/run_legibility.py",
       "bytes": 36985,
       "sha256": "dbee566343cf4de7f1044b13d905efb35d98e000d67477e8bc6a212d19269dcc"
+    },
+    {
+      "path": "scripts/verify_artifact.py",
+      "bytes": 2909,
+      "sha256": "ea475babdf19944261fdc07de5c8b4daf4b317821d03ed2218e6880e17a404b5"
     },
     {
       "path": "src/__init__.py",
@@ -7859,6 +7889,11 @@
       "path": "src/visualization.py",
       "bytes": 7926,
       "sha256": "9bd41b4efd311eb904d2dd8b8beef3c7f67ed325660686526e92dadc6611851b"
+    },
+    {
+      "path": "THIRD_PARTY_DATA.md",
+      "bytes": 968,
+      "sha256": "a710b41dba862d173531669354a762e175841988e1b81cf40e42acd45e6bf42c"
     }
   ]
 }

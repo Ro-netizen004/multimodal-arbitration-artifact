@@ -44,6 +44,9 @@ access. Proprietary-model checks also require the reviewer's own API keys.
 |-- results/calibration/         unimodal-accuracy calibration outputs
 |-- results/supplementary/       prompt and survival checks
 |-- paper/figures/               generated paper figures
+|-- EXPECTED_RESULTS.md          reviewer-facing output checks
+|-- EXPERIMENT_METADATA.md       reported-run settings and limitations
+|-- THIRD_PARTY_DATA.md          dataset provenance and licensing
 |-- DATA_ACCESS.md               included and external data dependencies
 `-- MANIFEST.json                file sizes and SHA-256 checksums
 ```
@@ -60,10 +63,12 @@ outputs:
 - `scripts/run_chartqa_conflict.py`: ChartQA-Conflict inference;
 - `scripts/prepare_chartqa_evidence.py`: reviewed ChartQA manifest compilation.
 
-Rerunning inference is not required to verify the reported statistics. It
-additionally requires model weights, upstream benchmark access, suitable GPU
-hardware, and—only for optional proprietary-model checks—provider API keys.
-No model weights, caches, credentials, or private cluster paths are included.
+Rerunning inference is not required to verify the reported statistics. Exact
+end-to-end inference is not self-contained during anonymous review: it
+requires model weights, upstream benchmark access, and the frozen derivative
+dataset identifier that will be restored after the anonymity period. Optional
+proprietary-model checks also require provider API keys. No model weights,
+caches, credentials, or private cluster paths are included.
 
 The artifact includes an inspection-ready release of the 229 ChartQA-Conflict
 items used in the reported analyses: each native chart, shared question,
@@ -85,14 +90,15 @@ ChartQA-Conflict condition.
 - NVIDIA L40S 48 GB, one GPU per job
 
 CPU-only analysis requires NumPy and SciPy; calibrated analyses additionally
-use pandas and statsmodels.
+use pandas and statsmodels. Inference dependencies are kept separate so that
+reviewers do not need to install the GPU stack.
 
 ## CPU-only setup
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate            # Windows: .venv\Scripts\activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-analysis.txt
 ```
 
 Model inference requires substantially more storage and compute than the
@@ -103,12 +109,23 @@ CPU-only analysis commands below.
 From the artifact root:
 
 ```bash
+python scripts/verify_artifact.py
+python scripts/reproduce_all.py
+```
+
+The wrapper writes fresh logs and derived JSON under `reproduced/` without
+modifying the supplied results. The individual principal commands are:
+
+```bash
 python scripts/cll_replication_table.py --prompt-role neutral
 
 python scripts/analyze_chartqa_conflict.py   --root results/main_chartqa_conflict   --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct     Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf     llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct   --exclude-ids 45
 
-python scripts/analyze_calibrated_slopes.py   --benchmark all
+python scripts/analyze_calibrated_slopes.py   --benchmark all   --output reproduced/calibrated_slopes.json
 ```
+
+See `EXPECTED_RESULTS.md` for high-level checks and
+`EXPERIMENT_METADATA.md` for the reported-run configuration.
 
 The ChartQA generated-answer analysis reports Phi-3.5-Vision as incomplete;
 this is expected and is not silently imputed. Its primary CLL analysis is
@@ -126,6 +143,8 @@ redistribution details.
 ## Integrity and exclusions
 
 The `MANIFEST.json` file records every included file's size and SHA-256 digest.
+Run `python scripts/verify_artifact.py` to check those records and scan the
+review copy for accidental identity-bearing paths or credentials.
 Compiled ChartQA item 45 is excluded from the reported 229-item analysis and
 is recorded in both the manifest and the analysis commands. Model weights,
 credentials, caches, development logs, and the private working repository are

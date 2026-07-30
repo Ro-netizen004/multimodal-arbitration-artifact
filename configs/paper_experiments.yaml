@@ -1,0 +1,43 @@
+schema_version: 1
+experiment: matched_modality_degradation
+primary_prompt_role: neutral
+benchmarks:
+  gsm8k: {source: openai/gsm8k, split: test, problems: 1319}
+  svamp: {source: ChilleD/SVAMP, split: test, problems: 300}
+  chartqa_conflict:
+    source: frozen_anonymous_derivative
+    frozen_items: 230
+    analyzed_items: 229
+    excluded_compiled_item_ids: [45]
+    manifest_sha256: 388bce0572487024f5ac12261621cbab8931ec3032d8bf0c65a258c134d20842
+levels: [0, 2, 4, 5]
+models:
+  - {id: Qwen/Qwen2-VL-2B-Instruct, type: qwen}
+  - {id: Qwen/Qwen2.5-VL-7B-Instruct, type: qwen}
+  - {id: HuggingFaceM4/Idefics3-8B-Llama3, type: idefics}
+  - {id: llava-hf/llava-onevision-qwen2-7b-ov-hf, type: llava_onevision}
+  - {id: llava-hf/llava-v1.6-mistral-7b-hf, type: llava}
+  - {id: microsoft/Phi-3.5-vision-instruct, type: phi}
+inference:
+  quantization: null
+  torch_dtype: bfloat16
+  decoding: greedy
+  do_sample: false
+  arithmetic_max_new_tokens: 256
+  chartqa_open_model_max_new_tokens: 128
+scoring:
+  measure: conditional_log_likelihood_margin
+  candidate_normalization: mean_log_probability_per_answer_token
+  bootstrap_resamples: 10000
+  permutation_resamples: 10000
+  random_seed: 20260721
+environment:
+  python: 3.10.20
+  torch: 2.5.1+cu121
+  cuda: "12.1"
+  cudnn: "9.1"
+  transformers: 4.49.0
+  torchvision: 0.20.1+cu121
+  pillow: 12.2.0
+  accelerate: 1.14.0
+  gpu: NVIDIA L40S 48GB
