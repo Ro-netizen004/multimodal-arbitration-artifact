@@ -1,0 +1,18 @@
+{
+  "design_version": "chartqa-same-question-conflict-v4",
+  "model": "llava-v1.6-mistral-7b-hf",
+  "arm": "image",
+  "mode": "generation",
+  "report_type": "evidence",
+  "n": 229,
+  "api_output_tokens": 1024,
+  "openai_reasoning_effort": "none",
+  "gemini_thinking_level": "minimal",
+  "reuse_image_l0": false,
+  "visual_representation": "plain_table",
+  "table_manifest_name": null,
+  "table_manifest_sha256": null,
+  "manifest_sha256": "db7c97477110ece0c3c916642e2955a72073db638991e7caa5d2dec8b6d25ceb",
+  "dataset_repo": "[ANONYMIZED_DATASET_NAMESPACE]/chartqa-evidence-conflict-table-v1",
+  "dataset_revision": "4c5d377d37e0b8854f230a37f757b0fc08a31379"
+}
