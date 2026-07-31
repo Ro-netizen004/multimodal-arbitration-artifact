@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduce all principal paper statistics into a fresh output directory."""
+"""Reproduce the two main tables and every appendix-table analysis."""
 
 import subprocess
 import sys
@@ -35,34 +35,47 @@ def run(name, arguments):
 
 def main():
     OUT.mkdir(exist_ok=True)
+    run("artifact_verification", ["scripts/verify_artifact.py"])
     run(
-        "main_arithmetic",
-        ["scripts/cll_replication_table.py", "--prompt-role", "neutral"],
+        "table_1_main_arithmetic",
+        [
+            "scripts/cll_replication_table.py",
+            "--prompt-role", "neutral",
+            "--resamples", "10000",
+        ],
     )
     run(
-        "main_chartqa",
+        "table_2_main_chartqa",
         [
             "scripts/analyze_chartqa_conflict.py",
             "--root", "results/main_chartqa_conflict",
             "--models", *MODELS,
             "--exclude-ids", "45",
+            "--resamples", "10000",
         ],
     )
     run(
-        "calibrated_slopes",
+        "appendix_chartqa_chart_vs_table",
         [
-            "scripts/analyze_calibrated_slopes.py",
-            "--benchmark", "all",
-            "--output", "reproduced/calibrated_slopes.json",
+            "scripts/analyze_chartqa_representation.py",
+            "--chart-root", "results/main_chartqa_conflict",
+            "--table-root", "results/ablation_chartqa_table",
+            "--models", *MODELS,
+            "--resamples", "10000",
+            "--seed", "20260731",
         ],
     )
     run(
-        "prompt_framing",
-        ["scripts/analyze_role_control.py", "--models", *MODELS],
+        "main_asymmetry_forest",
+        [
+            "scripts/plot_asymmetry_forest.py",
+            "--resamples", "10000",
+            "--output-prefix", "reproduced/asymmetry_forest",
+        ],
     )
     run(
-        "length_normalization",
-        ["scripts/analyze_cll_normalization.py", "--models", *MODELS],
+        "appendix_tables",
+        ["scripts/reproduce_appendix_tables.py"],
     )
     print(f"\nReproduction complete: {OUT}")
 
