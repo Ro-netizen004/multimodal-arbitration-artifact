@@ -20,6 +20,11 @@ from cll_replication_table import DISPLAY, _load_by_id, result_dir
 
 ROOT = Path(__file__).resolve().parent.parent
 LEVELS = (0, 2, 4, 5)
+BENCHMARK_SEED_OFFSETS = {
+    "gsm8k": 0,
+    "svamp": 100,
+    "chartqa": 200,
+}
 LEVEL_FILE = {
     "image": {
         0: "level_0_clean.cll.jsonl",
@@ -226,6 +231,7 @@ def analyze_model(benchmark, model, resamples, seed, min_l0_accuracy):
     lo, hi = np.quantile(bootstrap, (0.025, 0.975))
     return {
         "n": n,
+        "bootstrap_seed": seed,
         "accuracy": accuracy,
         "loss": {channel: losses[channel].tolist() for channel in losses},
         "median_shift": {channel: medians[channel].tolist() for channel in medians},
@@ -246,6 +252,15 @@ def main():
     )
     parser.add_argument("--resamples", type=int, default=10_000)
     parser.add_argument(
+        "--seed",
+        type=int,
+        default=20260726,
+        help=(
+            "Base bootstrap seed. Stable benchmark/model offsets are added so a "
+            "benchmark gets identical intervals whether run alone or with --benchmark all."
+        ),
+    )
+    parser.add_argument(
         "--min-l0-accuracy",
         type=float,
         default=0.10,
@@ -265,14 +280,18 @@ def main():
 
     results = {}
     print("benchmark\tmodel\tn\tb_image\tb_text\tdifference\t95% CI")
-    for benchmark_index, benchmark in enumerate(benchmarks):
+    for benchmark in benchmarks:
         results[benchmark] = {}
         for model_index, model in enumerate(DISPLAY):
             result = analyze_model(
                 benchmark,
                 model,
                 args.resamples,
-                seed=20260726 + 100 * benchmark_index + model_index,
+                seed=(
+                    args.seed
+                    + BENCHMARK_SEED_OFFSETS[benchmark]
+                    + model_index
+                ),
                 min_l0_accuracy=args.min_l0_accuracy,
             )
             results[benchmark][model] = result

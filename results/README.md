@@ -20,6 +20,20 @@ than by the historical phase names used while the project was developed.
   direct original-versus-neutral comparison. These are controls, not the
   primary arithmetic results.
 - `supplementary/`: character/OCR-survival checks and other supporting outputs.
+- `ablation_chartqa_table/`: the matched ChartQA representation ablation in
+  which each original chart is replaced by a plain table image containing the
+  same source facts. It contains generation and CLL outputs for both
+  degradation arms and all six CLL-capable models.
+
+Regenerate the matched GSM8K prompt-framing comparison from the artifact root:
+
+```bash
+python scripts/analyze_role_control.py \
+  --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct \
+    Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf \
+    Phi-3.5-vision-instruct \
+  --resamples 10000
+```
 
 The role-neutral arithmetic runs were originally stored under a directory
 named `role_counterbalance`. That historical name is intentionally absent from
