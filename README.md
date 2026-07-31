@@ -12,6 +12,7 @@ curation workbooks, and Git history.
 3. ChartQA-Conflict paired CLL and generated-answer contrasts.
 4. Per-model reallocation slopes calibrated by unimodal accuracy loss.
 5. Candidate-length-normalization sensitivity analyses.
+6. Chart-versus-plain-table representation ablation on matched ChartQA conflicts.
 
 ## Reproducibility scope
 
@@ -41,6 +42,7 @@ access. Proprietary-model checks also require the reviewer's own API keys.
 |-- data/chartqa_conflict/       229 reviewed chart-report conflicts
 |-- results/main_arithmetic/     GSM8K and SVAMP item-level outputs
 |-- results/main_chartqa_conflict/
+|-- results/ablation_chartqa_table/  chart-to-table representation ablation
 |-- results/calibration/         unimodal-accuracy calibration outputs
 |-- results/supplementary/       prompt and survival checks
 |-- paper/figures/               generated paper figures
@@ -62,6 +64,7 @@ outputs:
 - `scripts/run_legibility.py`: matched GSM8K/SVAMP degradation experiments;
 - `scripts/run_chartqa_conflict.py`: ChartQA-Conflict inference;
 - `scripts/prepare_chartqa_evidence.py`: reviewed ChartQA manifest compilation.
+- `scripts/analyze_chartqa_representation.py`: paired chart-versus-table contrast.
 
 Rerunning inference is not required to verify the reported statistics. Exact
 end-to-end inference is not self-contained during anonymous review: it
@@ -113,16 +116,137 @@ python scripts/verify_artifact.py
 python scripts/reproduce_all.py
 ```
 
-The wrapper writes fresh logs and derived JSON under `reproduced/` without
-modifying the supplied results. The individual principal commands are:
+The wrapper verifies the artifact, reproduces main-text Tables 1 and 2, and
+then runs every appendix-table analysis. It writes fresh logs and derived JSON
+under `reproduced/` without modifying the supplied results. To reproduce the
+two primary paper tables directly, run:
 
 ```bash
-python scripts/cll_replication_table.py --prompt-role neutral
+# Table 1: role-neutral arithmetic contrasts (GSM8K and SVAMP)
+python scripts/cll_replication_table.py \
+  --prompt-role neutral \
+  --resamples 10000
 
-python scripts/analyze_chartqa_conflict.py   --root results/main_chartqa_conflict   --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct     Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf     llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct   --exclude-ids 45
-
-python scripts/analyze_calibrated_slopes.py   --benchmark all   --output reproduced/calibrated_slopes.json
+# Table 2: ChartQA-Conflict contrasts
+python scripts/analyze_chartqa_conflict.py \
+  --root results/main_chartqa_conflict \
+  --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct \
+    Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf \
+    llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct \
+  --exclude-ids 45 \
+  --resamples 10000
 ```
+
+For Table 1, use the `PAIRED ARM CONTRAST` block. For Table 2, use the six
+rows whose `mode` is `cll`; the preceding `generation` rows are the
+supplementary behavioral analysis. The explicit resample count matches the
+paper and `configs/paper_experiments.yaml`.
+
+The main-text asymmetry forest plot is regenerated directly from those frozen
+item-level results with:
+
+```bash
+python scripts/plot_asymmetry_forest.py \
+  --resamples 10000 \
+  --output-prefix reproduced/asymmetry_forest
+```
+
+This writes PDF, PNG, and CSV versions of the plotted estimates.
+The pre-rendered submission figure and its plotted values are also included
+under `figures/asymmetry_forest.{pdf,png,csv}`.
+
+The supporting chart-versus-table representation ablation is reproduced with:
+
+```bash
+python scripts/analyze_chartqa_representation.py \
+  --chart-root results/main_chartqa_conflict \
+  --table-root results/ablation_chartqa_table \
+  --resamples 10000 \
+  --seed 20260731
+```
+
+The script reports each representation's median item-level asymmetry and the
+median paired change `A_table,i - A_chart,i`. All six table-condition CLL
+asymmetries remain negative; representation changes have no common direction.
+To regenerate only the appendix-table analyses, run:
+
+```bash
+python scripts/reproduce_appendix_tables.py
+```
+
+Its outputs are written to `reproduced/appendix/` and cover generated-choice/
+CLL agreement, accuracy-calibrated slopes for all three benchmarks,
+ChartQA generated-answer contrasts (including InternVL2), candidate-length
+normalization, and prompt-framing sensitivity.
+
+To reproduce the complete generated-answer ChartQA-Conflict appendix table,
+including InternVL2, run:
+
+```bash
+python scripts/analyze_chartqa_conflict.py \
+  --root results/main_chartqa_conflict \
+  --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct \
+    Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf \
+    llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct InternVL2-8B \
+  --exclude-ids 45 \
+  --resamples 10000
+```
+
+Use the rows whose `mode` is `generation`. Phi-3.5-Vision is expected to be
+reported as `INCOMPLETE`, while InternVL2 has generated-answer results but no
+CLL result.
+
+The calibrated-slope appendix tables can be reproduced separately:
+
+```bash
+python scripts/analyze_calibrated_slopes.py \
+  --benchmark all \
+  --resamples 10000 \
+  --seed 20260726 \
+  --output reproduced/calibrated_slopes.json
+```
+
+The generated-choice/CLL agreement validation is reproduced with:
+
+```bash
+python scripts/analyze_cll_generation_agreement.py \
+  --root results/main_arithmetic \
+  --resamples 10000 \
+  --seed 20260721
+```
+
+The primary combined summary is
+`POOLED/both_arms_L0_deduplicated`; its item-clustered interval is printed as
+`CLUSTER_BOOTSTRAP/both_arms_L0_deduplicated`.
+
+Table 7, the candidate-length-normalization sensitivity analysis, is
+reproduced with:
+
+```bash
+python scripts/analyze_cll_normalization.py \
+  --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct \
+    Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf \
+    llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct \
+  --resamples 10000
+```
+
+Use the six rows whose `framing` value is `neutral`; the `original` rows are
+the prompt-framing control. The reported columns for Table 7 are the
+`asymmetry` values at \(\alpha=0\), \(0.5\), and \(1\).
+
+The matched GSM8K prompt-framing sensitivity table is reproduced with:
+
+```bash
+python scripts/analyze_role_control.py \
+  --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct \
+    Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf \
+    Phi-3.5-vision-instruct \
+  --resamples 10000
+```
+
+The output reports the original-prompt asymmetry, role-neutral asymmetry,
+their within-item paired contrast, its bootstrap confidence interval, and
+the two-sided Wilcoxon signed-rank \(p\)-value.
 
 See `EXPECTED_RESULTS.md` for high-level checks and
 `EXPERIMENT_METADATA.md` for the reported-run configuration.

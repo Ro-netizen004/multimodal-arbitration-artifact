@@ -22,7 +22,13 @@ should satisfy these high-level checks:
    its CLL analysis is complete and is never imputed.
 5. The calibrated-slope output covers GSM8K, SVAMP, and ChartQA-Conflict and
    records any low-clean-accuracy exclusions explicitly.
+6. `reproduce_appendix_tables.py` completes five appendix analyses: generated-
+   choice/CLL agreement, calibrated slopes, ChartQA generated answers,
+   candidate-length normalization, and prompt-framing sensitivity.
 
+7. The chart-versus-table ablation contains 229 paired CLL items per model. All
+   six plain-table asymmetries remain negative. The paired table-minus-chart
+   change is not uniformly directed across models.
 For exact table values, compare the generated logs with
 `results/main_arithmetic/analysis/neutral_cll_paired_statistics.txt` and
 `results/calibration/derived/calibrated_slopes.json`. Fixed resampling seeds
