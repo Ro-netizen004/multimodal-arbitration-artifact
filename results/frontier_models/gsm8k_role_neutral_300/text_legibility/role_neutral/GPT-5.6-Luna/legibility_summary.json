@@ -1,0 +1,25 @@
+{
+  "model": "GPT-5.6-Luna",
+  "n": 300,
+  "levels_complete": [
+    0,
+    5
+  ],
+  "text_preference_by_level": {
+    "0": 0.6016597510373444,
+    "5": 0.0
+  },
+  "neither_rate_by_level": {
+    "0": 0.016666666666666666,
+    "5": 0.056666666666666664
+  },
+  "experiment_config": {
+    "schema_version": 1,
+    "prompt_config_version": "role-control-v1",
+    "model": "GPT-5.6-Luna",
+    "channel": "text",
+    "prompt_role": "neutral",
+    "n_problems": 300,
+    "dataset_sha256": "b426bb478322176c1035ccbb60182e6c9ad20bc176f91f8e3efc089777686b3d"
+  }
+}

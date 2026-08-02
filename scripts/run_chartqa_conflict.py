@@ -38,7 +38,7 @@ from src.text_noise import TEXT_NOISE_LEVELS, degrade_text
 
 DESIGN_VERSION = "chartqa-same-question-conflict-v4"
 LEVELS = (0, 2, 4, 5)
-DEFAULT_DATASET_REPO = "[ANONYMIZED_DATASET_NAMESPACE]/chartqa-evidence-conflict-v1"
+DEFAULT_DATASET_REPO = "[ANONYMIZED_DATASET_NAMESPACE]/chartqa-evidence-conflict-v2"
 DEFAULT_DATASET_REVISION = "3ead711196b4bf75ae6c23be8148bb8417047c4e"
 FROZEN_MANIFEST_SHA256 = (
     "388bce0572487024f5ac12261621cbab8931ec3032d8bf0c65a258c134d20842"

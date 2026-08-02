@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_config_version": "role-control-v1",
+  "model": "GPT-5.6-Luna",
+  "channel": "text",
+  "prompt_role": "neutral",
+  "n_problems": 300,
+  "dataset_sha256": "b426bb478322176c1035ccbb60182e6c9ad20bc176f91f8e3efc089777686b3d"
+}

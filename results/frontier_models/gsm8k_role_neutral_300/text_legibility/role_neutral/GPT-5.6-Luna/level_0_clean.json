@@ -1,0 +1,19 @@
+{
+  "level": 0,
+  "name": "clean",
+  "prompt_role": "neutral",
+  "prompt_config_version": "role-control-v1",
+  "n_problems": 300,
+  "counts": {
+    "text": 145,
+    "image": 96,
+    "invalid": 52,
+    "neither": 5,
+    "ambiguous": 2
+  },
+  "decidable": 241,
+  "text_preference": 0.6016597510373444,
+  "image_preference": 0.3983402489626556,
+  "neither_rate": 0.016666666666666666,
+  "dataset_sha256": "b426bb478322176c1035ccbb60182e6c9ad20bc176f91f8e3efc089777686b3d"
+}

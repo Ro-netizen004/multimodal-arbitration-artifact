@@ -74,6 +74,53 @@ def main():
         ],
     )
     run(
+        "frontier_chartqa_rescore",
+        [
+            "scripts/rescore_chartqa_generation.py",
+            "--root", "results/frontier_models/chartqa_conflict_raw",
+            "--output-root", "reproduced/frontier_chartqa_rescored",
+            "--manifest", "data/chartqa_conflict/items.jsonl",
+            "--models", "GPT-5.6-Luna", "Gemini-3.5-Flash",
+        ],
+    )
+    run(
+        "frontier_chartqa_audit",
+        [
+            "scripts/audit_frontier_chartqa.py",
+            "--root", "reproduced/frontier_chartqa_rescored",
+            "--models", "Gemini-3.5-Flash",
+            "--expected", "229",
+            "--levels", "0", "2", "4", "5",
+        ],
+    )
+    run(
+        "frontier_chartqa_contrast_luna",
+        [
+            "scripts/analyze_chartqa_conflict.py",
+            "--root", "reproduced/frontier_chartqa_rescored/evidence",
+            "--models", "GPT-5.6-Luna",
+            "--resamples", "10000",
+        ],
+    )
+    run(
+        "frontier_chartqa_contrast_gemini",
+        [
+            "scripts/analyze_chartqa_conflict.py",
+            "--root", "reproduced/frontier_chartqa_rescored/evidence",
+            "--models", "Gemini-3.5-Flash",
+            "--resamples", "10000",
+        ],
+    )
+    run(
+        "frontier_gsm8k_contrast",
+        [
+            "scripts/analyze_frontier_gsm8k.py",
+            "--root", "results/frontier_models/gsm8k_role_neutral_300",
+            "--model", "GPT-5.6-Luna",
+            "--resamples", "10000",
+        ],
+    )
+    run(
         "appendix_tables",
         ["scripts/reproduce_appendix_tables.py"],
     )

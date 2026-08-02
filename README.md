@@ -81,6 +81,12 @@ ChartQA datasets are not redistributed. The included inference scripts and
 frozen configuration metadata provide the pipeline for rerunning the reported
 ChartQA-Conflict condition.
 
+The sanitized 230-item derivative dataset, **ChartQA-Conflict v2**, is also
+available through the
+[anonymous dataset mirror](https://anonymous-hf.com/a/4qcemes98r9t/). It omits
+reviewer identities and free-form review notes; the artifact records the single
+post-run exclusion that yields the 229-item analysis set.
+
 ## Environment used for inference
 
 - Python 3.10.20
@@ -254,6 +260,49 @@ See `EXPECTED_RESULTS.md` for high-level checks and
 The ChartQA generated-answer analysis reports Phi-3.5-Vision as incomplete;
 this is expected and is not silently imputed. Its primary CLL analysis is
 complete for all 229 retained items in both degradation arms.
+
+## Reproduce the frontier-model appendix
+
+Saved API generations are included, so these analyses require no API keys and
+perform no inference. First rescore the raw ChartQA outputs with the same strict
+numeric matcher used in the paper; compatible unit labels are accepted, while
+conflicting scales, currencies, and units remain invalid:
+
+```bash
+python scripts/rescore_chartqa_generation.py \
+  --root results/frontier_models/chartqa_conflict_raw \
+  --output-root reproduced/frontier_chartqa_rescored \
+  --manifest data/chartqa_conflict/items.jsonl \
+  --models GPT-5.6-Luna Gemini-3.5-Flash
+
+python scripts/analyze_chartqa_conflict.py \
+  --root reproduced/frontier_chartqa_rescored/evidence \
+  --models GPT-5.6-Luna \
+  --resamples 10000
+
+python scripts/analyze_chartqa_conflict.py \
+  --root reproduced/frontier_chartqa_rescored/evidence \
+  --models Gemini-3.5-Flash \
+  --resamples 10000
+```
+
+The rescore output prints the four-level behavioral trajectories. The paired
+endpoint analysis reproduces GPT-5.6-Luna \(A=-0.9249\) and
+Gemini-3.5-Flash \(A=-0.7719\).
+
+Reproduce the 300-item GPT-5.6-Luna GSM8K contrast and both shared-clean
+baseline sensitivity checks with:
+
+```bash
+python scripts/analyze_frontier_gsm8k.py \
+  --root results/frontier_models/gsm8k_role_neutral_300 \
+  --model GPT-5.6-Luna \
+  --resamples 10000
+```
+
+This reports \(A=+0.2910\), its paired-bootstrap interval, and the positive
+shared-baseline sensitivity range. These commands are also part of
+`python scripts/reproduce_all.py`.
 
 ## Inspect ChartQA-Conflict
 

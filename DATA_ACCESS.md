@@ -18,6 +18,12 @@
 These files are sufficient to reproduce all reported aggregate numbers without
 model weights, GPUs, or access to the original benchmark images.
 
+The sanitized 230-item derivative dataset, **ChartQA-Conflict v2**, used to
+construct the analyzed ChartQA-Conflict release is available during anonymous review at
+https://anonymous-hf.com/a/4qcemes98r9t/. The anonymous release excludes
+reviewer identities and free-form review notes while preserving the frozen
+experimental fields, chart images, and manifest hash.
+
 ## Not redistributed in this artifact
 
 - Model weights.
@@ -31,4 +37,5 @@ records the exclusion. Saved result configurations retain the frozen revision
 and design version.
 
 After the anonymity period, the final archival release should replace the
-placeholder dataset namespace with the public dataset URL and pinned revision.
+anonymous URL and placeholder namespace with the public v2 dataset URL and
+pinned revision.

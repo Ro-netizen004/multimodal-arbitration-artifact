@@ -24,6 +24,12 @@ than by the historical phase names used while the project was developed.
   which each original chart is replaced by a plain table image containing the
   same source facts. It contains generation and CLL outputs for both
   degradation arms and all six CLL-capable models.
+- `frontier_models/chartqa_conflict_raw/`: saved GPT-5.6-Luna and
+  Gemini-3.5-Flash ChartQA generations. These are rescored offline into
+  `reproduced/frontier_chartqa_rescored/`; no API calls are required.
+- `frontier_models/gsm8k_role_neutral_300/`: the saved 300-item
+  GPT-5.6-Luna role-neutral GSM8K behavioral endpoints used for the frontier
+  appendix and clean-baseline sensitivity check.
 
 Regenerate the matched GSM8K prompt-framing comparison from the artifact root:
 
