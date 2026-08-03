@@ -2362,8 +2362,8 @@
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/image/Gemini-3.5-Flash/config_generation.json",
-      "bytes": 637,
-      "sha256": "841f75a63c407d81105c1a2ef2a8dfb93ff8a52d784b9d6c40f386f09f36b60f"
+      "bytes": 647,
+      "sha256": "ecc6a1f1cff3e8131ecb295ae30acd84c555c46154a08b5c9060256172f96791"
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/image/Gemini-3.5-Flash/level_0_clean.generation.jsonl",
@@ -2392,8 +2392,8 @@
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/image/GPT-5.6-Luna/config_generation.json",
-      "bytes": 633,
-      "sha256": "48d420909619ec4d5934c950ff050bfc53c0e51a5cbcde7e93e7233c07e60b2b"
+      "bytes": 643,
+      "sha256": "853869be57160a6d5a2c24faae7b7b704cd0649d89c03ad8f886f3013bac1fac"
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/image/GPT-5.6-Luna/level_0_clean.generation.jsonl",
@@ -2422,8 +2422,8 @@
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/text/Gemini-3.5-Flash/config_generation.json",
-      "bytes": 635,
-      "sha256": "f1f5382f7fc0919d0ee4b083a53f87f05f72a50ff084c8d3ae20d3d43ec8b29f"
+      "bytes": 645,
+      "sha256": "9ca819395d07db0c5ec0345b9bd19ae8d7e4a29187ceeb3b472a26d902c91f64"
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/text/Gemini-3.5-Flash/level_0_clean.generation.jsonl",
@@ -2452,8 +2452,8 @@
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/text/GPT-5.6-Luna/config_generation.json",
-      "bytes": 631,
-      "sha256": "de316d3d84c7911d4fe04f1b6ff42f1bd1c5be1a7a1608f38f3e6d3bf659d9a9"
+      "bytes": 641,
+      "sha256": "e43a91c0613eae797fe8dd7528a4c686ced265c204b221d4e6ef440152503059"
     },
     {
       "path": "results/frontier_models/chartqa_conflict_raw/evidence/text/GPT-5.6-Luna/level_0_clean.generation.jsonl",
@@ -5457,8 +5457,8 @@
     },
     {
       "path": "scripts/verify_artifact.py",
-      "bytes": 2909,
-      "sha256": "ea475babdf19944261fdc07de5c8b4daf4b317821d03ed2218e6880e17a404b5"
+      "bytes": 3771,
+      "sha256": "208c44679f7aa90b6fdf2a25143b5b8db71855f08ebbb33cbc9c575255c946cd"
     },
     {
       "path": "scripts/verify_paper_table_outputs.py",
