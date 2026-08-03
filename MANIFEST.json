@@ -1262,8 +1262,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19015,
-      "sha256": "762e1d2d669831d42edf0f17adf32c4f59883d5a122cf5670dcbf0b0c760f593"
+      "bytes": 19437,
+      "sha256": "7ce0897806ed208fbd99980a6b8372beb1f2c17263c108b50db36f3d9cf91708"
     },
     {
       "path": "requirements-analysis.txt",
@@ -5452,8 +5452,8 @@
     },
     {
       "path": "scripts/run_legibility.py",
-      "bytes": 36985,
-      "sha256": "dbee566343cf4de7f1044b13d905efb35d98e000d67477e8bc6a212d19269dcc"
+      "bytes": 37392,
+      "sha256": "508e02264bacbc310faadeb34b6d071e317708a0909b42c79c1d4c24658ba677"
     },
     {
       "path": "scripts/verify_artifact.py",
@@ -5477,8 +5477,8 @@
     },
     {
       "path": "src/benchmarks.py",
-      "bytes": 17492,
-      "sha256": "869f4e9e10e95ccaad96d0eb35f4e2f2de986f0dd02d896c509124a229647ac1"
+      "bytes": 19591,
+      "sha256": "10398f13231c55ec147ee4d021df40eb23c8751d1c661b238507317902797c8e"
     },
     {
       "path": "src/chartqa_attribution.py",

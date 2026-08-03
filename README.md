@@ -155,20 +155,29 @@ OUT=outputs/inference_arithmetic
 BENCHMARK=gsm8k                 # use svamp for the 300-item SVAMP run
 N=1319                          # use 300 for SVAMP
 
+# Use the load_dataset repository ID displayed by the anonymous arithmetic
+# mirror. The combined dataset supports both GSM8K and SVAMP; the runner
+# extracts its clean L0 rows and deterministically recreates the requested arm.
+DATASET_REPO="COPY_DATASET_ID_FROM_ANONYMOUS_MIRROR"
+
 python scripts/run_legibility.py \
+  --dataset-repo "$DATASET_REPO" \
   --benchmark "$BENCHMARK" --num-problems "$N" \
   --prompt-role neutral --noise-levels 0 2 4 5 \
   --channel image --models "$MODEL" --output-dir "$OUT"
 python scripts/run_legibility.py \
+  --dataset-repo "$DATASET_REPO" \
   --benchmark "$BENCHMARK" --num-problems "$N" \
   --prompt-role neutral --noise-levels 0 2 4 5 \
   --channel image --models "$MODEL" --output-dir "$OUT" --score-cll
 
 python scripts/run_legibility.py \
+  --dataset-repo "$DATASET_REPO" \
   --benchmark "$BENCHMARK" --num-problems "$N" \
   --prompt-role neutral --noise-levels 0 2 4 5 \
   --channel text --models "$MODEL" --output-dir "$OUT"
 python scripts/run_legibility.py \
+  --dataset-repo "$DATASET_REPO" \
   --benchmark "$BENCHMARK" --num-problems "$N" \
   --prompt-role neutral --noise-levels 0 2 4 5 \
   --channel text --models "$MODEL" --output-dir "$OUT" --score-cll

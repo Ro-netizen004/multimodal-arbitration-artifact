@@ -586,6 +586,13 @@ def main():
     parser.add_argument("--models", nargs="+", default=DEFAULT_MODELS)
     parser.add_argument("--benchmark", default="gsm8k", choices=TEXT_MATH_BENCHMARKS,
                         help="Which Protocol-A (rendered-text) benchmark to run.")
+    parser.add_argument(
+        "--dataset-repo",
+        default=None,
+        help=("Hugging Face repository ID for either the canonical rendered "
+              "benchmark or the combined arithmetic conflict dataset. This "
+              "command-line value overrides the artifact's redacted default."),
+    )
     parser.add_argument("--num-problems", type=int, default=300,
                         help="Problems per benchmark (default 300: full SVAMP; solid GSM8K subset). "
                              "Changing this auto-invalidates level_*.json from a different N.")
@@ -680,6 +687,8 @@ def main():
     # Load the CANONICAL HF renders (use_hf=True) so noise is applied on top of the
     # exact images used in the main experiments — Level 0 is then pixel-identical to
     # the Phase 1/3 mismatch baseline, per the CLAUDE.md "use canonical PNGs" rule.
+    if args.dataset_repo:
+        os.environ["VLM_ARITHMETIC_DATASET_REPO"] = args.dataset_repo
     items = load_benchmark(args.benchmark, args.num_problems, use_hf=True)
     questions = [it.question for it in items]
     references = [it.reference_answer for it in items]
