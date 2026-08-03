@@ -55,6 +55,10 @@ def main():
         ],
     )
     run(
+        "table_2_checkpoint_revisions",
+        ["scripts/emit_checkpoint_table.py"],
+    )
+    run(
         "appendix_chartqa_chart_vs_table",
         [
             "scripts/analyze_chartqa_representation.py",
@@ -71,6 +75,15 @@ def main():
             "scripts/plot_asymmetry_forest.py",
             "--resamples", "10000",
             "--output-prefix", "reproduced/asymmetry_forest",
+        ],
+    )
+    run(
+        "appendix_chartqa_table_endpoint",
+        [
+            "scripts/analyze_chartqa_conflict.py",
+            "--root", "results/ablation_chartqa_table",
+            "--models", *MODELS,
+            "--resamples", "10000",
         ],
     )
     run(
@@ -121,8 +134,20 @@ def main():
         ],
     )
     run(
+        "frontier_chartqa_trajectories",
+        [
+            "scripts/analyze_frontier_chartqa_trajectories.py",
+            "--root", "reproduced/frontier_chartqa_rescored/evidence",
+            "--models", "GPT-5.6-Luna", "Gemini-3.5-Flash",
+        ],
+    )
+    run(
         "appendix_tables",
         ["scripts/reproduce_appendix_tables.py"],
+    )
+    run(
+        "paper_table_verification",
+        ["scripts/verify_paper_table_outputs.py"],
     )
     print(f"\nReproduction complete: {OUT}")
 

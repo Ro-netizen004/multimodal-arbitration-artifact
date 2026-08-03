@@ -1,0 +1,13 @@
+Table 1: PASS
+Table 2: PASS
+Table 3: PASS
+Table 4: PASS
+Table 5: PASS
+Table 6: PASS
+Table 7: PASS
+Table 8: PASS
+Table 9: PASS
+Table 10: PASS
+Table 11: PASS
+Table 12: PASS
+All 12 numbered paper tables are backed by regenerated artifact outputs.

@@ -1,0 +1,16 @@
+
+=== Confound-controlled legibility (gsm8k, arbitration=cll) ===
+models: ['Idefics3-8B-Llama3', 'Phi-3.5-vision-instruct', 'Qwen2-VL-2B-Instruct', 'Qwen2.5-VL-7B-Instruct', 'llava-onevision-qwen2-7b-ov-hf', 'llava-v1.6-mistral-7b-hf']
+
+--- legibility axis: survival (OCR/char survival)  (36 points) ---
+    image slope ~ +0.254  (n=18)
+    text  slope ~ +5.805  (n=18)
+    interaction model  arb_shift ~ b0 + b1*leg + b2*mod + b3*(mod*leg):
+      intercept        = +0.082  (se 0.229, p=0.72) 
+      leg_loss(b1)     = +0.254  (se 0.397, p=0.53) 
+      modality(b2)     = +0.106  (se 0.446, p=0.81) 
+      mod:leg(b3)      = +5.551  (se 2.103, p=0.013) *
+    -> b3 (text slope - image slope) = +5.551, p=0.013: residual TEXT-PRIMACY beyond legibility
+
+Robustness: if b3 agrees in sign/significance across BOTH axes, the conclusion is
+not an artifact of how legibility was operationalized.

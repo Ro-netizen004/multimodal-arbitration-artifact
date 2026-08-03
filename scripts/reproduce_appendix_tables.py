@@ -91,6 +91,52 @@ def main() -> None:
         ],
     )
 
+    for benchmark in ("gsm8k", "svamp"):
+        regression_args = [
+            "scripts/analyze_legibility_item_model.py",
+            "--benchmark", benchmark,
+            "--decodability", f"results/calibration/arithmetic_unimodal/{benchmark}/decodability_all.json",
+            "--image-root", f"results/main_arithmetic/{benchmark}/image_degradation",
+            "--text-root", f"results/main_arithmetic/{benchmark}/text_degradation",
+            "--output", f"reproduced/appendix/pooled_accuracy_regression_{benchmark}.json",
+        ]
+        if benchmark == "gsm8k":
+            regression_args.extend([
+                "--phase4-image-root", "results/calibration/gsm8k_image_unimodal",
+            ])
+        run(
+            f"pooled_accuracy_regression_{benchmark}",
+            regression_args,
+        )
+        winsorized_args = [*regression_args]
+        output_index = winsorized_args.index("--output") + 1
+        winsorized_args[output_index] = (
+            f"reproduced/appendix/pooled_accuracy_regression_{benchmark}_winsor01.json"
+        )
+        winsorized_args.extend(["--winsorize", "0.01"])
+        run(
+            f"pooled_accuracy_regression_{benchmark}_winsor01",
+            winsorized_args,
+        )
+        control_args = [
+            "scripts/analyze_legibility_control.py",
+            "--benchmark", benchmark,
+            "--metric", "cll",
+            "--min-headroom", "0.0",
+            "--decodability", f"results/calibration/arithmetic_unimodal/{benchmark}/decodability_all.json",
+            "--survival", f"results/supplementary/character_ocr_survival/{benchmark}/survival.json",
+            "--image-root", f"results/main_arithmetic/{benchmark}/image_degradation",
+            "--text-root", f"results/main_arithmetic/{benchmark}/text_degradation",
+        ]
+        if benchmark == "gsm8k":
+            control_args.extend([
+                "--phase4-image-root", "results/calibration/gsm8k_image_unimodal",
+            ])
+        run(
+            f"calibration_axes_{benchmark}",
+            control_args,
+        )
+
     print(f"\nAppendix-table reproduction complete: {OUT}")
 
 

@@ -1,3 +1,7 @@
 .venv/
-reproduced/
-scripts/__pycache__/
+reproduced/*
+!reproduced/*.txt
+!reproduced/appendix/
+reproduced/appendix/*
+!reproduced/appendix/*.txt
+**/__pycache__/

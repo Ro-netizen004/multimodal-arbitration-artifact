@@ -1,0 +1,26 @@
+
+=== Confound-controlled legibility (svamp, arbitration=cll) ===
+models: ['Idefics3-8B-Llama3', 'Phi-3.5-vision-instruct', 'Qwen2-VL-2B-Instruct', 'Qwen2.5-VL-7B-Instruct', 'llava-onevision-qwen2-7b-ov-hf', 'llava-v1.6-mistral-7b-hf']
+
+--- legibility axis: task_acc (single-modality VLM accuracy)  (36 points) ---
+    image slope ~ +1.109  (n=18)
+    text  slope ~ +3.091  (n=18)
+    interaction model  arb_shift ~ b0 + b1*leg + b2*mod + b3*(mod*leg):
+      intercept        = -0.004  (se 0.728, p=1) 
+      leg_loss(b1)     = +1.109  (se 0.916, p=0.23) 
+      modality(b2)     = +0.561  (se 1.536, p=0.72) 
+      mod:leg(b3)      = +1.982  (se 2.054, p=0.34) 
+    -> b3 (text slope - image slope) = +1.982, p=0.34: no statistically resolved residual asymmetry
+
+--- legibility axis: survival (OCR/char survival)  (36 points) ---
+    image slope ~ +1.134  (n=18)
+    text  slope ~ +9.099  (n=18)
+    interaction model  arb_shift ~ b0 + b1*leg + b2*mod + b3*(mod*leg):
+      intercept        = -0.058  (se 0.749, p=0.94) 
+      leg_loss(b1)     = +1.134  (se 0.916, p=0.22) 
+      modality(b2)     = +1.313  (se 1.122, p=0.25) 
+      mod:leg(b3)      = +7.965  (se 4.634, p=0.095) 
+    -> b3 (text slope - image slope) = +7.965, p=0.095: no statistically resolved residual asymmetry
+
+Robustness: if b3 agrees in sign/significance across BOTH axes, the conclusion is
+not an artifact of how legibility was operationalized.

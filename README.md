@@ -14,6 +14,10 @@ curation workbooks, and Git history.
 5. Candidate-length-normalization sensitivity analyses.
 6. Chart-versus-plain-table representation ablation on matched ChartQA conflicts.
 
+Every numbered table in the submission PDF is mapped to its generating command
+and output in [`TABLE_REPRODUCTION.md`](TABLE_REPRODUCTION.md). The complete map
+is executed by `python scripts/reproduce_all.py`.
+
 ## Reproducibility scope
 
 The artifact is self-contained for reproducing the paper's analyses, metrics,
@@ -32,6 +36,14 @@ The first path is complete and immediately runnable from this repository. The
 second additionally requires the relevant model weights and upstream benchmark
 access. Proprietary-model checks also require the reviewer's own API keys.
 
+## Licensing
+
+Evaluation code is released under the MIT License (`LICENSE`). Newly created
+annotations, degradation metadata, conflict mappings, exclusion records, and
+saved model outputs are released under CC BY 4.0 (`DATA_LICENSE.md`). Upstream
+GSM8K and SVAMP material is MIT-licensed; ChartQA-derived charts and source data
+remain under GPL-3.0. See `THIRD_PARTY_DATA.md` for the component-level notice.
+
 ## Repository map
 
 ```text
@@ -47,6 +59,7 @@ access. Proprietary-model checks also require the reviewer's own API keys.
 |-- results/supplementary/       prompt and survival checks
 |-- paper/figures/               generated paper figures
 |-- EXPECTED_RESULTS.md          reviewer-facing output checks
+|-- TABLE_REPRODUCTION.md        commands and outputs for paper Tables 1--12
 |-- EXPERIMENT_METADATA.md       reported-run settings and limitations
 |-- THIRD_PARTY_DATA.md          dataset provenance and licensing
 |-- DATA_ACCESS.md               included and external data dependencies
@@ -225,6 +238,11 @@ The primary combined summary is
 `POOLED/both_arms_L0_deduplicated`; its item-clustered interval is printed as
 `CLUSTER_BOOTSTRAP/both_arms_L0_deduplicated`.
 
+The appendix wrapper also regenerates the pooled task-accuracy regressions
+(Table 6) and the character/OCR-survival interactions in Appendix F. The latter
+uses the frozen survival measurements in `results/supplementary/`; rerunning OCR
+measurement itself is not required to reproduce the reported coefficients.
+
 Table 7, the candidate-length-normalization sensitivity analysis, is
 reproduced with:
 
@@ -286,7 +304,16 @@ python scripts/analyze_chartqa_conflict.py \
   --resamples 10000
 ```
 
-The rescore output prints the four-level behavioral trajectories. The paired
+The four-level behavioral trajectories used by the frontier trajectory table are
+emitted explicitly with:
+
+```powershell
+python scripts\analyze_frontier_chartqa_trajectories.py `
+  --root reproduced\frontier_chartqa_rescored\evidence `
+  --models GPT-5.6-Luna Gemini-3.5-Flash
+```
+
+The paired
 endpoint analysis reproduces GPT-5.6-Luna \(A=-0.9249\) and
 Gemini-3.5-Flash \(A=-0.7719\).
 

@@ -1,0 +1,9 @@
+[
+  {"checkpoint": "Qwen/Qwen2-VL-2B-Instruct", "revision": "895c3a49bc3fa70a340399125c650a463535e71c"},
+  {"checkpoint": "Qwen/Qwen2.5-VL-7B-Instruct", "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5"},
+  {"checkpoint": "HuggingFaceM4/Idefics3-8B-Llama3", "revision": "fddb4ff79181e55a994674777e06cd5456ce3dc3"},
+  {"checkpoint": "llava-hf/llava-onevision-qwen2-7b-ov-hf", "revision": "0d50680527681998e456c7b78950205bedd8a068"},
+  {"checkpoint": "llava-hf/llava-v1.6-mistral-7b-hf", "revision": "2424fdd47412fccc66d91719126b420e9fbd7065"},
+  {"checkpoint": "microsoft/Phi-3.5-vision-instruct", "revision": "12b77fb40b63a2c73c68243d3f767aab688a1b2a"},
+  {"checkpoint": "OpenGVLab/InternVL2-8B", "revision": "6fb9ad6924f69424e57fab2ab061d707688f0296"}
+]
