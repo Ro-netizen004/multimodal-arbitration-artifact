@@ -18,6 +18,13 @@ LEVEL_FILES = {
     "text": ("level_0_clean.cll.jsonl", "level_5_heavy_corruption.cll.jsonl"),
 }
 
+SETTING_SEED_OFFSETS = {
+    "gsm8k_original": 0,
+    "gsm8k_neutral": 100,
+    "svamp_neutral": 200,
+    "chartqa": 300,
+}
+
 
 def candidate_length(total, mean):
     if total is None or mean is None or not np.isfinite(total) or not np.isfinite(mean):
@@ -60,10 +67,10 @@ def arm_changes(model_dir: Path, arm: str, alpha: float):
     return {item: l5[item] - l0[item] for item in sorted(l0.keys() & l5.keys())}
 
 
-def contrast(image_dir: Path, text_dir: Path, alpha: float):
+def contrast(image_dir: Path, text_dir: Path, alpha: float, exclude_ids=()):
     image = arm_changes(image_dir, "image", alpha)
     text = arm_changes(text_dir, "text", alpha)
-    ids = sorted(image.keys() & text.keys())
+    ids = sorted((image.keys() & text.keys()) - set(exclude_ids))
     r_image = np.asarray([image[item] for item in ids], dtype=float)
     r_text = np.asarray([-text[item] for item in ids], dtype=float)
     return ids, r_image, r_text, r_text - r_image
@@ -95,30 +102,54 @@ def main():
                         default=Path("results/prompt_framing_control/original_prompt/gsm8k/text_degradation"))
     parser.add_argument("--neutral-root", type=Path,
                         default=Path("results/main_arithmetic"))
+    parser.add_argument("--chartqa-root", type=Path,
+                        default=Path("results/main_chartqa_conflict"))
+    parser.add_argument(
+        "--benchmarks", nargs="+", choices=("gsm8k", "svamp", "chartqa"),
+        default=("gsm8k",),
+        help=("Settings to analyze. GSM8K retains original and role-neutral "
+              "rows; SVAMP and ChartQA use the primary paper conditions."),
+    )
+    parser.add_argument("--chartqa-exclude-ids", nargs="+", type=int, default=(45,))
     parser.add_argument("--resamples", type=int, default=10_000)
     parser.add_argument("--alphas", nargs="+", type=float, default=(0.0, 0.5, 1.0))
     args = parser.parse_args()
 
-    framings = {
-        "original": (args.original_image_root, args.original_text_root),
-        "neutral": (args.neutral_root / "gsm8k" / "image_degradation",
-                    args.neutral_root / "gsm8k" / "text_degradation"),
-    }
-    print("framing\tmodel\talpha\tn\tR_image\tR_text\tasymmetry\t95% CI\tWilcoxon p")
-    for framing, (image_root, text_root) in framings.items():
+    settings = []
+    if "gsm8k" in args.benchmarks:
+        settings.extend([
+            ("gsm8k_original", args.original_image_root, args.original_text_root, ()),
+            ("gsm8k_neutral", args.neutral_root / "gsm8k" / "image_degradation",
+             args.neutral_root / "gsm8k" / "text_degradation", ()),
+        ])
+    if "svamp" in args.benchmarks:
+        settings.append(
+            ("svamp_neutral", args.neutral_root / "svamp" / "image_degradation",
+             args.neutral_root / "svamp" / "text_degradation", ())
+        )
+    if "chartqa" in args.benchmarks:
+        settings.append(
+            ("chartqa", args.chartqa_root / "image", args.chartqa_root / "text",
+             tuple(args.chartqa_exclude_ids))
+        )
+
+    print("setting\tmodel\talpha\tn\tR_image\tR_text\tasymmetry\t95% CI\tWilcoxon p")
+    for setting, image_root, text_root, exclude_ids in settings:
         for model_index, model in enumerate(args.models):
             for alpha in args.alphas:
                 ids, r_image, r_text, asymmetry = contrast(
-                    image_root / model, text_root / model, alpha
+                    image_root / model, text_root / model, alpha, exclude_ids
                 )
                 result = paired_stats(
-                    asymmetry, seed=20260721 + model_index, resamples=args.resamples
+                    asymmetry,
+                    seed=20260721 + SETTING_SEED_OFFSETS[setting] + model_index,
+                    resamples=args.resamples,
                 )
                 if result is None:
-                    print(f"{framing}\t{model}\t{alpha:g}\tINCOMPLETE")
+                    print(f"{setting}\t{model}\t{alpha:g}\tINCOMPLETE")
                     continue
                 median, lo, hi, p_value = result
-                print(f"{framing}\t{model}\t{alpha:g}\t{len(ids)}\t"
+                print(f"{setting}\t{model}\t{alpha:g}\t{len(ids)}\t"
                       f"{np.median(r_image):+.4f}\t{np.median(r_text):+.4f}\t"
                       f"{median:+.4f}\t[{lo:+.4f},{hi:+.4f}]\t{p_value:.3g}")
 

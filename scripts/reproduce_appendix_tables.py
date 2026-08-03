@@ -79,6 +79,7 @@ def main() -> None:
         [
             "scripts/analyze_cll_normalization.py",
             "--models", *CLL_MODELS,
+            "--benchmarks", "gsm8k", "svamp", "chartqa",
             "--resamples", "10000",
         ],
     )

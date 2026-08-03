@@ -24,9 +24,16 @@ every paper table.
 | 7 | Arithmetic per-model calibrated slopes | GSM8K and SVAMP rows in `reproduced/appendix/calibrated_slopes.txt` |
 | 8 | ChartQA per-model calibrated slopes | ChartQA rows in `reproduced/appendix/calibrated_slopes.txt` |
 | 9 | Chart-versus-table representation control | `reproduced/appendix_chartqa_chart_vs_table.txt` (paired representation change) and the `cll` rows of `reproduced/appendix_chartqa_table_endpoint.txt` (standalone table-condition CIs) |
-| 10 | Candidate-length-normalization sensitivity | Neutral GSM8K rows in `reproduced/appendix/length_normalization.txt` |
+| 10 | Candidate-length-normalization sensitivity | Role-neutral GSM8K/SVAMP and ChartQA rows in `reproduced/appendix/length_normalization.txt` |
 | 11 | Open-model generated-answer ChartQA contrasts | `generation` rows in `reproduced/appendix/chartqa_generated_answers.txt` |
 | 12 | Prompt-framing sensitivity | `reproduced/appendix/prompt_framing.txt` |
+
+The canonical ChartQA generation and unimodal files already contain the
+uniform answer-extraction rescore. No model inference is rerun during table
+reproduction. In particular, Table 8 includes Phi-3.5-Vision after its clean
+chart-only accuracy was corrected to 166/229 (0.725); Table 11 still reports
+its very small complete-case generated endpoint sample rather than treating it
+as evidence comparable to the other behavioral rows.
 
 Table 1 is typeset as one table in the paper but deliberately comes from the
 two benchmark-specific analyzers: the arithmetic script and the ChartQA script.

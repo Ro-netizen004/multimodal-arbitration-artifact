@@ -1212,8 +1212,8 @@
     },
     {
       "path": "EXPECTED_RESULTS.md",
-      "bytes": 1719,
-      "sha256": "c78847ca86403987b4f8aef7ccd53b316eff5aab30b7dcc1f56814b924822e30"
+      "bytes": 2115,
+      "sha256": "b848480f62b27fd23f4ec17ea6b11b1194324e694adcb4dabffa45e63267aac6"
     },
     {
       "path": "EXPERIMENT_METADATA.md",
@@ -1262,8 +1262,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19437,
-      "sha256": "7ce0897806ed208fbd99980a6b8372beb1f2c17263c108b50db36f3d9cf91708"
+      "bytes": 20053,
+      "sha256": "cafe63c6e427a46cfe3969fd6f3350dfcb04adac929694b4ff353dbb8dbbf519"
     },
     {
       "path": "requirements-analysis.txt",
@@ -1931,29 +1931,34 @@
       "sha256": "accdef5e58668c2fb9bbc95182860092cc8ef1a1c0681ef5c0088d02ad78e447"
     },
     {
+      "path": "results/calibration/chartqa_unimodal/EXTRACTION_AUDIT.md",
+      "bytes": 952,
+      "sha256": "152cc3aa135cbd541c1ac1f0ad7931232024ee293b0b6181de1821a08f270ddd"
+    },
+    {
       "path": "results/calibration/chartqa_unimodal/image/Idefics3-8B-Llama3/config_decodability.json",
       "bytes": 423,
       "sha256": "af5470ebaf58f600c423791f6ff76195c68d3812a4df39a2bbc7797070a5ae4b"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Idefics3-8B-Llama3/level_0_clean.decodability.jsonl",
-      "bytes": 62966,
-      "sha256": "434ecc4b1fb35e92d533a5ed754edb2ede71dc0f8b1cdfd7b74c62b65c299f7b"
+      "bytes": 63176,
+      "sha256": "394044e344322a915b1ac3e9ea85f17be221a3f8482d42f7eb005caf7ce4bac8"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Idefics3-8B-Llama3/level_2_blur_light.decodability.jsonl",
-      "bytes": 62950,
-      "sha256": "56f2dbac9fdad2780676c32ee308e05d96e075b57a7041ae926075490e46bc12"
+      "bytes": 63160,
+      "sha256": "2efa55ce2316e398718d9acec792ffaceb953c05eda73fe35174ebd63915a6f7"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Idefics3-8B-Llama3/level_4_blur_noise.decodability.jsonl",
-      "bytes": 63058,
-      "sha256": "dc497fc9d11ae63b11e25261f45d29b8077ff7a9396b0073dcebb34189634d9d"
+      "bytes": 63268,
+      "sha256": "4013af1843abf638ef580fea783c24a50b3ebe501244f6a2694109d29563da6b"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Idefics3-8B-Llama3/level_5_heavy_degradation.decodability.jsonl",
-      "bytes": 63155,
-      "sha256": "ab317863d1619d607cc8f0228c8d7918d580ed84205236bef05fa01fb9515acd"
+      "bytes": 63478,
+      "sha256": "3e579768b00eb035f38b6141cc784bbabf67a32904f2500041d12faf581b1c82"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-onevision-qwen2-7b-ov-hf/config_decodability.json",
@@ -1962,23 +1967,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-onevision-qwen2-7b-ov-hf/level_0_clean.decodability.jsonl",
-      "bytes": 62944,
-      "sha256": "ac625692435956259d2a6d07939000eab85863ee5de53c72ed69e10f81d866db"
+      "bytes": 63154,
+      "sha256": "ada6aa2c6dc8bb29bae3521f468a9d560103b6ef44cbc51b89bf8eb10070dc3a"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-onevision-qwen2-7b-ov-hf/level_2_blur_light.decodability.jsonl",
-      "bytes": 62881,
-      "sha256": "ccfe21e9f7c37c3d292cde6fea9d7d72d447137fe48034269b961ad1c3e05dd6"
+      "bytes": 63092,
+      "sha256": "7bb93e14dac1e6c61dc396a6047c6ca1853773bf73ba6901521c10ad1f1f2331"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-onevision-qwen2-7b-ov-hf/level_4_blur_noise.decodability.jsonl",
-      "bytes": 61981,
-      "sha256": "fbb6e06186c20d956b151dab5a8622fa76dd8a2036ece614f421b2b6d06e41a8"
+      "bytes": 62602,
+      "sha256": "a4606f5a320174d4c00f6cb5873a31a0ded8d9480e4ba84a0e0917278cba92ac"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-onevision-qwen2-7b-ov-hf/level_5_heavy_degradation.decodability.jsonl",
-      "bytes": 62054,
-      "sha256": "7e9a5ba856684bbbcfdfb55b758379346cee0aeebd922311af775cadbf84bdb8"
+      "bytes": 62309,
+      "sha256": "deb6847b688e160323cb6b55bc1ff15949a9174c77c76a3d6deaec82d1d35056"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-v1.6-mistral-7b-hf/config_decodability.json",
@@ -1987,23 +1992,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-v1.6-mistral-7b-hf/level_0_clean.decodability.jsonl",
-      "bytes": 62426,
-      "sha256": "0110f9e8aa7db73884d84f28e304ba28d168c025638e00199ba515ed77a0636b"
+      "bytes": 63127,
+      "sha256": "b35e796a1e3eded2292f462b8a2a693b10703b56089474fd3940fc816328f210"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-v1.6-mistral-7b-hf/level_2_blur_light.decodability.jsonl",
-      "bytes": 62442,
-      "sha256": "acc1ec7d07514515c266e276e90418d96aa5af2dc5835339f4cd2e5e3b79c3b3"
+      "bytes": 63101,
+      "sha256": "41fba96cb4be70153472caae7cc1b7ff071e846838be0628f8f6b90b88007a7d"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-v1.6-mistral-7b-hf/level_4_blur_noise.decodability.jsonl",
-      "bytes": 62881,
-      "sha256": "38e33514efa8fd4026cf89a7ed9a3f3bb2e0ca481299d658010db4137e804bf9"
+      "bytes": 63175,
+      "sha256": "ed16cdc90cd780d3fcdf5d5d08d45d612c959118cce87dababda8e554d3bfb77"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/llava-v1.6-mistral-7b-hf/level_5_heavy_degradation.decodability.jsonl",
-      "bytes": 62548,
-      "sha256": "31f16efd36e96d273d7e59bc23c0e2656567a906633788ce6426d505cfd7c858"
+      "bytes": 62799,
+      "sha256": "8d1b35b11783a3cb2771f0bce655268afc181ecb617c3aba0687d9a36d450aa3"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Phi-3.5-vision-instruct/config_decodability.json",
@@ -2012,23 +2017,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Phi-3.5-vision-instruct/level_0_clean.decodability.jsonl",
-      "bytes": 153282,
-      "sha256": "45f0e68487d9c83a555018b81b7f5b2f7ccfeedf6b6fd0d540ab88fb38f6912e"
+      "bytes": 161847,
+      "sha256": "9c1e5fd3247eb5291f07fe3c42eea2d0cb0f565600fcc56e676cf8dc82bea89f"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Phi-3.5-vision-instruct/level_2_blur_light.decodability.jsonl",
-      "bytes": 150012,
-      "sha256": "fee64d58d4dcd6fbb10164491b4cf4be25bd77437bb6f489e263a0b0386ab1a9"
+      "bytes": 158288,
+      "sha256": "084ac45c48b1e3ab1afb169cc395e8793b615fe11ee30235a0c862f1b55113cd"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Phi-3.5-vision-instruct/level_4_blur_noise.decodability.jsonl",
-      "bytes": 148021,
-      "sha256": "3051efa26374fe6ab69b7d5150c102dad129f35051dee054ab7481d6547e2675"
+      "bytes": 156078,
+      "sha256": "97a0ec445dbe379a351d50e62641c7dcf4c6d619b6d48432b92eb441c9b26f7a"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Phi-3.5-vision-instruct/level_5_heavy_degradation.decodability.jsonl",
-      "bytes": 145548,
-      "sha256": "d749584b2f6569501e11f8b4a1d7bb3e332fd0e78cb20475c3a7ecefa9afb857"
+      "bytes": 153768,
+      "sha256": "a17484dbdc8953f750546b795f591792b74191825a394be036e53dc4c8375162"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2-VL-2B-Instruct/config_decodability.json",
@@ -2037,23 +2042,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2-VL-2B-Instruct/level_0_clean.decodability.jsonl",
-      "bytes": 63008,
-      "sha256": "ef1cb34ae452eaa1d906b9dd6f232129495dbb2f3737e4f0903b1699555eaac5"
+      "bytes": 63218,
+      "sha256": "3798854478f2d5769204f685395b8ac77065c3e929c37597cc4a7a6b7ee2a597"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2-VL-2B-Instruct/level_2_blur_light.decodability.jsonl",
-      "bytes": 63055,
-      "sha256": "48c62dce8bc04ed52995d90607c80adaa889adf11589023ba12e911cb71dd758"
+      "bytes": 63265,
+      "sha256": "6acc9ca85a157c25121ace7e7b982c170cb6e713ff639887aaf0bdee0846ef33"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2-VL-2B-Instruct/level_4_blur_noise.decodability.jsonl",
-      "bytes": 63458,
-      "sha256": "bc2e675ca4878690044327120b6b3e000fd5de2d14a1c375270393f25023037b"
+      "bytes": 63788,
+      "sha256": "acb889ade62c506514fbed910f2770a79e0ab24a08aae5114f425640ee8b65c8"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2-VL-2B-Instruct/level_5_heavy_degradation.decodability.jsonl",
-      "bytes": 63367,
-      "sha256": "831ae62146bc1df777de25968d9cb4775b72506d08b7ca79fe74c66a989ea66a"
+      "bytes": 63775,
+      "sha256": "eb987bd448b0546b65f724738dc842719df3b19126b59bdf1182851f6a345009"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2.5-VL-7B-Instruct/config_decodability.json",
@@ -2062,23 +2067,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2.5-VL-7B-Instruct/level_0_clean.decodability.jsonl",
-      "bytes": 63041,
-      "sha256": "4d238c47d98dfe7c0dc85c737cfd782cef41236bdf4db90793ae1fd794b3c726"
+      "bytes": 63376,
+      "sha256": "012c68e9a3bd64c384bd06865e7d5bbe6aafada9c22a1df76ea341181e9e353d"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2.5-VL-7B-Instruct/level_2_blur_light.decodability.jsonl",
-      "bytes": 63051,
-      "sha256": "0fe48ccc642c1bee67d95a6da9d120be98d9207958ece5e37da17519cc454c92"
+      "bytes": 63457,
+      "sha256": "1b8c8c3958e66cbab5d910b1323d7cf278b99d8e479b38cfd696294ec67282fe"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2.5-VL-7B-Instruct/level_4_blur_noise.decodability.jsonl",
-      "bytes": 62759,
-      "sha256": "bff55f9b9e11389ff26a68c5bd59f8a8a01ef928d310fe185052dfb1dfcbcf9b"
+      "bytes": 63520,
+      "sha256": "9d0b67ec2f2f1d7d0107b3469d43f1c1f3120c733ecf4988e7c9367aad424c75"
     },
     {
       "path": "results/calibration/chartqa_unimodal/image/Qwen2.5-VL-7B-Instruct/level_5_heavy_degradation.decodability.jsonl",
-      "bytes": 62682,
-      "sha256": "f42361454ee4e6d50c08385fee6a643f84ff52af3d1942d90e6193d2e1b27e50"
+      "bytes": 63577,
+      "sha256": "c5a0b14cc6e296adff6b1f8c6839b0cbcb3a7c477de26d65e1939a4c4b5559fc"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Idefics3-8B-Llama3/config_decodability.json",
@@ -2087,23 +2092,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Idefics3-8B-Llama3/level_0_clean.decodability.jsonl",
-      "bytes": 63030,
-      "sha256": "259829cf7f4f0e7cb75dbe536bdace583a9cb00267e8734e79a97ab05b325723"
+      "bytes": 63804,
+      "sha256": "624b8d214ae9dfabdfdb482fc424483292563f51935f93aa34e5a45d7e9b61ed"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Idefics3-8B-Llama3/level_2_light_corruption.decodability.jsonl",
-      "bytes": 62769,
-      "sha256": "da15a511fab2bb176563fa28503ff044ce6d3a6ba479a09fab18ae0b070bc1af"
+      "bytes": 63862,
+      "sha256": "e7884925aa7ca2fe796e309392ec229d8ee268c07ea6b637682267b2c6671453"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Idefics3-8B-Llama3/level_4_medium_corruption.decodability.jsonl",
-      "bytes": 62627,
-      "sha256": "3d481f0ee6865b31ca4a3371f433cd685c3fcaa14febaa18d1995a606fa67976"
+      "bytes": 64157,
+      "sha256": "e37f9056d5e56f4516a736f6604e71752a7d7385fa37644612b9965ad06b9443"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Idefics3-8B-Llama3/level_5_heavy_corruption.decodability.jsonl",
-      "bytes": 62424,
-      "sha256": "15ba4c2453f7d1b29a688a81e812665854668f3b01fe025481de96c836d0af4a"
+      "bytes": 64136,
+      "sha256": "01dcd46baba25c9a978db13e2beeba170bb28cdac8ee085cf44916d8b86e29a4"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-onevision-qwen2-7b-ov-hf/config_decodability.json",
@@ -2112,23 +2117,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-onevision-qwen2-7b-ov-hf/level_0_clean.decodability.jsonl",
-      "bytes": 63880,
-      "sha256": "bbe114a219c774644a158001460b5882aa80313ea82509a44d74704edf874fa4"
+      "bytes": 64090,
+      "sha256": "e8d3618ad22fc1362846fc02829ca9f6f9adc3eaf49b30af369db265ddb7fb52"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-onevision-qwen2-7b-ov-hf/level_2_light_corruption.decodability.jsonl",
-      "bytes": 63852,
-      "sha256": "c35e7f171fc4baeb2c136879ab66d29313b470fc53977555abb6452593a7965f"
+      "bytes": 64062,
+      "sha256": "afa4d26010586ce1195bb36bf5b1a49004865d82ae85c881bcdede8161c816bc"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-onevision-qwen2-7b-ov-hf/level_4_medium_corruption.decodability.jsonl",
-      "bytes": 63732,
-      "sha256": "ba022e1a4e22195db165176b83e616ebc80b816f0dd9575729d02bc3c1887829"
+      "bytes": 64026,
+      "sha256": "e13f0dbf9d0af4af635491d2c0c9dee20768383a393f9f7f56569b271d7f522d"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-onevision-qwen2-7b-ov-hf/level_5_heavy_corruption.decodability.jsonl",
-      "bytes": 63751,
-      "sha256": "4056dd02d80d1aa2b2c67cad5cfcfc95ff2b1a8aa92da9f34e21b47103b31b47"
+      "bytes": 64000,
+      "sha256": "cb0ecaa11708460abdb855eed8825244b9688831b94a1ebd8c064aa62fe89768"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-v1.6-mistral-7b-hf/config_decodability.json",
@@ -2137,23 +2142,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-v1.6-mistral-7b-hf/level_0_clean.decodability.jsonl",
-      "bytes": 62541,
-      "sha256": "5ac7df46fd08155cf8c4d8235cc6d090c83c69623b200ee76be008684dec09a3"
+      "bytes": 63011,
+      "sha256": "7054c61d42828ae596ad6a1ae66d17ab30d5c4ec8317b985a6ebe6212c4192e6"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-v1.6-mistral-7b-hf/level_2_light_corruption.decodability.jsonl",
-      "bytes": 62389,
-      "sha256": "fd9b0322ad155ac1753f8af7af21749212ab57e28c061fd9241a4b355528e8d3"
+      "bytes": 63094,
+      "sha256": "8b36e894fbf60cc1677f0bacb490f2ad5ba5208c661a477b08f7422621b2a301"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-v1.6-mistral-7b-hf/level_4_medium_corruption.decodability.jsonl",
-      "bytes": 62472,
-      "sha256": "f63dc645cea6491cb07a7c570d1ee32b50f1c5717f65565857ddba4e36b60ac0"
+      "bytes": 63183,
+      "sha256": "695f27626bd020f75784dc8979bece90f266b0a41c43c49974aa3e111f502c91"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/llava-v1.6-mistral-7b-hf/level_5_heavy_corruption.decodability.jsonl",
-      "bytes": 65616,
-      "sha256": "811b84c566b72ed852203b5ad8b3ab34746e3c1e474d96add20a5e2f4c626b5c"
+      "bytes": 66525,
+      "sha256": "12f040b1958b738335c709e27738071e86314880991ee64e4e553f5a73b7a7ce"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Phi-3.5-vision-instruct/config_decodability.json",
@@ -2162,23 +2167,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Phi-3.5-vision-instruct/level_0_clean.decodability.jsonl",
-      "bytes": 146521,
-      "sha256": "5f8e9959b2873905349f6d482f66d611dfd9201d3884eb27b0aa64b754bc7630"
+      "bytes": 147351,
+      "sha256": "9dba4127e213f385e52c9b074a33d5cf67378308dc4814544f33716dc7e2d558"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Phi-3.5-vision-instruct/level_2_light_corruption.decodability.jsonl",
-      "bytes": 148514,
-      "sha256": "e45a3d10a6cb881ea5f1eb6959050e7fcaf6ed1a84a4c02037892ad3ab6970e5"
+      "bytes": 149419,
+      "sha256": "eb55ecfd0d350f12dc3d67ddb9149e33991156c25b0f054b01a5c770e4b2b65a"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Phi-3.5-vision-instruct/level_4_medium_corruption.decodability.jsonl",
-      "bytes": 151920,
-      "sha256": "ab64ec0c0eba5e6c097e2e8e35075ae75598cb4d13db6cd7ed52b5c04c107681"
+      "bytes": 152410,
+      "sha256": "1b0424681e72e73e9a25d9f247d5aa54b4f040c2c959809eb15d2aa00d94eff1"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Phi-3.5-vision-instruct/level_5_heavy_corruption.decodability.jsonl",
-      "bytes": 153588,
-      "sha256": "64d642c0a21da49cdd5045eb712e6fd060f2b2bc495fc2a39bf3ac2c0728e521"
+      "bytes": 153887,
+      "sha256": "575b70ed170d7423927ef9002d0ff33f1da41b0d1d8bb0abb4ce05bd03f12a61"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2-VL-2B-Instruct/config_decodability.json",
@@ -2187,23 +2192,23 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2-VL-2B-Instruct/level_0_clean.decodability.jsonl",
-      "bytes": 63798,
-      "sha256": "a14e8f8b71cdcd15dd100632c57dc09fb8ee2daae6656bd74b1eee610a801638"
+      "bytes": 64573,
+      "sha256": "d72e53355200fcd47471c8f729f2997a9143d3aca862b0fca3d3a0a7dabb9803"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2-VL-2B-Instruct/level_2_light_corruption.decodability.jsonl",
-      "bytes": 63472,
-      "sha256": "65d362bda045cc565211aaee1bcac4c7caa923fe235ba995c68daf6711010214"
+      "bytes": 64646,
+      "sha256": "3e4cf5d964be95e375f097ee236d8c6fdd29f33259e21a137cc2e78c5dc81a41"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2-VL-2B-Instruct/level_4_medium_corruption.decodability.jsonl",
-      "bytes": 63006,
-      "sha256": "a59e951bd07b672ec352eb2a8acd9807c697a05b5bf52e44cfa913c1bfb25eb1"
+      "bytes": 64678,
+      "sha256": "1d3bae3f57ef0552de8b92746dbb8b2883463dc418b3c8825fcee16409b43c83"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2-VL-2B-Instruct/level_5_heavy_corruption.decodability.jsonl",
-      "bytes": 62711,
-      "sha256": "2e2ad8e2368de11ac44c6ecbabd86901a4275321a696eca96723c3fb385aca59"
+      "bytes": 64179,
+      "sha256": "b9fd2ad9c149d67bc9838dcf1748b69f256276e82df0e9a093a5dc033f6155a3"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2.5-VL-7B-Instruct/config_decodability.json",
@@ -2212,28 +2217,33 @@
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2.5-VL-7B-Instruct/level_0_clean.decodability.jsonl",
-      "bytes": 63852,
-      "sha256": "57996f912743f2ef07eb0e16fd1894dd1cda88d5c391c5c5e75a0a051d5ad2d7"
+      "bytes": 64104,
+      "sha256": "b5f719f64e1aeb69cfc39a97a8250b374f3cf33ba5f92f6a70c68813993e9dba"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2.5-VL-7B-Instruct/level_2_light_corruption.decodability.jsonl",
-      "bytes": 63707,
-      "sha256": "959636aff2a01d23e8329b1fabc207c5f2c742fdb549425d9f4f5144eff3280b"
+      "bytes": 64038,
+      "sha256": "241f0f63f93e41cef61fb9108ba47b94be66a85f66fd29fa2016e169a71e86a1"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2.5-VL-7B-Instruct/level_4_medium_corruption.decodability.jsonl",
-      "bytes": 63601,
-      "sha256": "58858008bcf7cb8f4847e3acdbbb8186345b35034c937029a496320d710d89ad"
+      "bytes": 64003,
+      "sha256": "f066aee3a4eb1997217221c052e76b60c4980d07fa0f4df87e8ab94530309580"
     },
     {
       "path": "results/calibration/chartqa_unimodal/text/Qwen2.5-VL-7B-Instruct/level_5_heavy_corruption.decodability.jsonl",
-      "bytes": 63114,
-      "sha256": "6120b691392f598b9ca14c346018492d600cefd6fbfc99770809ae239f20ca32"
+      "bytes": 64079,
+      "sha256": "fd7df5a5e1ad913dab3ce0b77c2f1ca201ea6c52012fe351a2a577cbf3c85c5b"
     },
     {
       "path": "results/calibration/derived/calibrated_slopes.json",
-      "bytes": 13897,
-      "sha256": "0be026300e4666e3b91ca896366d581508aa616a99d794d8b25c4d95d002ba98"
+      "bytes": 21991,
+      "sha256": "4e7ae3db0afed08167065f50a4fdd09a5006e9e0b1212ee7d0e1feaa64adf780"
+    },
+    {
+      "path": "results/calibration/derived/calibrated_slopes.txt",
+      "bytes": 2596,
+      "sha256": "afbf66e49bf77974630aa9d09c3b181debe28ce02153569cca2970b7d37c4259"
     },
     {
       "path": "results/calibration/derived/chartqa_calibrated_slopes.json",
@@ -3642,8 +3652,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Idefics3-8B-Llama3/level_0_clean.generation.jsonl",
-      "bytes": 57880,
-      "sha256": "0000a5fe3b1dc7b4f49dc30ca3ed48599959426e74523a79695cb1f87d576986"
+      "bytes": 58090,
+      "sha256": "3d0c6242f9a9152d780458cc25358b2400ce4cd3f4c51efbec9020f2bb1bc1f1"
     },
     {
       "path": "results/main_chartqa_conflict/image/Idefics3-8B-Llama3/level_2_blur_light.cll.jsonl",
@@ -3652,8 +3662,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Idefics3-8B-Llama3/level_2_blur_light.generation.jsonl",
-      "bytes": 57867,
-      "sha256": "1a3b24d1ef42bb41aab29e4c86a5e6ccfa59bef5667cf3bb71595889fd1899ec"
+      "bytes": 58077,
+      "sha256": "e157e4dcab48fe9cfde07d8cc378897e531f1661c32901442e08924368dd070d"
     },
     {
       "path": "results/main_chartqa_conflict/image/Idefics3-8B-Llama3/level_4_blur_noise.cll.jsonl",
@@ -3662,8 +3672,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Idefics3-8B-Llama3/level_4_blur_noise.generation.jsonl",
-      "bytes": 58121,
-      "sha256": "c96297f7365dac5b04961e935115c5a69cc28ff4ff0aef928bdd2dda595a9615"
+      "bytes": 58368,
+      "sha256": "10af1172b93e9eb7aa390cc941550036e1917f5c9da31325f00165dd2de62c83"
     },
     {
       "path": "results/main_chartqa_conflict/image/Idefics3-8B-Llama3/level_5_heavy_degradation.cll.jsonl",
@@ -3672,8 +3682,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Idefics3-8B-Llama3/level_5_heavy_degradation.generation.jsonl",
-      "bytes": 58090,
-      "sha256": "455bda75b5cc1a1902ffb05980ea0eff1df1d4207000affad5b3fe0b03d58dd2"
+      "bytes": 58379,
+      "sha256": "7cc65140a10ee80b29a258796e24428ff7fbe2f284a293a551517f3dcf4c200c"
     },
     {
       "path": "results/main_chartqa_conflict/image/InternVL2-8B/config_generation.json",
@@ -3682,23 +3692,23 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/InternVL2-8B/level_0_clean.generation.jsonl",
-      "bytes": 57833,
-      "sha256": "3c871458bf913ecf1fba0566c1d49ed7c974b0b7e31e0b82fe477c0df7e150e6"
+      "bytes": 58200,
+      "sha256": "c293096414d57e55b6b1cfd18f7291d9420d8ffac0365faba8e1eccf0aa94fff"
     },
     {
       "path": "results/main_chartqa_conflict/image/InternVL2-8B/level_2_blur_light.generation.jsonl",
-      "bytes": 57658,
-      "sha256": "aacad1a881bcc1f47148b1fc2b7841bd10e3d14e36566e805fcb42e91bc1956f"
+      "bytes": 58025,
+      "sha256": "b8f24ecd2b053fd2f3db6a64edbdeee330dafdbe5bfea8a496f0ad07b43233ef"
     },
     {
       "path": "results/main_chartqa_conflict/image/InternVL2-8B/level_4_blur_noise.generation.jsonl",
-      "bytes": 57757,
-      "sha256": "51c384b249de33f1d9e069de47e658444c43761cafdbbe50e89c33674c68a28b"
+      "bytes": 58319,
+      "sha256": "dacd1a3166cdcdd0be6a1d0f1d26c1ec100093f6354a8d2d496e2b49690a21c4"
     },
     {
       "path": "results/main_chartqa_conflict/image/InternVL2-8B/level_5_heavy_degradation.generation.jsonl",
-      "bytes": 57606,
-      "sha256": "1763fce62450ff3bab2838c68c4a5aabae47971a8044739378688057bc06fb51"
+      "bytes": 58083,
+      "sha256": "4a74144e5b169e396c661b37b9842b8694100726274f67f00b6001425bba2a3c"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/config_cll.json",
@@ -3717,8 +3727,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/level_0_clean.generation.jsonl",
-      "bytes": 58091,
-      "sha256": "88ea08701b8468c9168db0ed65d7ca0e98369673101a224f51c6bfb5eec1e61b"
+      "bytes": 58307,
+      "sha256": "d582974ec81f52a4e849e86e2afaecc36a26198d7f3f16f11dc1a1282f7c2a48"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/level_2_blur_light.cll.jsonl",
@@ -3727,8 +3737,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/level_2_blur_light.generation.jsonl",
-      "bytes": 58031,
-      "sha256": "9715254ff7d5fdb826ca8a57718404ccac453eddd4d88d7711dd9d8983128995"
+      "bytes": 58285,
+      "sha256": "73a7395596a642864c042e4fa772312f77c7f0f00023313a71ed22e3920a5b26"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/level_4_blur_noise.cll.jsonl",
@@ -3737,8 +3747,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/level_4_blur_noise.generation.jsonl",
-      "bytes": 58265,
-      "sha256": "b86e8b22ef551358a71c7ed29c92cd8467c426bd787c4d082746cb0119728ac6"
+      "bytes": 58478,
+      "sha256": "87508a47381c3e0f377b571b15c2cfa0eb6b76e0f2812dcc59a8b848116cf135"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/level_5_heavy_degradation.cll.jsonl",
@@ -3747,8 +3757,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-onevision-qwen2-7b-ov-hf/level_5_heavy_degradation.generation.jsonl",
-      "bytes": 58306,
-      "sha256": "f439053327740b24dbbaf4aba19791d09799674dd8e66bcb719207455e487284"
+      "bytes": 58519,
+      "sha256": "94b8bd99f9cabf01f8802b827357960030291269b1f48dc2cb93cd0131906a12"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/config_cll.json",
@@ -3767,8 +3777,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/level_0_clean.generation.jsonl",
-      "bytes": 57873,
-      "sha256": "149872abba5028720c60bd587b6f55c4c419088f8a34130de6d3b2ed4f55c42d"
+      "bytes": 58129,
+      "sha256": "641c123b13123aed40e02a42046a0f8293f9b6c31ff59d5e402346b4761ccd1e"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/level_2_blur_light.cll.jsonl",
@@ -3777,8 +3787,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/level_2_blur_light.generation.jsonl",
-      "bytes": 57980,
-      "sha256": "4d03b001ecd0ff8932dac7c4e04643a9c6b6386d00bfd39f65df74fa8bd13c2f"
+      "bytes": 58190,
+      "sha256": "8b4906056e7244d9650276fd618edeb5ffb6a47d7f7e517d8b066ba025a5415b"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/level_4_blur_noise.cll.jsonl",
@@ -3787,8 +3797,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/level_4_blur_noise.generation.jsonl",
-      "bytes": 58085,
-      "sha256": "44bb5b2d4d3181c292afbf270f66a8c7d65ae4e207ac9392ca61410004b7a540"
+      "bytes": 58295,
+      "sha256": "1d3dc1b1fa9ab81e846f25b94c1260721fdea7da61d64905ffb3920dd2767d67"
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/level_5_heavy_degradation.cll.jsonl",
@@ -3797,8 +3807,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/llava-v1.6-mistral-7b-hf/level_5_heavy_degradation.generation.jsonl",
-      "bytes": 57736,
-      "sha256": "ff44771df8a13b819bd7eaee58da5ae4635b3555f50c8a68851ccf9d98252396"
+      "bytes": 57946,
+      "sha256": "11cff839543671da1879178e23fff291fd25cdd1ce5da5e54e54cfc10e2d1455"
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/config_cll.json",
@@ -3817,8 +3827,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/level_0_clean.generation.jsonl",
-      "bytes": 138832,
-      "sha256": "f5be4d480b0f55f9674ff8ae61338ab7b6f99f757e94a8c8f6cd8fc172c26426"
+      "bytes": 141494,
+      "sha256": "967432ec1cc10ff3913082e17cdd4833011f8040b099966351f3f5118519ea40"
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/level_2_blur_light.cll.jsonl",
@@ -3827,8 +3837,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/level_2_blur_light.generation.jsonl",
-      "bytes": 135666,
-      "sha256": "791d463d13e01575e540a79a84946ec1d7a5dc0c12fa182898546319c6ba3788"
+      "bytes": 137694,
+      "sha256": "2285d87a131a1f14dd37a53511e4d5df5a7b6af66aab4f8f42b7fcd1ce8c2475"
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/level_4_blur_noise.cll.jsonl",
@@ -3837,8 +3847,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/level_4_blur_noise.generation.jsonl",
-      "bytes": 134787,
-      "sha256": "0a849059345933800d04f91f139027eec83edcb6a79925cd6e7d731a5dad6517"
+      "bytes": 138409,
+      "sha256": "12e2379adc0d5a2e114353f64b0bcddfff6c55b6b4909a9f6044592df3d4e1c2"
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/level_5_heavy_degradation.cll.jsonl",
@@ -3847,8 +3857,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Phi-3.5-vision-instruct/level_5_heavy_degradation.generation.jsonl",
-      "bytes": 132318,
-      "sha256": "e712197933d49a7e65455c2f1602492321f1fda843b76e82626f2c46a1c54ffc"
+      "bytes": 135945,
+      "sha256": "145be1f2233e7d6136dbf799ec919532a65eaa3df0390138e0cb5e06c5708b96"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/config_cll.json",
@@ -3867,8 +3877,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/level_0_clean.generation.jsonl",
-      "bytes": 58089,
-      "sha256": "fcbfb0c3f6ae9f46a591f112fd62729ff1e93af170aca43bd09dc3920d90677b"
+      "bytes": 58299,
+      "sha256": "b8bfe77528fc7bccdbeabf186f7e71bde3999fb59f3e36c42a1b054002e708c8"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/level_2_blur_light.cll.jsonl",
@@ -3877,8 +3887,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/level_2_blur_light.generation.jsonl",
-      "bytes": 58172,
-      "sha256": "eb9bcbb3ed27401ad4021d65dc536604b198c46cf2e5232d94ab1c60c35a1875"
+      "bytes": 58382,
+      "sha256": "02181b9635920810a430c8b0e4aa9f9ef68b7812b98f3c49e363808ba78c33f4"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/level_4_blur_noise.cll.jsonl",
@@ -3887,8 +3897,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/level_4_blur_noise.generation.jsonl",
-      "bytes": 58215,
-      "sha256": "0cef74e31149245d6a4f4ef3605a9488fa63a01517b43585ae509b618d701f52"
+      "bytes": 58425,
+      "sha256": "0e42e01c38eed7a55b4520742f57531fd43a54cbd00cb35932d9f4c259d34a88"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/level_5_heavy_degradation.cll.jsonl",
@@ -3897,8 +3907,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2-VL-2B-Instruct/level_5_heavy_degradation.generation.jsonl",
-      "bytes": 58278,
-      "sha256": "8daac91a986976b6b3a269515a8dcd99bfb49fab8dcc7d3e727c1b2167140346"
+      "bytes": 58525,
+      "sha256": "0030ec7668b9602a4cba17b5fd4f8be7ec4bf870ef9c4dc3a7c59eb3827bd2d8"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/config_cll.json",
@@ -3917,8 +3927,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/level_0_clean.generation.jsonl",
-      "bytes": 58622,
-      "sha256": "04e081a5a9ba0556733134e217254919a78459ed086376f6b0b4eaa0017a4adc"
+      "bytes": 58872,
+      "sha256": "6b17c10dd8386330a7b3a12a4e46371b726c4354c625cd6d5ee0cce6b6d3de50"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/level_2_blur_light.cll.jsonl",
@@ -3927,8 +3937,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/level_2_blur_light.generation.jsonl",
-      "bytes": 58800,
-      "sha256": "8ea006cc13730ad93e3e94bc750ef3ca6e09654e7b46524bf9489be903be64b0"
+      "bytes": 59010,
+      "sha256": "9a4f626f4af5edfec1939884bb923e62349fb7942a11cea8444745e2f92d710d"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/level_4_blur_noise.cll.jsonl",
@@ -3937,8 +3947,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/level_4_blur_noise.generation.jsonl",
-      "bytes": 58354,
-      "sha256": "1cc94bbe79fa5f00fa3005093dcea863bf2080961aef60fdfefeaeb1a2050b57"
+      "bytes": 58564,
+      "sha256": "2082b7f754218fe87bf8daf759acba83fa44281fdefdc0e121c68b8fde6e1b3b"
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/level_5_heavy_degradation.cll.jsonl",
@@ -3947,8 +3957,13 @@
     },
     {
       "path": "results/main_chartqa_conflict/image/Qwen2.5-VL-7B-Instruct/level_5_heavy_degradation.generation.jsonl",
-      "bytes": 58384,
-      "sha256": "a3a170c60482e2063bd0049e247ceac26ca416608c9a09818f3a0129ec40e7d9"
+      "bytes": 58634,
+      "sha256": "a75184e122a99b244dc1e68c914f02b4f62ec9249ffff18bc065e9b703f7ca33"
+    },
+    {
+      "path": "results/main_chartqa_conflict/rescored_analysis.txt",
+      "bytes": 2626,
+      "sha256": "e6cb7b1d7d290aba781bbb113783f1620f04b749cee486df23a581f48b94f072"
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/config_cll.json",
@@ -3967,8 +3982,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/level_0_clean.generation.jsonl",
-      "bytes": 57650,
-      "sha256": "4668b6a3e2f90f10dc22ddc113ab82412909720e9c0e82d737b27dda545b5a8f"
+      "bytes": 57860,
+      "sha256": "f83df106ce0f4918f44e9251e6de5e6da6c3d7f90ef18c3935bf1fba51315e84"
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/level_2_light_corruption.cll.jsonl",
@@ -3977,8 +3992,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/level_2_light_corruption.generation.jsonl",
-      "bytes": 57663,
-      "sha256": "90bcd3ab4449f83a28af74ddd124fdb15da46d54fd3b18af9727191f782a0e65"
+      "bytes": 57873,
+      "sha256": "cfdbea938db76ece24bd9c9de2176b5531ef235f229d3993b2cf691e5f87aab1"
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/level_4_medium_corruption.cll.jsonl",
@@ -3987,8 +4002,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/level_4_medium_corruption.generation.jsonl",
-      "bytes": 57697,
-      "sha256": "c0a6bba35dc5c6be62e4efac97f1b382a16e6ef199c93770116a3054cddd5ae6"
+      "bytes": 57907,
+      "sha256": "a9ecf84919259b8cd23130707b7169971c3149acd015266048523ea06319405c"
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/level_5_heavy_corruption.cll.jsonl",
@@ -3997,8 +4012,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Idefics3-8B-Llama3/level_5_heavy_corruption.generation.jsonl",
-      "bytes": 57683,
-      "sha256": "4448fea593603dc7189535156b26bf6cdab79b0e12096308c1965ca702ea0da6"
+      "bytes": 57893,
+      "sha256": "91b6ea9c7a0713a90ab239488f7979749c0fa434c4fd9b100116c78033230cf9"
     },
     {
       "path": "results/main_chartqa_conflict/text/InternVL2-8B/config_generation.json",
@@ -4007,23 +4022,23 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/InternVL2-8B/level_0_clean.generation.jsonl",
-      "bytes": 57603,
-      "sha256": "1a0b2c860381f44564cf19591b309ce53eca5a2032199071f6dac133d8c026a6"
+      "bytes": 57970,
+      "sha256": "26e58be0132365f0bd7e8889be0417d23121cecf849fb41eefc200884501c1c1"
     },
     {
       "path": "results/main_chartqa_conflict/text/InternVL2-8B/level_2_light_corruption.generation.jsonl",
-      "bytes": 57542,
-      "sha256": "5f7c0493bd57588e69a1088344b799714c522e8ae64aa04debe4783c3411d9cf"
+      "bytes": 57958,
+      "sha256": "7044797423cb545f11d162b1d486f9ce7a11e8be4a972f2c6150fc9f5fc32e7b"
     },
     {
       "path": "results/main_chartqa_conflict/text/InternVL2-8B/level_4_medium_corruption.generation.jsonl",
-      "bytes": 57575,
-      "sha256": "2e5a70c61d6b8a8a53000cf6c0cb9b944ebf7c94018bcd6b4ad911bd075c8d2e"
+      "bytes": 57899,
+      "sha256": "4b6048fb523c9f87e44b0e793e6d25a765d46f8ca851d7156deae91662520875"
     },
     {
       "path": "results/main_chartqa_conflict/text/InternVL2-8B/level_5_heavy_corruption.generation.jsonl",
-      "bytes": 57464,
-      "sha256": "46a8d02717842deb6280402b143470af03fa1a1fcd1531614ab5a852f1b9d81d"
+      "bytes": 57711,
+      "sha256": "c52380b0aa561d9526601c0e46ad32b897ba91fd47279da3044aa98878c74fb4"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/config_cll.json",
@@ -4042,8 +4057,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/level_0_clean.generation.jsonl",
-      "bytes": 57861,
-      "sha256": "2eda96674a9a1ba3ac6bf9e8bb66b32b73d222cead0211e5c13180d849fcca42"
+      "bytes": 58077,
+      "sha256": "22a9819aca8294cfed884946c28b4920142c11688aec5fbeff8828743473b356"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/level_2_light_corruption.cll.jsonl",
@@ -4052,8 +4067,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/level_2_light_corruption.generation.jsonl",
-      "bytes": 57866,
-      "sha256": "6cb7b49b8d14b4057216b9589ddbd7ebf8afb279087005f195e520bd7750b96b"
+      "bytes": 58194,
+      "sha256": "f75e0f421da163bce7525da13551d203f27233c09c5b1513fa11b0416ec3dfb3"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/level_4_medium_corruption.cll.jsonl",
@@ -4062,8 +4077,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/level_4_medium_corruption.generation.jsonl",
-      "bytes": 57871,
-      "sha256": "9ad308cd9448904433fd0b889b92686904a25d98c3574311ceba3e2cae5e5bfc"
+      "bytes": 58125,
+      "sha256": "44b09f36ecb11753555b8c48f6cb9c4a9586f976f4143a34ad484ff01dd4c5ad"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/level_5_heavy_corruption.cll.jsonl",
@@ -4072,8 +4087,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-onevision-qwen2-7b-ov-hf/level_5_heavy_corruption.generation.jsonl",
-      "bytes": 57780,
-      "sha256": "a185bb2d2f5e9d87ef8ba73c6eaf167657e89d1b625dd10ba5bc2fd205bf0cb5"
+      "bytes": 58031,
+      "sha256": "d8153c9811548c95844326aa78d2d3f0b76ed2d0f9f28afbcc70ad15e60bf358"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/config_cll.json",
@@ -4092,8 +4107,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/level_0_clean.generation.jsonl",
-      "bytes": 57643,
-      "sha256": "91ad9588227b8636860ed450d19c2a7015bc4568d465f8c77c3e28f56f073241"
+      "bytes": 57899,
+      "sha256": "0c99c4fcf1a4cf44cdd9bfe52a545205520a94237a4c060512257b40db2d7fc1"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/level_2_light_corruption.cll.jsonl",
@@ -4102,8 +4117,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/level_2_light_corruption.generation.jsonl",
-      "bytes": 57680,
-      "sha256": "067694fbbd627f85e2958d37ba2872622f16dd2f6b2eb20f3d2bc148f81de7af"
+      "bytes": 57932,
+      "sha256": "cf0abe96bdfb11f688401893002fabbe788019ea2fc28c715c8b777bfd959519"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/level_4_medium_corruption.cll.jsonl",
@@ -4112,8 +4127,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/level_4_medium_corruption.generation.jsonl",
-      "bytes": 57560,
-      "sha256": "2803d9e0005201edc20f7f0eec33cef24727280bf51f5d9028dff99c4c1465d1"
+      "bytes": 57934,
+      "sha256": "1f60d3b1b707559490b39117c1e173bd82f62b0945ac0c601a1eca2a64bf16ea"
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/level_5_heavy_corruption.cll.jsonl",
@@ -4122,8 +4137,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/llava-v1.6-mistral-7b-hf/level_5_heavy_corruption.generation.jsonl",
-      "bytes": 57537,
-      "sha256": "e5005e1653dd37ef37a6a4776c1bcc0cae25f6a47ad437c23c5866d79b349d62"
+      "bytes": 57940,
+      "sha256": "7931964e67efbc75982e7e17644da7efb249fe423a19be4e3b6401aef46b307c"
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/config_cll.json",
@@ -4142,8 +4157,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/level_0_clean.generation.jsonl",
-      "bytes": 138602,
-      "sha256": "c26ffcf9bbfdfcc5ec6098548eb49c9f0d9fdd1375aebb457d9c7d8140490ab9"
+      "bytes": 141264,
+      "sha256": "55a352ab881f463ecf394b576eb46953cd9e0737c61e5befd0f53abf1119290b"
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/level_2_light_corruption.cll.jsonl",
@@ -4152,8 +4167,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/level_2_light_corruption.generation.jsonl",
-      "bytes": 139791,
-      "sha256": "0cae069a0e1974de94247df7a3340b12c65f4c7cfadf17dd1c9bdec5c30b7716"
+      "bytes": 142286,
+      "sha256": "af44c7d235bbb740f0d50ae8f15671ae0e3b7b58a1353d58bd2461290e46a48c"
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/level_4_medium_corruption.cll.jsonl",
@@ -4162,8 +4177,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/level_4_medium_corruption.generation.jsonl",
-      "bytes": 138457,
-      "sha256": "66345586f12d8eced335332e8a18660617a324f1f2ec1238b937ec1156e75bac"
+      "bytes": 140383,
+      "sha256": "92af6e9a7b6a9abfe1ff8e2a36e2d11e61a06e7766caa7f2ffbab14706cda2d6"
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/level_5_heavy_corruption.cll.jsonl",
@@ -4172,8 +4187,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Phi-3.5-vision-instruct/level_5_heavy_corruption.generation.jsonl",
-      "bytes": 137879,
-      "sha256": "3406109a888550054bbbce3477eb4ad41051d1e325c2636f143328824e1f71ac"
+      "bytes": 139690,
+      "sha256": "517de512b64297cd1f282faacd64b3a0170bd516b3cd49f9d5e58308042b4174"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/config_cll.json",
@@ -4192,8 +4207,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/level_0_clean.generation.jsonl",
-      "bytes": 57859,
-      "sha256": "4c4a4be0b27552e26d1c3ac24241eccec2988c95047ab78e2d052fe398339b08"
+      "bytes": 58069,
+      "sha256": "98b34b2e6f2a2c4334a449502939cb18f4f8847adb523b2384a02751b14122d0"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/level_2_light_corruption.cll.jsonl",
@@ -4202,8 +4217,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/level_2_light_corruption.generation.jsonl",
-      "bytes": 57850,
-      "sha256": "a40bd4ad5f96d5c6357a1399b68edb9ab567eda45addb26e240164eea0cab7b3"
+      "bytes": 58060,
+      "sha256": "b8f7fce7db5f17a5a5c90aeb9bd395264d8662719e136e29a866ed28b5eba838"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/level_4_medium_corruption.cll.jsonl",
@@ -4212,8 +4227,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/level_4_medium_corruption.generation.jsonl",
-      "bytes": 57834,
-      "sha256": "1d0f3ef654ad1cc4ff4760c921d2c279c1eda53aef7799ce1e4bdf726565bdea"
+      "bytes": 58044,
+      "sha256": "59caaa95d4b0c8f55ce2aec49fd69c0ef8c0c09d3062a9ccdbe17c3c898721da"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/level_5_heavy_corruption.cll.jsonl",
@@ -4222,8 +4237,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2-VL-2B-Instruct/level_5_heavy_corruption.generation.jsonl",
-      "bytes": 57782,
-      "sha256": "115604e21ccaf4b77d092e22876992678dc0ba24fd05beba5ba561ad96be4553"
+      "bytes": 57992,
+      "sha256": "f18be6b364274ff1f8a20217bb5bb48008c8cc75e63a1a257d07a02698884715"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/config_cll.json",
@@ -4242,8 +4257,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/level_0_clean.generation.jsonl",
-      "bytes": 58392,
-      "sha256": "edea97b8f2b617df69e8d8ce4174c9dbb280a1baa9ff9068009412106c728e7d"
+      "bytes": 58642,
+      "sha256": "f3004429561d39ef903b38e388afd28769879f686aaed956f900bd3f90eddc48"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/level_2_light_corruption.cll.jsonl",
@@ -4252,8 +4267,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/level_2_light_corruption.generation.jsonl",
-      "bytes": 58341,
-      "sha256": "3c2253bc80e7d2b1dcd1378b88edd3704b40ca13dd2f647d4f48050532577376"
+      "bytes": 58669,
+      "sha256": "e4743aa3a366bdbf4e3d665f1ff1e9997041f408fc200900fc85c320a3399970"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/level_4_medium_corruption.cll.jsonl",
@@ -4262,8 +4277,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/level_4_medium_corruption.generation.jsonl",
-      "bytes": 58276,
-      "sha256": "11884883be811e59302b6c7b605d81316ed19439a96a911e7d484dc66763bcba"
+      "bytes": 58569,
+      "sha256": "55f13778d7b5aa478dc32fd898e029b647b1ed562a2dbc3bd0b9e9eb7cb60459"
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/level_5_heavy_corruption.cll.jsonl",
@@ -4272,8 +4287,8 @@
     },
     {
       "path": "results/main_chartqa_conflict/text/Qwen2.5-VL-7B-Instruct/level_5_heavy_corruption.generation.jsonl",
-      "bytes": 58150,
-      "sha256": "aae4fb108938190ed6e8dedd0afc730bd43c7823a56985f79c4ef8ec26b27ca0"
+      "bytes": 58441,
+      "sha256": "3df24b9e47ea60cfc286a1ca91b484ebee5a6763153ada798fd55e4ebdaa68a7"
     },
     {
       "path": "results/prompt_framing_control/analysis/cll_normalization_sensitivity.txt",
@@ -5337,8 +5352,8 @@
     },
     {
       "path": "scripts/analyze_cll_normalization.py",
-      "bytes": 5360,
-      "sha256": "e5a24d7eed9f5873833cbbaca7542d85eee32fd5aeea2d9a3b02726a9a86ac3e"
+      "bytes": 6596,
+      "sha256": "94d60ecbdb2584000986f39aaeb5b87058063672114e4a7eefe6092ba80536ec"
     },
     {
       "path": "scripts/analyze_frontier_chartqa_trajectories.py",
@@ -5427,13 +5442,13 @@
     },
     {
       "path": "scripts/reproduce_appendix_tables.py",
-      "bytes": 4644,
-      "sha256": "8afc69100956b933408a0bd7615be32551bf49b52b5bce4013193b4faba2d89b"
+      "bytes": 4701,
+      "sha256": "428bcf5475e0326b5cc0f8f4ab19539e67f61e2eedfe6c1cea25d9a3eee96cf0"
     },
     {
       "path": "scripts/rescore_chartqa_generation.py",
-      "bytes": 3894,
-      "sha256": "a21103dc5726fe8b1675e8595b73514835ef3cbeaa00668dafa2394ee35dbc55"
+      "bytes": 6684,
+      "sha256": "724313bb9a6ff6835c8aae03b1e2b57d770ecddfe9af9ebbc81c6a401da0b15e"
     },
     {
       "path": "scripts/rescore_legibility_results.py",
@@ -5447,8 +5462,8 @@
     },
     {
       "path": "scripts/run_chartqa_conflict.py",
-      "bytes": 37387,
-      "sha256": "94a379a5b595cf396b827a120604fa1d6273804a50ebe0f2da1dcefa81db84aa"
+      "bytes": 37590,
+      "sha256": "d3145fcab1bf990d4022aba135995296736f150396389c3d4d761ef1a5d96c93"
     },
     {
       "path": "scripts/run_legibility.py",
@@ -5462,8 +5477,8 @@
     },
     {
       "path": "scripts/verify_paper_table_outputs.py",
-      "bytes": 4207,
-      "sha256": "bc01247701172ff110cb53d8b2864d58d1bdcab099c5aaede34a5c2b4cc5b134"
+      "bytes": 4365,
+      "sha256": "8d0e13135c8d84a68ab16df3884a6f83d53d7c0caf1e66ecbb32487367d6b505"
     },
     {
       "path": "src/__init__.py",
@@ -5482,8 +5497,8 @@
     },
     {
       "path": "src/chartqa_attribution.py",
-      "bytes": 4892,
-      "sha256": "1ae9ba3b70b66fba2f9e9aa8f5b0ac1ac7af64b05db50d0b02fe518729bb8ff1"
+      "bytes": 5324,
+      "sha256": "d51f4f060032a524bd80c298741b873a64cc997855a8b64487a14f7d2f3c9405"
     },
     {
       "path": "src/error_analysis.py",
@@ -5532,8 +5547,8 @@
     },
     {
       "path": "TABLE_REPRODUCTION.md",
-      "bytes": 3274,
-      "sha256": "b4239176905f76679013a3aad07c0994a9a9ce3c979e314a9e8c66e7c5bb9305"
+      "bytes": 3732,
+      "sha256": "5a079cc60f1de3b3bf361662b97e07915be6c9a394c73516f527a2599dc23154"
     },
     {
       "path": "THIRD_PARTY_DATA.md",

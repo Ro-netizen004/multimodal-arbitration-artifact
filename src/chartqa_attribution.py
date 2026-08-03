@@ -24,9 +24,13 @@ CURRENCY_WORDS = {
 }
 
 
-def extract_final_answer(prediction):
-    """Return only a marked final answer or a terse answer-only response."""
+def extract_final_answer(prediction, unit_hint="", prefer_leading=False):
+    """Return a marked answer or a conservative leading terse answer."""
     text = str(prediction).strip()
+    first_line = text.splitlines()[0].strip() if text else ""
+    if prefer_leading and first_line and len(first_line.split()) <= 4:
+        if normalize_answer(first_line, unit_hint) is not None:
+            return first_line
     marked = re.search(r"####\s*([^\r\n]+)", text)
     if marked:
         return marked.group(1).strip()
@@ -40,6 +44,9 @@ def extract_final_answer(prediction):
         return terminal_answer.group(1).strip()
     if "\n" not in text and len(text.split()) <= 4:
         return text
+    if first_line and len(first_line.split()) <= 4:
+        if normalize_answer(first_line, unit_hint) is not None:
+            return first_line
     return None
 
 
@@ -106,7 +113,7 @@ def normalize_answer(answer, unit_hint=""):
 
 
 def classify(prediction, row):
-    final = extract_final_answer(prediction)
+    final = extract_final_answer(prediction, row.get("unit_class", ""))
     predicted = normalize_answer(final, row.get("unit_class", ""))
     image = normalize_answer(row["image_answer"], row.get("unit_class", ""))
     text = normalize_answer(row["text_answer"], row.get("unit_class", ""))

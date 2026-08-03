@@ -10,13 +10,17 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.chartqa_attribution import classify
+from src.chartqa_attribution import classify, extract_final_answer, normalize_answer
 
 
 def load_manifest(path: Path):
-    with path.open(encoding="utf-8") as handle:
-        rows = ([json.loads(line) for line in handle if line.strip()]
-                if path.suffix == ".jsonl" else json.load(handle))
+    if path.is_dir():
+        from datasets import load_from_disk
+        rows = load_from_disk(str(path))
+    else:
+        with path.open(encoding="utf-8") as handle:
+            rows = ([json.loads(line) for line in handle if line.strip()]
+                    if path.suffix == ".jsonl" else json.load(handle))
     return {
         int(row["conflict_id"]): {
             "image_answer": str(row.get("image_answer", row.get("chart_answer"))),
@@ -50,6 +54,35 @@ def rescore_file(source: Path, destination: Path, manifest):
     return output
 
 
+def rescore_decodability_file(source: Path, destination: Path, manifest):
+    output = []
+    with source.open(encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            result = json.loads(line)
+            item = int(result["i"])
+            if item not in manifest:
+                raise RuntimeError(f"No manifest row for item {item} in {source}")
+            unit = manifest[item].get("unit_class", "")
+            extracted = extract_final_answer(
+                result.get("prediction", ""), unit, prefer_leading=True
+            )
+            normalized = normalize_answer(extracted, unit)
+            target = normalize_answer(str(result.get("target_answer", "")), unit)
+            result.update(
+                extracted_final=extracted,
+                normalized_final=repr(normalized),
+                correct=normalized is not None and normalized == target,
+            )
+            output.append(result)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    with destination.open("w", encoding="utf-8") as handle:
+        for result in output:
+            handle.write(json.dumps(result, ensure_ascii=False) + "\n")
+    return output
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, required=True)
@@ -72,6 +105,8 @@ def main():
             for metadata in source_dir.glob("*.json"):
                 if not metadata.name.startswith("summary_"):
                     shutil.copy2(metadata, output_dir / metadata.name)
+            for cll_file in source_dir.glob("level_*.cll.jsonl"):
+                shutil.copy2(cll_file, output_dir / cll_file.name)
 
             levels = {}
             for source in sorted(source_dir.glob("level_*.generation.jsonl")):
@@ -85,11 +120,36 @@ def main():
                                         if decidable else None),
                 }
                 print(f"{model} {arm} L{level}: n={len(rows)} counts={dict(counts)}")
-            summary = {"arm": arm, "mode": "generation", "levels": levels,
-                       "rescored_from": str(args.root)}
-            with (output_dir / "summary_generation.json").open(
-                    "w", encoding="utf-8") as handle:
-                json.dump(summary, handle, indent=2)
+            if levels:
+                summary = {"arm": arm, "mode": "generation", "levels": levels,
+                           "rescored_from": str(args.root)}
+                with (output_dir / "summary_generation.json").open(
+                        "w", encoding="utf-8") as handle:
+                    json.dump(summary, handle, indent=2)
+
+            decodability_levels = {}
+            for source in sorted(source_dir.glob("level_*.decodability.jsonl")):
+                rows = rescore_decodability_file(
+                    source, output_dir / source.name, manifest
+                )
+                level = int(source.name.split("_", 2)[1])
+                correct = sum(bool(row.get("correct")) for row in rows)
+                decodability_levels[str(level)] = {
+                    "n": len(rows), "correct": correct,
+                    "accuracy": correct / len(rows) if rows else None,
+                    "errors": sum("error" in row for row in rows),
+                }
+                print(f"{model} {arm} L{level}: n={len(rows)} correct={correct} "
+                      f"accuracy={correct / len(rows):.4f}")
+            if decodability_levels:
+                summary = {
+                    "arm": arm, "mode": "decodability",
+                    "levels": decodability_levels,
+                    "rescored_from": str(args.root),
+                }
+                with (output_dir / "summary_decodability.json").open(
+                        "w", encoding="utf-8") as handle:
+                    json.dump(summary, handle, indent=2)
 
 
 if __name__ == "__main__":

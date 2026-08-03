@@ -31,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.run_legibility import CLL_TYPES, MODEL_REGISTRY
 from src.benchmarks import load_benchmark
+from src.chartqa_attribution import classify, extract_final_answer, normalize_answer
 from src.models import VLMModel
 from src.noise import NOISE_LEVELS, apply_noise_level
 from src.text_noise import TEXT_NOISE_LEVELS, degrade_text
@@ -404,7 +405,7 @@ def unimodal_prompt(row, arm, report=None, visual_representation="chart"):
     return f"Question: {row['question']}\n\n{evidence}\n\n{ending}"
 
 
-def extract_final_answer(prediction):
+def _extract_final_answer_legacy(prediction):
     """Return only the explicitly marked final answer, or a terse answer-only output."""
     text = str(prediction).strip()
     marked = re.search(r"####\s*([^\r\n]+)", text)
@@ -429,7 +430,7 @@ def extract_final_answer(prediction):
     return None
 
 
-def normalize_answer(answer, unit_hint=""):
+def _normalize_answer_legacy(answer, unit_hint=""):
     """Strict canonicalization; no distance, substring, or fuzzy matching."""
     if answer is None:
         return None
@@ -467,7 +468,7 @@ def normalize_answer(answer, unit_hint=""):
     return ("numeric", value.normalize(), explicit_unit or hinted or "unitless")
 
 
-def classify(prediction, row):
+def _classify_legacy(prediction, row):
     final = extract_final_answer(prediction)
     predicted = normalize_answer(final, row.get("unit_class", ""))
     image = normalize_answer(row["image_answer"], row.get("unit_class", ""))
@@ -589,7 +590,9 @@ def run_level(
                         if arm == "image"
                         else vlm.generate_text_only(prompt)
                     )
-                    extracted = extract_final_answer(prediction)
+                    extracted = extract_final_answer(
+                        prediction, row.get("unit_class", ""), prefer_leading=True
+                    )
                     normalized = normalize_answer(
                         extracted, row.get("unit_class", "")
                     )

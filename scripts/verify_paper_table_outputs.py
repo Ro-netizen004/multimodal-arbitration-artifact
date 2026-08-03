@@ -30,13 +30,17 @@ CHECKS = {
         ("reproduced/appendix/calibration_axes_svamp.txt", ["mod:leg(b3)      = +1.982", "mod:leg(b3)      = +7.965"]),
     ],
     7: [("reproduced/appendix/calibrated_slopes.txt", ["gsm8k\tQwen2-VL-2B\t1319\t+0.1305\t+0.9571\t+0.8266", "svamp\tPhi-3.5\t300\t+0.0176\t+3.3119\t+3.2942"])],
-    8: [("reproduced/appendix/calibrated_slopes.txt", ["chartqa\tQwen2-VL-2B\t229\t+2.8889\t+1.6388\t-1.2500", "chartqa\tPhi-3.5\tEXCLUDED"] )],
+    8: [("reproduced/appendix/calibrated_slopes.txt", ["chartqa\tQwen2-VL-2B\t229\t+2.8968\t+1.7399\t-1.1569", "chartqa\tPhi-3.5\t229\t+3.4105\t+2.8099\t-0.6006"] )],
     9: [
         ("reproduced/appendix_chartqa_chart_vs_table.txt", ["Qwen2.5-VL-7B-Instruct\t229\t-1.3615\t-1.7009\t-0.3349"]),
         ("reproduced/appendix_chartqa_table_endpoint.txt", ["cll\tQwen2-VL-2B-Instruct\t229\t+3.1351\t+2.1457\t-0.9702\t[-1.2172,-0.8125]"]),
     ],
-    10: [("reproduced/appendix/length_normalization.txt", ["neutral\tQwen2-VL-2B-Instruct\t0\t1319", "neutral\tPhi-3.5-vision-instruct\t1\t1319"] )],
-    11: [("reproduced/appendix/chartqa_generated_answers.txt", ["generation\tQwen2-VL-2B-Instruct\t112\t+0.9286", "generation\tInternVL2-8B\t103\t+0.2913"] )],
+    10: [("reproduced/appendix/length_normalization.txt", [
+        "gsm8k_neutral\tQwen2-VL-2B-Instruct\t0\t1319",
+        "svamp_neutral\tPhi-3.5-vision-instruct\t1\t300",
+        "chartqa\tPhi-3.5-vision-instruct\t1\t229",
+    ])],
+    11: [("reproduced/appendix/chartqa_generated_answers.txt", ["generation\tQwen2-VL-2B-Instruct\t113\t+0.9292", "generation\tPhi-3.5-vision-instruct\t9\t+1.0000", "generation\tInternVL2-8B\t105\t+0.2857"] )],
     12: [("reproduced/appendix/prompt_framing.txt", ["Qwen2.5-VL-7B-Instruct\t1319\t+0.8125\t+0.0595\t-0.3750", "Phi-3.5-vision-instruct\t1319\t+1.3750\t+1.3104\t+0.0000"] )],
 }
 

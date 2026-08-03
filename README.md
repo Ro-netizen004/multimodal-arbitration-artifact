@@ -381,8 +381,13 @@ python scripts/analyze_cll_normalization.py \
   --models Qwen2-VL-2B-Instruct Qwen2.5-VL-7B-Instruct \
     Idefics3-8B-Llama3 llava-onevision-qwen2-7b-ov-hf \
     llava-v1.6-mistral-7b-hf Phi-3.5-vision-instruct \
+  --benchmarks gsm8k svamp chartqa \
   --resamples 10000
 ```
+
+The role-neutral GSM8K and SVAMP rows and the audited 229-item ChartQA rows test
+the same exponents, \(\alpha\in\{0,0.5,1\}\). ChartQA conflict ID 45 is excluded
+by default, matching the primary analysis.
 
 Use the six rows whose `framing` value is `neutral`; the `original` rows are
 the prompt-framing control. The reported columns for Table 7 are the
@@ -405,9 +410,14 @@ the two-sided Wilcoxon signed-rank \(p\)-value.
 See `EXPECTED_RESULTS.md` for high-level checks and
 `EXPERIMENT_METADATA.md` for the reported-run configuration.
 
-The ChartQA generated-answer analysis reports Phi-3.5-Vision as incomplete;
-this is expected and is not silently imputed. Its primary CLL analysis is
-complete for all 229 retained items in both degradation arms.
+Phi-3.5-Vision often returned its direct answer on the first line without the
+requested delimiter. The released ChartQA files use a uniform, conservative
+no-inference rescore: an undelimited first line is accepted only when the whole
+line normalizes to one answer. This changes Phi's audited clean chart-only
+accuracy from the delimiter-only 2/229 (0.009) to 166/229 (0.725), ruling out a
+loading or image-processing failure. Its generated endpoint contrast still has
+only nine complete cases and is not emphasized; its primary CLL analysis is
+complete for all 229 retained items in both arms.
 
 ## Reproduce the frontier-model appendix
 

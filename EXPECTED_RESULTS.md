@@ -18,10 +18,15 @@ should satisfy these high-level checks:
 3. ChartQA-Conflict contains 229 analyzed CLL items per model after excluding
    compiled item 45, and all six CLL contrasts have the opposite direction
    from the majority arithmetic pattern.
-4. Phi-3.5-Vision generated-answer ChartQA analysis is reported as incomplete;
-   its CLL analysis is complete and is never imputed.
-5. The calibrated-slope output covers GSM8K, SVAMP, and ChartQA-Conflict and
-   records any low-clean-accuracy exclusions explicitly.
+4. Phi-3.5-Vision's corrected clean chart-only accuracy is 166/229 (0.725).
+   The earlier 2/229 (0.009) value counted only outputs containing the requested
+   delimiter; a uniform no-inference rescore also accepts an answer-only first
+   line when that complete line normalizes to a single answer. Phi's endpoint
+   generated-answer contrast remains based on only nine complete cases and is
+   therefore not emphasized; its CLL analysis is complete for all 229 items.
+5. The calibrated-slope output covers GSM8K, SVAMP, and ChartQA-Conflict. All
+   six CLL models enter the corrected ChartQA calibration and have negative
+   chart-versus-report slope differences.
 6. `reproduce_appendix_tables.py` completes the generated-choice/CLL agreement,
    per-model calibrated slopes, ChartQA generated answers, candidate-length
    normalization, prompt-framing sensitivity, raw and 1%-winsorized pooled
