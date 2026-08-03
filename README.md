@@ -96,9 +96,18 @@ ChartQA-Conflict condition.
 
 The sanitized 230-item derivative dataset, **ChartQA-Conflict v2**, is also
 available through the
-[anonymous dataset mirror](https://anonymous-hf.com/a/4qcemes98r9t/). It omits
+[anonymous ChartQA-Conflict mirror](https://anonymous-hf.com/a/l6ys5y01rlpw/).
+It omits
 reviewer identities and free-form review notes; the artifact records the single
 post-run exclusion that yields the 229-item analysis set.
+
+The rendered GSM8K and SVAMP conflict stimuli are available through a separate
+[anonymous stimulus mirror](https://anonymous-hf.com/a/4qcemes98r9t/). Their
+upstream problem content remains subject to the GSM8K and SVAMP MIT licenses.
+
+The paired ChartQA chart-versus-table release, containing both `chart_image` and
+`table_image` for the 229 analyzed conflicts, is available through the
+[anonymous chart/table mirror](https://anonymous-hf.com/a/p1nzaf47bbqu/).
 
 ## Environment used for inference
 
@@ -114,6 +123,118 @@ post-run exclusion that yields the 229-item analysis set.
 CPU-only analysis requires NumPy and SciPy; calibrated analyses additionally
 use pandas and statsmodels. Inference dependencies are kept separate so that
 reviewers do not need to install the GPU stack.
+
+## Run model inference (optional, GPU)
+
+Inference is optional: all paper statistics can be reproduced from the included
+item-level outputs without downloading model weights. To regenerate those raw
+outputs, use Python 3.10, a CUDA-capable GPU, and the separately pinned inference
+environment:
+
+```bash
+python -m venv .venv-inference
+source .venv-inference/bin/activate       # Windows: .venv-inference\Scripts\activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements-inference.txt
+```
+
+The examples below run one open checkpoint at a time. Replace `MODEL` with a key
+accepted by `src/models.py`, for example `Qwen2.5-VL-7B-Instruct`. Generation must
+finish before CLL scoring because the latter joins its scores to the saved
+generation rows. Use a fresh output directory; the runners intentionally refuse
+incompatible resumes.
+
+### Role-counterbalanced GSM8K or SVAMP
+
+The paper uses levels L0, L2, L4, and L5. Run both degradation arms in generation
+mode, followed by the corresponding CLL jobs:
+
+```bash
+MODEL=Qwen2.5-VL-7B-Instruct
+OUT=outputs/inference_arithmetic
+BENCHMARK=gsm8k                 # use svamp for the 300-item SVAMP run
+N=1319                          # use 300 for SVAMP
+
+python scripts/run_legibility.py \
+  --benchmark "$BENCHMARK" --num-problems "$N" \
+  --prompt-role neutral --noise-levels 0 2 4 5 \
+  --channel image --models "$MODEL" --output-dir "$OUT"
+python scripts/run_legibility.py \
+  --benchmark "$BENCHMARK" --num-problems "$N" \
+  --prompt-role neutral --noise-levels 0 2 4 5 \
+  --channel image --models "$MODEL" --output-dir "$OUT" --score-cll
+
+python scripts/run_legibility.py \
+  --benchmark "$BENCHMARK" --num-problems "$N" \
+  --prompt-role neutral --noise-levels 0 2 4 5 \
+  --channel text --models "$MODEL" --output-dir "$OUT"
+python scripts/run_legibility.py \
+  --benchmark "$BENCHMARK" --num-problems "$N" \
+  --prompt-role neutral --noise-levels 0 2 4 5 \
+  --channel text --models "$MODEL" --output-dir "$OUT" --score-cll
+```
+
+The arithmetic runner downloads the benchmark and canonical rendered stimuli from
+Hugging Face. Model weights are downloaded from the checkpoint identifiers listed
+in `EXPERIMENT_METADATA.md`.
+
+### ChartQA-Conflict and chart-versus-table ablation
+
+The paired representation release contains both `chart_image` and `table_image`
+and is available from the
+[anonymous chart/table mirror](https://anonymous-hf.com/a/p1nzaf47bbqu/).
+Open that page and copy the anonymous Hugging Face dataset identifier shown in its
+loading instructions into `TABLE_DATASET_REPO`. The reported table-ablation release
+is pinned to revision
+`4c5d377d37e0b8854f230a37f757b0fc08a31379` and contains 229 rows.
+
+Run once with `REP=chart` for the genuine-chart condition and once with
+`REP=plain_table` for the table-image condition:
+
+```bash
+MODEL=Qwen2.5-VL-7B-Instruct
+TABLE_DATASET_REPO="COPY_DATASET_ID_FROM_ANONYMOUS_MIRROR"
+TABLE_DATASET_REVISION=4c5d377d37e0b8854f230a37f757b0fc08a31379
+REP=plain_table                    # or: chart
+OUT=outputs/inference_chartqa_${REP}
+
+for ARM in image text; do
+  python scripts/run_chartqa_conflict.py \
+    --models "$MODEL" --arm "$ARM" --mode generation \
+    --levels 0 2 4 5 --num-problems 229 \
+    --visual-representation "$REP" \
+    --dataset-repo "$TABLE_DATASET_REPO" \
+    --dataset-revision "$TABLE_DATASET_REVISION" \
+    --output-dir "$OUT"
+
+  python scripts/run_chartqa_conflict.py \
+    --models "$MODEL" --arm "$ARM" --mode cll \
+    --levels 0 2 4 5 --num-problems 229 \
+    --visual-representation "$REP" \
+    --dataset-repo "$TABLE_DATASET_REPO" \
+    --dataset-revision "$TABLE_DATASET_REVISION" \
+    --output-dir "$OUT"
+done
+```
+
+For a cheap pre-flight check, change `--num-problems 229` to `12` and use a new
+output directory. Confirm that each requested level contains 12 generation rows and
+12 CLL rows before launching the full run. CLL is available only for checkpoints
+whose local wrapper exposes continuation scoring; InternVL2 and proprietary API
+models are evaluated behaviorally instead.
+
+After the complete chart and table runs, compare them with:
+
+```bash
+python scripts/analyze_chartqa_representation.py \
+  --chart-root outputs/inference_chartqa_chart \
+  --table-root outputs/inference_chartqa_plain_table \
+  --resamples 10000 --seed 20260731
+```
+
+These are portable shell examples. On a scheduler, submit generation and CLL as
+separate jobs and make each CLL job depend on successful completion of its matching
+generation job.
 
 ## CPU-only setup
 

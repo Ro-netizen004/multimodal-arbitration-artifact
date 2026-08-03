@@ -20,9 +20,16 @@ model weights, GPUs, or access to the original benchmark images.
 
 The sanitized 230-item derivative dataset, **ChartQA-Conflict v2**, used to
 construct the analyzed ChartQA-Conflict release is available during anonymous review at
-https://anonymous-hf.com/a/4qcemes98r9t/. The anonymous release excludes
+https://anonymous-hf.com/a/l6ys5y01rlpw/. The anonymous release excludes
 reviewer identities and free-form review notes while preserving the frozen
 experimental fields, chart images, and manifest hash.
+
+The rendered GSM8K and SVAMP conflict stimuli are available during anonymous
+review at https://anonymous-hf.com/a/4qcemes98r9t/.
+
+The 229-item paired ChartQA representation-ablation dataset, including both the
+original `chart_image` and matched `table_image` for every conflict, is available
+during anonymous review at https://anonymous-hf.com/a/p1nzaf47bbqu/.
 
 ## Not redistributed in this artifact
 
