@@ -146,15 +146,15 @@ Phi-3.5-vision-instruct	original	+0.0070	+0.5648	+0.5578
 Phi-3.5-vision-instruct	neutral	+0.0696	+0.8723	+0.8027
 
 ===== appendix/pooled_accuracy_regression_gsm8k =====
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
   warnings.warn(msg)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
   warnings.warn(msg, ConvergenceWarning)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
   warnings.warn(msg, ConvergenceWarning)
 benchmark=gsm8k
 rows=47484 items=1319 models=6 cells=36
@@ -174,15 +174,15 @@ generalization check, but it has only six clusters and should be interpreted
 cautiously.
 
 ===== appendix/pooled_accuracy_regression_gsm8k_winsor01 =====
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
   warnings.warn(msg)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
   warnings.warn(msg, ConvergenceWarning)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
   warnings.warn(msg, ConvergenceWarning)
 benchmark=gsm8k
 rows=47484 items=1319 models=6 cells=36
@@ -230,15 +230,15 @@ Robustness: if b3 agrees in sign/significance across BOTH axes, the conclusion i
 not an artifact of how legibility was operationalized.
 
 ===== appendix/pooled_accuracy_regression_svamp =====
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
   warnings.warn(msg)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
   warnings.warn(msg, ConvergenceWarning)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
   warnings.warn(msg, ConvergenceWarning)
 benchmark=svamp
 rows=10800 items=300 models=6 cells=36
@@ -258,15 +258,15 @@ generalization check, but it has only six clusters and should be interpreted
 cautiously.
 
 ===== appendix/pooled_accuracy_regression_svamp_winsor01 =====
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:1634: UserWarning: Random effects covariance is singular
   warnings.warn(msg)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2054: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2237: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
   warnings.warn(msg, ConvergenceWarning)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2245: UserWarning: The random effects covariance matrix is singular.
   warnings.warn(_warn_cov_sing)
-C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
+[LOCAL_ARTIFACT_PATH]\.venv\lib\site-packages\statsmodels\regression\mixed_linear_model.py:2261: ConvergenceWarning: The Hessian matrix at the estimated parameter values is not positive definite.
   warnings.warn(msg, ConvergenceWarning)
 benchmark=svamp
 rows=10800 items=300 models=6 cells=36
@@ -313,4 +313,4 @@ models: ['Idefics3-8B-Llama3', 'Phi-3.5-vision-instruct', 'Qwen2-VL-2B-Instruct'
 Robustness: if b3 agrees in sign/significance across BOTH axes, the conclusion is
 not an artifact of how legibility was operationalized.
 
-Appendix-table reproduction complete: C:\Users\Tech moon\Documents\GitHub\multimodal-arbitration-artifact\reproduced\appendix
+Appendix-table reproduction complete: [LOCAL_ARTIFACT_PATH]\reproduced\appendix

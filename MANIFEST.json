@@ -1192,8 +1192,8 @@
     },
     {
       "path": "DATA_ACCESS.md",
-      "bytes": 2113,
-      "sha256": "6813d9d25014ccbfe18c069988c5dc877d2dc9de696b5254255cc388bd93d270"
+      "bytes": 2345,
+      "sha256": "8ebaf67d5bd155e086e71ac4012f1085bbc35c8f132eb4530d451a722e98b3d0"
     },
     {
       "path": "DATA_LICENSE.md",
@@ -1262,8 +1262,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14303,
-      "sha256": "bf28f6bafdefa0aa8121cb7adcab5deee558817f18909925efb86658c14a9b7e"
+      "bytes": 19015,
+      "sha256": "762e1d2d669831d42edf0f17adf32c4f59883d5a122cf5670dcbf0b0c760f593"
     },
     {
       "path": "requirements-analysis.txt",
@@ -5537,8 +5537,8 @@
     },
     {
       "path": "THIRD_PARTY_DATA.md",
-      "bytes": 1439,
-      "sha256": "ae0ed6db5660c367b8f5c490de808e5c7eefe7aae8f0b9784cec8e8abad5338e"
+      "bytes": 1757,
+      "sha256": "98e40170373d4fd0d1a469ae381a63adbaba1fc69fd97a4771552bca83b60468"
     }
   ]
 }

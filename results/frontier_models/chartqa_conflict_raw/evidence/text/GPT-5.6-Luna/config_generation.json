@@ -13,6 +13,6 @@
   "table_manifest_name": null,
   "table_manifest_sha256": null,
   "manifest_sha256": "db7c97477110ece0c3c916642e2955a72073db638991e7caa5d2dec8b6d25ceb",
-  "dataset_repo": "vlm-modality-research/chartqa-evidence-conflict-table-v1",
+  "dataset_repo": "[ANONYMIZED_DATASET_NAMESPACE]/chartqa-evidence-conflict-table-v1",
   "dataset_revision": "4c5d377d37e0b8854f230a37f757b0fc08a31379"
 }
