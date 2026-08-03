@@ -5457,8 +5457,8 @@
     },
     {
       "path": "scripts/verify_artifact.py",
-      "bytes": 2766,
-      "sha256": "5cd5ab77a8df89ea3268b828fdcf7f11d1b21549831323ac5347188f106b9cac"
+      "bytes": 3950,
+      "sha256": "90d0d8bf698ce5e10e14f4617e11ec1455c8fc34c5547d5e727e89b44bb2e0df"
     },
     {
       "path": "scripts/verify_paper_table_outputs.py",

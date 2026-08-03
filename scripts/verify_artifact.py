@@ -19,6 +19,19 @@ FORBIDDEN = {
         r"hf_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]+|ghp_[A-Za-z0-9]+"
     ),
 }
+# SHA-256 digests reject project-specific identifying tokens without publishing
+# those tokens in the anonymous artifact. The token scan is limited to small
+# metadata/code files; generic path, email, and secret checks still cover all
+# textual outputs.
+FORBIDDEN_TOKEN_HASHES = {
+    "0cbf857023e7b8d88e60566429f6f4e9031549ec695ea3a6406c7a0f408c6229",
+    "b3ee2a758e6352060dfcbe347d4f5bc48bb95afa633b3d11339e3eb31226cf9a",
+    "7196dc911f4f68b2e997dce291e2b42e0d3d69f746dc80d4ebeccd504af1b28e",
+    "d389f2fe204a555c8b212fc2b5774be2d2c5fa731052197f61d56219f6200ccb",
+    "09e42d840905c824766bfa303bf5ae609e52c2aa27a7cc3e491614026d827331",
+    "23e7e646939e173ea6b6b160c757f12c8157e335f0d5f568993333be4c44c0df",
+    "49b6e65154771d059aaad07c9bdac87368767058bb66c64b8f12e228698ab0b1",
+}
 TEXT_SUFFIXES = {
     ".csv", ".json", ".jsonl", ".md", ".py", ".sh", ".txt", ".yaml", ".yml"
 }
@@ -59,6 +72,14 @@ def main():
             for label, pattern in FORBIDDEN.items():
                 if pattern.search(value):
                     errors.append(f"{label}: {relative}")
+            if len(payload) < 256 * 1024:
+                tokens = re.findall(r"[A-Za-z0-9._-]+", value.casefold())
+                if any(
+                    hashlib.sha256(token.encode("utf-8")).hexdigest()
+                    in FORBIDDEN_TOKEN_HASHES
+                    for token in tokens
+                ):
+                    errors.append(f"project-specific identity token: {relative}")
     if errors:
         print("Artifact verification FAILED:")
         for error in errors:
