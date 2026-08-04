@@ -1,9 +1,0 @@
-Gemini-3.5-Flash image L0: n=229/229 counts={'text': 29, 'image': 174, 'neither': 7, 'invalid': 19} empty=0.0% invalid=8.3% decidable=88.6% finish={'FinishReason.STOP': 229}
-Gemini-3.5-Flash image L2: n=229/229 counts={'text': 29, 'image': 173, 'neither': 7, 'invalid': 20} empty=0.0% invalid=8.7% decidable=88.2% finish={'FinishReason.STOP': 229}
-Gemini-3.5-Flash image L4: n=229/229 counts={'text': 78, 'neither': 31, 'image': 102, 'invalid': 18} empty=0.0% invalid=7.9% decidable=78.6% finish={'FinishReason.STOP': 229}
-Gemini-3.5-Flash image L5: n=229/229 counts={'text': 176, 'neither': 23, 'image': 12, 'invalid': 18} empty=0.0% invalid=7.9% decidable=82.1% finish={'FinishReason.STOP': 229}
-Gemini-3.5-Flash text L0: n=229/229 counts={'text': 29, 'image': 174, 'neither': 7, 'invalid': 19} empty=0.0% invalid=8.3% decidable=88.6% finish={'FinishReason.STOP': 229}
-Gemini-3.5-Flash text L2: n=229/229 counts={'text': 11, 'image': 182, 'neither': 17, 'invalid': 19} empty=0.0% invalid=8.3% decidable=84.3% finish={'FinishReason.STOP': 229}
-Gemini-3.5-Flash text L4: n=229/229 counts={'text': 8, 'image': 184, 'neither': 18, 'invalid': 19} empty=0.0% invalid=8.3% decidable=83.8% finish={'FinishReason.STOP': 229}
-Gemini-3.5-Flash text L5: n=229/229 counts={'text': 5, 'image': 182, 'neither': 23, 'invalid': 19} empty=0.0% invalid=8.3% decidable=81.7% finish={'FinishReason.STOP': 229}
-Frontier smoke gate PASSED.

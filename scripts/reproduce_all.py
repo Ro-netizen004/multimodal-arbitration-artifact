@@ -28,6 +28,9 @@ def run(name, arguments):
     )
     output = result.stdout
     print(output, end="")
+    # The verifier intentionally ignores generated outputs, and callers may
+    # start from a clean checkout with no reproduced/ directory.
+    OUT.mkdir(parents=True, exist_ok=True)
     (OUT / f"{name}.txt").write_text(output, encoding="utf-8")
     if result.returncode:
         raise SystemExit(f"{name} failed with exit code {result.returncode}")
